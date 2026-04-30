@@ -5,10 +5,26 @@ import Image from "next/image";
 import { useTheme } from "../context/ThemeContext";
 import styles from "./Header.module.css";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const { theme, toggleTheme } = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname() || "";
+  
+  const isActive = (basePath) => {
+    if (!pathname) return false;
+    const normalizedPathname = pathname.endsWith('/') ? pathname : pathname + '/';
+    const normalizedBasePath = basePath.endsWith('/') ? basePath : basePath + '/';
+    return normalizedPathname.startsWith(normalizedBasePath);
+  };
+
+  const isExact = (path) => {
+    if (!pathname) return false;
+    const normalizedPathname = pathname.endsWith('/') ? pathname : pathname + '/';
+    const normalizedPath = path.endsWith('/') ? path : path + '/';
+    return normalizedPathname === normalizedPath;
+  };
   
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
@@ -64,53 +80,53 @@ export default function Header() {
           <Link href="/" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
           
           <div className={styles.navGroup}>
-            <Link href="/solutions/" className={styles.navLabel} onClick={() => setIsMobileMenuOpen(false)}>
+            <Link href="/solutions/" className={`${styles.navLabel} ${isActive('/solutions') ? styles.active : ''}`}>
               Solutions <span className={styles.chevron}>▾</span>
             </Link>
             <div className={styles.megaMenuContainer}>
               <ul className={styles.navList}>
                 <li className={styles.hasSub}>
-                  <Link href="/solutions/zoho-implementation/">Zoho Implementation Stack <span className={styles.chevronRight}>▸</span></Link>
+                  <Link href="/solutions/zoho-implementation/" className={isActive('/solutions/zoho-implementation') ? styles.activeDropdown : ''}>Zoho Implementation Stack <span className={styles.chevronRight}>▸</span></Link>
                   <ul className={styles.subList}>
-                    <li><Link href="/solutions/zoho-implementation/zoho-crm-quickstart/" onClick={() => setIsMobileMenuOpen(false)}>Zoho CRM QuickStart</Link></li>
-                    <li><Link href="/solutions/zoho-implementation/managed-services/" onClick={() => setIsMobileMenuOpen(false)}>Zoho Managed Services</Link></li>
+                    <li><Link href="/solutions/zoho-implementation/zoho-crm-quickstart/" className={isExact('/solutions/zoho-implementation/zoho-crm-quickstart') ? styles.activeDropdown : ''}>Zoho CRM QuickStart</Link></li>
+                    <li><Link href="/solutions/zoho-implementation/managed-services/" className={isExact('/solutions/zoho-implementation/managed-services') ? styles.activeDropdown : ''}>Zoho Managed Services</Link></li>
                   </ul>
                 </li>
-                <li><Link href="/solutions/product-engineering/" onClick={() => setIsMobileMenuOpen(false)}>Product Engineering</Link></li>
-                <li><Link href="/solutions/ai-digital-workers/" onClick={() => setIsMobileMenuOpen(false)}>AI & Digital Workers</Link></li>
-                <li><Link href="/solutions/data-engineering/" onClick={() => setIsMobileMenuOpen(false)}>Data Engineering</Link></li>
+                <li><Link href="/solutions/product-engineering/" className={isActive('/solutions/product-engineering') ? styles.activeDropdown : ''}>Product Engineering</Link></li>
+                <li><Link href="/solutions/ai-digital-workers/" className={isActive('/solutions/ai-digital-workers') ? styles.activeDropdown : ''}>AI & Digital Workers</Link></li>
+                <li><Link href="/solutions/data-engineering/" className={isActive('/solutions/data-engineering') ? styles.activeDropdown : ''}>Data Engineering</Link></li>
               </ul>
             </div>
           </div>
 
           <div className={styles.navGroup}>
-            <span className={styles.navLabel}>
+            <span className={`${styles.navLabel} ${isActive('/industries') ? styles.active : ''}`}>
               Industries <span className={styles.chevron}>▾</span>
             </span>
             <div className={styles.megaMenuContainer}>
               <ul className={styles.navList}>
-                <li><Link href="/industries/professional-services/" onClick={() => setIsMobileMenuOpen(false)}>Professional Services</Link></li>
-                <li><Link href="/industries/manufacturing-distribution/" onClick={() => setIsMobileMenuOpen(false)}>Manufacturing & Distribution</Link></li>
-                <li><Link href="/industries/logistics-field-service/" onClick={() => setIsMobileMenuOpen(false)}>Logistics & Field Service</Link></li>
-                <li><Link href="/industries/financial-services/" onClick={() => setIsMobileMenuOpen(false)}>Financial Services</Link></li>
+                <li><Link href="/industries/professional-services/" className={isActive('/industries/professional-services') ? styles.activeDropdown : ''}>Professional Services</Link></li>
+                <li><Link href="/industries/manufacturing-distribution/" className={isActive('/industries/manufacturing-distribution') ? styles.activeDropdown : ''}>Manufacturing & Distribution</Link></li>
+                <li><Link href="/industries/logistics-field-service/" className={isActive('/industries/logistics-field-service') ? styles.activeDropdown : ''}>Logistics & Field Service</Link></li>
+                <li><Link href="/industries/financial-services/" className={isActive('/industries/financial-services') ? styles.activeDropdown : ''}>Financial Services</Link></li>
               </ul>
             </div>
           </div>
 
           <div className={styles.navGroup}>
-            <span className={styles.navLabel}>
+            <span className={`${styles.navLabel} ${isActive('/about') || isActive('/case-studies') || isActive('/trust-security') ? styles.active : ''}`}>
               Company <span className={styles.chevron}>▾</span>
             </span>
             <div className={styles.megaMenuContainer}>
               <ul className={styles.navList}>
-                <li><Link href="/about/" onClick={() => setIsMobileMenuOpen(false)}>Why FI Digital</Link></li>
-                <li><Link href="/case-studies/" onClick={() => setIsMobileMenuOpen(false)}>Case Studies Hub</Link></li>
-                <li><Link href="/trust-security/" onClick={() => setIsMobileMenuOpen(false)}>Trust & Security</Link></li>
+                <li><Link href="/about/" className={isActive('/about') ? styles.activeDropdown : ''}>Why FI Digital</Link></li>
+                <li><Link href="/case-studies/" className={isActive('/case-studies') ? styles.activeDropdown : ''}>Case Studies Hub</Link></li>
+                <li><Link href="/trust-security/" className={isActive('/trust-security') ? styles.activeDropdown : ''}>Trust & Security</Link></li>
               </ul>
             </div>
           </div>
 
-          <Link href="/packages/" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>Packages</Link>
+          <Link href="/packages/" className={`${styles.navLink} ${isActive('/packages') ? styles.active : ''}`}>Packages</Link>
 
           <div className={styles.navActions}>
             <button 
