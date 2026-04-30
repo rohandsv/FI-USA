@@ -1,0 +1,131 @@
+.footer {
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding-top: 4rem;
+  margin-top: auto;
+}
+
+.footerGrid {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  padding-bottom: 4rem;
+}
+
+.brandSection {
+  max-width: 350px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.logoLightModeBg {
+  background-color: var(--text-primary);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+.descriptor {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.contactInfo p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.contactInfo strong {
+  color: var(--text-primary);
+}
+
+.contactInfo a:hover {
+  color: var(--accent-color);
+}
+
+.timezone {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.linksSection {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.linkColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.linkColumn h4 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.linkColumn a {
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.linkColumn a:hover {
+  color: var(--accent-color);
+}
+
+.footerBottom {
+  border-top: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+}
+
+.bottomFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legalLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.legalLinks a {
+  transition: color 0.2s;
+}
+
+.legalLinks a:hover {
+  color: var(--text-primary);
+}
+
+@media (max-width: 992px) {
+  .footerGrid {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .linksSection {
+    gap: 2rem;
+  }
+}
