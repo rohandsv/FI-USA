@@ -128,7 +128,12 @@
 }
 
 .navLabel:hover, .navLink:hover {
-  color: var(--text-primary);
+  color: var(--accent-color);
+}
+
+.navLabel.active, .navLink.active {
+  color: var(--accent-color);
+  font-weight: 600;
 }
 
 .chevron, .chevronRight {
@@ -170,7 +175,6 @@
   list-style: none;
   min-width: 280px;
   padding: 0.75rem;
-  overflow: hidden;
 }
 
 .navList li {
@@ -189,7 +193,7 @@
   transition: all 0.2s ease;
 }
 
-.navList li > a:hover {
+.navList li > a:hover, .navList li > a.activeDropdown {
   background-color: color-mix(in srgb, var(--accent-color) 10%, transparent);
   color: var(--accent-color);
 }
