@@ -55,8 +55,15 @@ export default function Header() {
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""} ${isHidden ? styles.hidden : ""}`}>
       <div className={`container ${styles.headerContainer}`}>
-        <Link href="/" className={`${styles.logo} ${theme === 'light' ? styles.logoLightModeBg : ''}`}>
-          <Image src="/logos/fi-header-logo.png" alt="FI Digital" width={220} height={55} style={{ objectFit: 'contain' }} priority />
+        <Link href="/" className={styles.logo}>
+          <Image 
+            src={theme === 'dark' ? "/logos/logo-on-dark1.png" : "/logos/logo-on-light1.png"} 
+            alt="FI Digital" 
+            width={180} 
+            height={45} 
+            style={{ objectFit: 'contain' }} 
+            priority 
+          />
         </Link>
 
         <button 
@@ -70,6 +77,7 @@ export default function Header() {
         </button>
 
         <nav className={`${styles.navigation} ${isMobileMenuOpen ? styles.mobileOpen : ""}`}>
+          <Link href="/" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
           
           <div className={styles.navGroup}>
             <Link href="/solutions/" className={`${styles.navLabel} ${isActive('/solutions') ? styles.active : ''}`}>
@@ -144,7 +152,7 @@ export default function Header() {
                 </svg>
               )}
             </button>
-            <Link href="/book-a-fit-call/" className="btn btn-primary">
+            <Link href="/book-a-fit-call/" className="btn btn-primary" onClick={() => setIsMobileMenuOpen(false)}>
               Book a Call
             </Link>
           </div>

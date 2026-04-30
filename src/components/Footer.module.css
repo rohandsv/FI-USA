@@ -25,12 +25,6 @@
   letter-spacing: -0.02em;
 }
 
-.logoLightModeBg {
-  background-color: var(--text-primary);
-  padding: 0.75rem 1.25rem;
-  border-radius: 0.5rem;
-  display: inline-block;
-}
 
 .descriptor {
   color: var(--text-secondary);
