@@ -1,0 +1,42 @@
+# FI Digital - Full LLM Context
+
+> FI Digital is a US SMB transformation partner. We help operations-led, growth-stage, and data-ambitious mid-market companies modernize business systems, ship digital products, deploy AI workers, and unify data — as one execution partner.
+
+Headquarters: Atlanta, Georgia, USA
+Legal entity: FI Digital LLC
+Serving: US SMB and mid-market (25-500 employees)
+Delivery: US-based account leads, global engineering bench
+
+## Services
+
+- [Zoho Implementation Stack](https://fidigital.com/solutions/zoho-implementation/): Zoho Premium Partner. CRM, marketing automation, service ops, Zoho One rollouts, managed support, optimization.
+- [Product Engineering](https://fidigital.com/solutions/product-engineering/): Discovery sprints, MVP builds, customer portals, internal workflow apps, app modernization, integration engineering.
+- [AI and Digital Workers](https://fidigital.com/solutions/ai-digital-workers/): AI opportunity workshops, one-workflow AI pilots, support copilots, internal knowledge assistants, document AI, human-in-the-loop automation.
+- [Data Engineering](https://fidigital.com/solutions/data-engineering/): Data foundation assessments, ETL / ELT modernization, Databricks lakehouse, Snowflake analytics, governance, BI acceleration.
+
+## Industries
+
+- [Professional Services](https://fidigital.com/industries/professional-services/)
+- [Manufacturing and Distribution](https://fidigital.com/industries/manufacturing-distribution/)
+- [Logistics and Field Service](https://fidigital.com/industries/logistics-field-service/)
+- [Financial Services](https://fidigital.com/industries/financial-services/)
+
+## Starting Offers
+
+- Zoho CRM QuickStart (starting at a fixed fee)
+- Product Discovery Sprint (two weeks, fixed fee)
+- One-Workflow AI Pilot (fixed fee)
+- Data Foundation Assessment (fixed fee)
+- Managed Services (monthly starting point)
+
+## Proof
+
+- Zoho Premium Partner
+- 200+ projects delivered across 10 years
+- SOC 2 Type II aligned delivery practices
+- US-based account leads, globally distributed engineering bench
+
+## Contact
+
+- Book a fit call: https://fidigital.com/contact/
+- Email: hello@fidigital.com
