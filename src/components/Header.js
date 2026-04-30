@@ -39,8 +39,15 @@ export default function Header() {
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""} ${isHidden ? styles.hidden : ""}`}>
       <div className={`container ${styles.headerContainer}`}>
-        <Link href="/" className={`${styles.logo} ${theme === 'light' ? styles.logoLightModeBg : ''}`}>
-          <Image src="/logos/fi-header-logo.png" alt="FI Digital" width={220} height={55} style={{ objectFit: 'contain' }} priority />
+        <Link href="/" className={styles.logo}>
+          <Image 
+            src={theme === 'dark' ? "/logos/logo-on-dark1.png" : "/logos/logo-on-light1.png"} 
+            alt="FI Digital" 
+            width={180} 
+            height={45} 
+            style={{ objectFit: 'contain' }} 
+            priority 
+          />
         </Link>
 
         <button 
@@ -54,9 +61,10 @@ export default function Header() {
         </button>
 
         <nav className={`${styles.navigation} ${isMobileMenuOpen ? styles.mobileOpen : ""}`}>
+          <Link href="/" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
           
           <div className={styles.navGroup}>
-            <Link href="/solutions/" className={styles.navLabel}>
+            <Link href="/solutions/" className={styles.navLabel} onClick={() => setIsMobileMenuOpen(false)}>
               Solutions <span className={styles.chevron}>▾</span>
             </Link>
             <div className={styles.megaMenuContainer}>
@@ -64,13 +72,13 @@ export default function Header() {
                 <li className={styles.hasSub}>
                   <Link href="/solutions/zoho-implementation/">Zoho Implementation Stack <span className={styles.chevronRight}>▸</span></Link>
                   <ul className={styles.subList}>
-                    <li><Link href="/solutions/zoho-implementation/zoho-crm-quickstart/">Zoho CRM QuickStart</Link></li>
-                    <li><Link href="/solutions/zoho-implementation/managed-services/">Zoho Managed Services</Link></li>
+                    <li><Link href="/solutions/zoho-implementation/zoho-crm-quickstart/" onClick={() => setIsMobileMenuOpen(false)}>Zoho CRM QuickStart</Link></li>
+                    <li><Link href="/solutions/zoho-implementation/managed-services/" onClick={() => setIsMobileMenuOpen(false)}>Zoho Managed Services</Link></li>
                   </ul>
                 </li>
-                <li><Link href="/solutions/product-engineering/">Product Engineering</Link></li>
-                <li><Link href="/solutions/ai-digital-workers/">AI & Digital Workers</Link></li>
-                <li><Link href="/solutions/data-engineering/">Data Engineering</Link></li>
+                <li><Link href="/solutions/product-engineering/" onClick={() => setIsMobileMenuOpen(false)}>Product Engineering</Link></li>
+                <li><Link href="/solutions/ai-digital-workers/" onClick={() => setIsMobileMenuOpen(false)}>AI & Digital Workers</Link></li>
+                <li><Link href="/solutions/data-engineering/" onClick={() => setIsMobileMenuOpen(false)}>Data Engineering</Link></li>
               </ul>
             </div>
           </div>
@@ -81,10 +89,10 @@ export default function Header() {
             </span>
             <div className={styles.megaMenuContainer}>
               <ul className={styles.navList}>
-                <li><Link href="/industries/professional-services/">Professional Services</Link></li>
-                <li><Link href="/industries/manufacturing-distribution/">Manufacturing & Distribution</Link></li>
-                <li><Link href="/industries/logistics-field-service/">Logistics & Field Service</Link></li>
-                <li><Link href="/industries/financial-services/">Financial Services</Link></li>
+                <li><Link href="/industries/professional-services/" onClick={() => setIsMobileMenuOpen(false)}>Professional Services</Link></li>
+                <li><Link href="/industries/manufacturing-distribution/" onClick={() => setIsMobileMenuOpen(false)}>Manufacturing & Distribution</Link></li>
+                <li><Link href="/industries/logistics-field-service/" onClick={() => setIsMobileMenuOpen(false)}>Logistics & Field Service</Link></li>
+                <li><Link href="/industries/financial-services/" onClick={() => setIsMobileMenuOpen(false)}>Financial Services</Link></li>
               </ul>
             </div>
           </div>
@@ -95,14 +103,14 @@ export default function Header() {
             </span>
             <div className={styles.megaMenuContainer}>
               <ul className={styles.navList}>
-                <li><Link href="/about/">Why FI Digital</Link></li>
-                <li><Link href="/case-studies/">Case Studies Hub</Link></li>
-                <li><Link href="/trust-security/">Trust & Security</Link></li>
+                <li><Link href="/about/" onClick={() => setIsMobileMenuOpen(false)}>Why FI Digital</Link></li>
+                <li><Link href="/case-studies/" onClick={() => setIsMobileMenuOpen(false)}>Case Studies Hub</Link></li>
+                <li><Link href="/trust-security/" onClick={() => setIsMobileMenuOpen(false)}>Trust & Security</Link></li>
               </ul>
             </div>
           </div>
 
-          <Link href="/packages/" className={styles.navLink}>Packages</Link>
+          <Link href="/packages/" className={styles.navLink} onClick={() => setIsMobileMenuOpen(false)}>Packages</Link>
 
           <div className={styles.navActions}>
             <button 
@@ -128,7 +136,7 @@ export default function Header() {
                 </svg>
               )}
             </button>
-            <Link href="/book-a-fit-call/" className="btn btn-primary">
+            <Link href="/book-a-fit-call/" className="btn btn-primary" onClick={() => setIsMobileMenuOpen(false)}>
               Book a Call
             </Link>
           </div>

@@ -11,8 +11,14 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.footerGrid}`}>
         <div className={styles.brandSection}>
-          <Link href="/" className={`${styles.logo} ${theme === 'light' ? styles.logoLightModeBg : ''}`}>
-            <Image src="/logos/fi-header-logo.png" alt="FI Digital" width={240} height={60} style={{ objectFit: 'contain' }} />
+          <Link href="/" className={styles.logo}>
+            <Image 
+              src={theme === 'dark' ? "/logos/logo-on-dark1.png" : "/logos/logo-on-light1.png"} 
+              alt="FI Digital" 
+              width={200} 
+              height={50} 
+              style={{ objectFit: 'contain' }} 
+            />
           </Link>
           <p className={styles.descriptor}>
             US SMB transformation partner. Zoho Premium Partner plus product engineering, AI automation, and data engineering.
