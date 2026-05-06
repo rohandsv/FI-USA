@@ -11,6 +11,8 @@ export const metadata = {
   description: "Zoho Premium Partner plus product engineering, AI automation, and data engineering delivery from one execution partner.",
   icons: {
     icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 
