@@ -1,0 +1,378 @@
+.sectionDeliverables {
+  padding: 10rem 0;
+  background-color: var(--bg-secondary);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.deliverablesTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.deliverablesTable th {
+  background-color: var(--brand-navy);
+  color: #ffffff;
+  padding: 1.5rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.deliverablesTable td {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.deliverablesTable tr:last-child td {
+  border-bottom: none;
+}
+
+.deliverableName {
+  font-weight: 700;
+  color: var(--text-primary) !important;
+  width: 25%;
+}
+
+.deliverableWhat {
+  width: 50%;
+}
+
+.deliverableScope {
+  font-weight: 600;
+  color: var(--accent-color) !important;
+  width: 25%;
+}
+
+.phaseCol {
+  font-weight: 700;
+  color: var(--text-primary) !important;
+  width: 15%;
+}
+
+.timingCol {
+  font-weight: 600;
+  color: var(--accent-color) !important;
+  width: 15%;
+}
+
+.whatCol {
+  width: 45%;
+}
+
+.outcomeCol {
+  font-weight: 600;
+  color: var(--text-primary) !important;
+  width: 25%;
+}
+
+/* UNIQUE TIMELINE STYLES */
+.timelineGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 4rem auto 0;
+  position: relative;
+}
+
+.timelineGrid::before {
+  content: '';
+  position: absolute;
+  left: 35px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent-color), var(--border-color));
+  opacity: 0.3;
+}
+
+.timelinePhaseCard {
+  display: flex;
+  gap: 2.5rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  align-items: flex-start;
+}
+
+.timelinePhaseCard:hover {
+  transform: translateX(10px);
+  border-color: var(--accent-color);
+}
+
+.phaseIndicator {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  background-color: var(--brand-navy);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.25rem;
+  z-index: 2;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.phaseNumber {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.phaseTiming {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--accent-color);
+}
+
+.phaseContent {
+  flex-grow: 1;
+}
+
+.phaseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.phaseTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.phaseWhat {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.phaseDeliverableTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1.25rem;
+  background-color: color-mix(in srgb, var(--accent-color) 8%, var(--bg-primary));
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.phaseDeliverableTag::before {
+  content: '✓';
+  font-weight: 900;
+}
+
+/* PRICING FACTORS STYLES */
+.pricingSection {
+  padding: 10rem 0;
+}
+
+.factorsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.factorCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.factorCard:hover {
+  transform: translateY(-5px);
+}
+
+.factorIcon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.factorCard h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.factorCard p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.pricingCallout {
+  margin-top: 5rem;
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--brand-navy);
+  color: #ffffff;
+  border-radius: 2rem;
+}
+
+.pricingCallout p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* WHO THIS IS FOR STYLES */
+.whoSection {
+  padding: 10rem 0;
+  background-color: var(--bg-secondary);
+}
+
+.whoList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+
+.whoItem {
+  display: flex;
+  gap: 1.5rem;
+  background-color: var(--bg-card);
+  padding: 2rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--border-color);
+  align-items: flex-start;
+}
+
+.whoCheck {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.whoItem p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* INTEGRATIONS STYLES */
+.integrationsSection {
+  padding: 10rem 0;
+  background-color: var(--bg-primary);
+}
+
+.integrationsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.integrationCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 1.25rem;
+  transition: border-color 0.3s ease;
+}
+
+.integrationCard:hover {
+  border-color: var(--accent-color);
+}
+
+.integrationCard h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.integrationCard p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* TRUST & CREDENTIALS STYLES */
+.trustSection {
+  padding: 10rem 0;
+  background-color: var(--brand-navy);
+  color: #ffffff;
+}
+
+.credentialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.credentialItem {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.credentialDot {
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  box-shadow: 0 0 15px var(--accent-color);
+}
+
+.credentialItem p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.credentialItem strong {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .credentialsGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

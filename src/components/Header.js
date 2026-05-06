@@ -194,6 +194,17 @@ export default function Header() {
             </div>
           </div>
 
+          {/* Contact Menu */}
+          <div className={styles.navGroup}>
+            <Link 
+              href="/contact/" 
+              className={`${styles.navLabel} ${isActive('/contact') ? styles.active : ''}`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Contact
+            </Link>
+          </div>
+
           {/* More Dropdown */}
           <div className={`${styles.navGroup} ${activeMobileGroup === 'more' ? styles.mobileGroupActive : ''}`}>
             <span 
@@ -206,7 +217,6 @@ export default function Header() {
               <ul className={styles.navList}>
                 <li><Link href="/about/" className={isActive('/about') ? styles.activeDropdown : ''} onClick={() => setIsMobileMenuOpen(false)}>Why FI Digital (About)</Link></li>
                 <li><Link href="/trust-security/" className={isActive('/trust-security') ? styles.activeDropdown : ''} onClick={() => setIsMobileMenuOpen(false)}>Trust & Security</Link></li>
-                <li><Link href="/contact/" className={isActive('/contact') ? styles.activeDropdown : ''} onClick={() => setIsMobileMenuOpen(false)}>Contact Us</Link></li>
                 <li className={styles.menuDivider}></li>
                 <li><Link href="/solutions/zoho-implementation/" className={isActive('/solutions/zoho-implementation') ? styles.activeDropdown : ''} onClick={() => setIsMobileMenuOpen(false)}>Zoho Implementation</Link></li>
                 <li><Link href="/packages/" className={isActive('/packages') ? styles.activeDropdown : ''} onClick={() => setIsMobileMenuOpen(false)}>Packages</Link></li>
