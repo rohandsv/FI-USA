@@ -188,6 +188,28 @@ export default function ProductClient() {
           </div>
         </div>
       </section>
+      
+      <div className={styles.trustStrip}>
+        <div className="container">
+          <div className={styles.partnerBadgesRow}>
+            <div className={`${styles.partnerBadge} hero-animate`}>
+              <Image src="/logos/microsoft-partner.png" alt="Microsoft Partner" width={140} height={45} style={{ objectFit: 'contain' }} />
+            </div>
+            <div className={`${styles.partnerBadge} hero-animate`}>
+              <Image src="/logos/aws-partner.png" alt="AWS Partner" width={140} height={45} style={{ objectFit: 'contain' }} />
+            </div>
+            <div className={`${styles.partnerBadgeText} hero-animate`}>
+              <span>US-based Account Leads</span>
+            </div>
+            <div className={`${styles.partnerBadgeText} hero-animate`}>
+              <span>Senior Engineering Bench</span>
+            </div>
+            <div className={`${styles.partnerBadgeText} hero-animate`}>
+              <span>SOC 2 Type II Aligned</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* SECTION 1: WHY US */}
       <section className={`${styles.sectionWhy} scroll-section`}>

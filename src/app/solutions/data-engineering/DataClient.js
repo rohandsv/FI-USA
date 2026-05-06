@@ -161,15 +161,28 @@ export default function DataClient() {
           </div>
         </div>
 
-        <div className={styles.trustStrip}>
+        <div className={dataStyles.trustStrip}>
           <div className="container">
-            <ul className={styles.trustList}>
-              <li className="hero-animate">Databricks Select Partner</li>
-              <li className="hero-animate">Snowflake Partner</li>
-              <li className="hero-animate">Microsoft Fabric Certified</li>
-              <li className="hero-animate">US-based Data Architects</li>
-              <li className="hero-animate">SOC 2 Type II aligned</li>
-            </ul>
+            <div className={dataStyles.partnerBadgesRow}>
+              <div className={`${dataStyles.partnerBadge} hero-animate`}>
+                <Image src="/logos/microsoft-partner.png" alt="Microsoft Partner" width={140} height={45} style={{ objectFit: 'contain' }} />
+              </div>
+              <div className={`${dataStyles.partnerBadge} hero-animate`}>
+                <Image src="/logos/aws-partner.png" alt="AWS Partner" width={140} height={45} style={{ objectFit: 'contain' }} />
+              </div>
+              <div className={`${dataStyles.partnerBadge} hero-animate`}>
+                <Image src="/logos/snowflake.png" alt="Snowflake Partner" width={140} height={45} style={{ objectFit: 'contain' }} />
+              </div>
+              <div className={`${dataStyles.partnerBadge} hero-animate`}>
+                <Image src="/logos/databricks.png" alt="Databricks Partner" width={140} height={45} style={{ objectFit: 'contain' }} />
+              </div>
+              <div className={`${dataStyles.partnerBadgeText} hero-animate`}>
+                <span>US-based Data Architects</span>
+              </div>
+              <div className={`${dataStyles.partnerBadgeText} hero-animate`}>
+                <span>SOC 2 Type II Aligned</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
