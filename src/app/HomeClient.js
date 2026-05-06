@@ -431,6 +431,13 @@ export default function HomeClient() {
             <Link href="/trust-security/" className="btn btn-secondary">View Security Summary &rarr;</Link>
           </div>
         </div>
+
+        <div className={`container ${styles.badgeStrip}`} style={{ marginTop: '4rem', borderTop: '1px solid var(--border-color)', paddingTop: '4rem', display: 'flex', flexWrap: 'wrap', gap: '2rem', justifyContent: 'center', alignItems: 'center' }}>
+          <Image src="/images/zoho-premium-partner.png" alt="Zoho Premium Partner" width={140} height={50} style={{ objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7 }} />
+          <Image src="/images/soc2-badge.png" alt="SOC 2 Type II Aligned" width={100} height={50} style={{ objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7 }} />
+          <Image src="/images/aws-partner.png" alt="AWS Partner" width={100} height={50} style={{ objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7 }} />
+          <Image src="/images/microsoft-partner.png" alt="Microsoft Partner" width={140} height={50} style={{ objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7 }} />
+        </div>
       </section>
 
     </div>

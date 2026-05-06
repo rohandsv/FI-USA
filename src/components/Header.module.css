@@ -101,7 +101,8 @@
 .navigation {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem; /* Increased spacing between menus */
+  margin-left: auto; /* Push everything to the right on desktop */
 }
 
 .navGroup {
@@ -120,7 +121,8 @@
   transition: color 0.2s ease;
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.35rem;
+  white-space: nowrap; /* Single line menu names */
 }
 
 .navLabel:hover, .navLink:hover {
@@ -146,30 +148,168 @@
 .megaMenuContainer {
   position: absolute;
   top: 100%;
-  left: -1rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px) scale(0.98);
   padding-top: 1.5rem;
   visibility: hidden;
   opacity: 0;
-  transform: translateY(10px) scale(0.98);
   transform-origin: top center;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   pointer-events: none;
+  z-index: 1000;
 }
 
 .navGroup:hover .megaMenuContainer {
   visibility: visible;
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateX(-50%) translateY(0) scale(1);
   pointer-events: auto;
+}
+
+.megaMenuContent {
+  display: flex;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 50px -10px rgba(0,0,0,0.15);
+  overflow: hidden;
+  min-width: 500px;
+}
+
+.megaMenuSide {
+  width: 180px;
+  background-color: color-mix(in srgb, var(--text-primary) 3%, transparent);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-right: 1px solid var(--border-color);
+}
+
+.megaCategory, .megaCategoryActive {
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.megaCategory {
+  color: var(--text-secondary);
+}
+
+.megaCategoryActive, .megaCategoryActiveLink {
+  background-color: color-mix(in srgb, var(--accent-color) 8%, transparent);
+  color: var(--accent-color);
+}
+
+.megaCategoryActiveLink {
+  font-weight: 700;
+}
+
+.megaCategory:hover {
+  background-color: color-mix(in srgb, var(--text-primary) 5%, transparent);
+}
+
+.megaChevron {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  opacity: 0.5;
+}
+
+.megaMenuMain {
+  flex: 1;
+  padding: 2rem;
+  background-color: var(--bg-card);
+  min-width: 320px;
+}
+
+.megaMenuList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.megaMenuTitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.megaMenuItem {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  padding: 0.25rem 0.5rem;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.megaMenuItem:hover, .megaMenuLink:hover {
+  color: var(--accent-color);
+  background-color: color-mix(in srgb, var(--accent-color) 5%, transparent);
+  transform: translateX(4px);
+}
+
+.activePage {
+  color: var(--accent-color) !important;
+  font-weight: 700;
+  background-color: color-mix(in srgb, var(--accent-color) 8%, transparent);
+}
+
+.megaDescription {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.megaMenuLink {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.megaMenuDivider {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 0.5rem 0;
+  opacity: 0.5;
+}
+
+.menuDivider {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 0.5rem 0.75rem;
+  opacity: 0.5;
 }
 
 .navList {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: 0.75rem;
-  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.2);
+  border-radius: 1rem;
+  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.1);
   list-style: none;
-  min-width: 280px;
+  min-width: 260px;
   padding: 0.75rem;
 }
 
@@ -227,6 +367,7 @@
   align-items: center;
   gap: 1.5rem;
   margin-left: 1rem;
+  white-space: nowrap; /* Keep button name in single line */
 }
 
 /* Premium Theme Toggle Switch */
@@ -252,6 +393,11 @@
   .navigation {
     gap: 1.5rem;
   }
+}
+
+.desktopCta {
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
@@ -309,8 +455,40 @@
     display: none;
   }
 
-  .navGroup:hover .megaMenuContainer {
+  .navGroup.mobileGroupActive .megaMenuContainer {
     display: block;
+    margin-bottom: 1rem;
+    position: static;
+    transform: none;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .megaMenuContent {
+    flex-direction: column;
+    min-width: 0;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+  .megaMenuSide {
+    width: 100%;
+    background: transparent;
+    border-right: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    display: none; /* Hide side categories on mobile for simplicity, or we could keep them */
+  }
+
+  .megaMenuMain {
+    padding: 0;
+  }
+
+  .megaMenuItem {
+    padding: 0.5rem 0 0.5rem 1rem;
+    border-left: 2px solid var(--border-color);
   }
 
   .navList, .subList {
@@ -319,6 +497,10 @@
     border: none;
     padding: 0;
     margin-top: 0.5rem;
+  }
+
+  .navGroup.mobileGroupActive .chevron {
+    transform: rotate(180deg);
   }
 
   .navList li > a {
@@ -342,4 +524,45 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .desktopCta {
+    display: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .mobileOnlyContact {
+    display: block;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    width: 100%;
+  }
+
+  .mobilePhone {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .mobileStickyBottom {
+    display: block;
+  }
+}
+
+.mobileOnlyContact {
+  display: none;
+}
+
+.mobileStickyBottom {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 102;
+  background-color: var(--bg-card);
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
 }

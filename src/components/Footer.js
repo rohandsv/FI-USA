@@ -10,62 +10,68 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.footerGrid}`}>
-        <div className={styles.brandSection}>
-          <Link href="/" className={styles.logo}>
-            <Image 
-              src={theme === 'dark' ? "/logos/logo-on-dark1.png" : "/logos/logo-on-light1.png"} 
-              alt="FI Digital" 
-              width={200} 
-              height={50} 
-              style={{ objectFit: 'contain' }} 
+        {/* Column 1 — Brand */}
+        <div className={styles.brandColumn}>
+          <Link href="/" className={styles.footerLogo}>
+            <Image
+              src={theme === 'dark' ? "/logos/logo-on-dark1.png" : "/logos/logo-on-light1.png"}
+              alt="FI Digital Logo"
+              width={180}
+              height={45}
+              className={styles.logoImage}
+              style={{ objectFit: 'contain' }}
             />
           </Link>
-          <p className={styles.descriptor}>
-            US SMB transformation partner. Zoho Premium Partner plus product engineering, AI automation, and data engineering.
-          </p>
-          <div className={styles.contactInfo}>
-            <p><strong>HQ:</strong> 123 Innovation Drive, Atlanta, GA</p>
-            <p><strong>Phone:</strong> <a href="tel:+18665550199">1-866-555-0199</a></p>
-            <p><strong>Email:</strong> <a href="mailto:privacy@fidigital.com">privacy@fidigital.com</a></p>
-          </div>
-          <p className={styles.timezone}>
-            US-based account leads in ET, global delivery 24/5.
+          <p className={styles.tagline}>
+            Enterprise-grade transformation for US SMBs. Zoho Premium Partner.
           </p>
         </div>
+        {/* Column 1 — Solutions */}
+        <div className={styles.linkColumn}>
+          <h4>Solutions</h4>
+          <Link href="/solutions/zoho-implementation/">Zoho Implementation</Link>
+          <Link href="/solutions/product-engineering/">Product Engineering</Link>
+          <Link href="/solutions/ai-digital-workers/">AI & Digital Workers</Link>
+          <Link href="/solutions/data-engineering/">Data Engineering</Link>
+          <Link href="/packages/">Packages</Link>
+        </div>
 
-        <div className={styles.linksSection}>
-          <div className={styles.linkColumn}>
-            <h4>Practices</h4>
-            <Link href="/solutions/zoho-implementation/">Zoho Stack</Link>
-            <Link href="/solutions/product-engineering/">Product Engineering</Link>
-            <Link href="/solutions/ai-digital-workers/">AI & Digital Workers</Link>
-            <Link href="/solutions/data-engineering/">Data Engineering</Link>
-          </div>
+        {/* Column 2 — Industries */}
+        <div className={styles.linkColumn}>
+          <h4>Industries</h4>
+          <Link href="/industries/professional-services/">Professional Services</Link>
+          <Link href="/industries/manufacturing-distribution/">Manufacturing & Distribution</Link>
+          <Link href="/industries/logistics-field-service/">Logistics & Field Service</Link>
+          <Link href="/industries/financial-services/">Financial Services</Link>
+        </div>
 
-          <div className={styles.linkColumn}>
-            <h4>Industries</h4>
-            <Link href="/industries/professional-services/">Professional Services</Link>
-            <Link href="/industries/manufacturing-distribution/">Manufacturing</Link>
-            <Link href="/industries/logistics-field-service/">Logistics</Link>
-            <Link href="/industries/financial-services/">Financial Services</Link>
-          </div>
+        {/* Column 3 — Company */}
+        <div className={styles.linkColumn}>
+          <h4>Company</h4>
+          <Link href="/about/">About</Link>
+          <Link href="/trust-security/">Trust & Security</Link>
+        </div>
 
-          <div className={styles.linkColumn}>
-            <h4>Company</h4>
-            <Link href="/about/">Why FI Digital</Link>
-            <Link href="/case-studies/">Case Studies</Link>
-            <Link href="/trust-security/">Trust & Security</Link>
-            <Link href="/packages/">Packages</Link>
-          </div>
+        {/* Column 4 — Resources */}
+        <div className={styles.linkColumn}>
+          <h4>Resources</h4>
+          <Link href="/case-studies/">Case Studies</Link>
+          <Link href="/insights/">Insights</Link>
+        </div>
+
+        {/* Column 5 — Contact */}
+        <div className={styles.linkColumn}>
+          <h4>Contact</h4>
+          <a href="mailto:hello@fidigital.com" className={styles.footerContactLink}>hello@fidigital.com</a>
+          <a href="tel:+18665550199" className={styles.footerContactLink}>+1-866-555-0199</a>
+          <p className={styles.address}>123 Innovation Drive, Suite 400, Atlanta, GA 30301</p>
         </div>
       </div>
 
       <div className={styles.footerBottom}>
         <div className={`container ${styles.bottomFlex}`}>
-          <p>&copy; {new Date().getFullYear()} FI Digital LLC. All rights reserved.</p>
-          <div className={styles.legalLinks}>
-            <Link href="/privacy">Privacy Policy</Link>
-            <Link href="/terms">Terms of Service</Link>
+          <div className={styles.bottomLeft}>
+            <span>FI Digital LLC © 2026</span>
           </div>
         </div>
       </div>

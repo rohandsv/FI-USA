@@ -1,0 +1,83 @@
+.formSection {
+  padding: 6rem 0;
+  background-color: var(--bg-primary);
+}
+
+.formCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  padding: 4rem;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 600px) {
+  .formCard {
+    padding: 2.5rem;
+  }
+}
+
+.footerPrompt {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  text-align: center;
+  margin: 0;
+}
+
+/* SUCCESS PAGE */
+.successWrapper {
+  background-color: var(--bg-primary);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.successIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: color-mix(in srgb, var(--accent-color) 15%, var(--bg-primary));
+  color: var(--accent-color);
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2.5rem;
+}
+
+.trustStripSection {
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 4rem 0;
+}
+
+.trustStripWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.trustItem {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.trustItem strong {
+  color: var(--text-primary);
+  margin-right: 0.25rem;
+}
+
+.trustItem a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.trustItem a:hover {
+  color: var(--accent-color);
+}
