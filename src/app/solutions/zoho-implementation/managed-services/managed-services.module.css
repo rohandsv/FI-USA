@@ -1,0 +1,553 @@
+.sectionAbout {
+  padding: 10rem 0;
+  background-color: var(--bg-primary);
+}
+
+.sectionHeaderCentered {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.tableWrapper {
+  margin-top: 4rem;
+  overflow-x: auto;
+  border-radius: 1.5rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.serviceList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 4rem;
+  margin-top: 5rem;
+}
+
+.serviceItem {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.serviceItem:hover {
+  transform: translateX(10px);
+}
+
+.serviceIconWrapper {
+  background-color: var(--bg-secondary);
+  color: var(--accent-color);
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.serviceContent {
+  flex: 1;
+}
+
+.serviceTitle {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.serviceDesc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.managedTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg-card);
+  text-align: left;
+}
+
+.managedTable th {
+  background-color: var(--brand-navy);
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+}
+
+.managedTable td {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: top;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.managedTable tr:last-child td {
+  border-bottom: none;
+}
+
+.serviceAreaName {
+  font-weight: 800;
+  color: var(--text-primary);
+  width: 25%;
+}
+
+.comparisonTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg-card);
+  text-align: left;
+}
+
+.comparisonTable th {
+  background-color: var(--brand-navy);
+  color: #ffffff;
+  padding: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparisonTable th:first-child {
+  text-align: left;
+  border-left: none;
+}
+
+.slaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+
+.slaCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 2rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+}
+
+.slaCard:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.slaBadge {
+  display: inline-flex;
+  padding: 0.5rem 1.25rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: fit-content;
+}
+
+.slaP1 .slaBadge { background-color: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); }
+.slaP2 .slaBadge { background-color: rgba(245, 158, 11, 0.1); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.2); }
+.slaP3 .slaBadge { background-color: rgba(59, 130, 246, 0.1); color: #3b82f6; border: 1px solid rgba(59, 130, 246, 0.2); }
+
+.slaTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.slaDef {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+  min-height: 3.2rem;
+}
+
+.slaResponseList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
+}
+
+.slaResponseItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slaTierName {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.slaTime {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.comparisonTable td {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  vertical-align: top;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.comparisonTable td:first-child {
+  border-left: none;
+  font-weight: 800;
+  color: var(--text-primary);
+  width: 20%;
+}
+
+.comparisonTable td:not(:first-child) {
+  text-align: center;
+  width: 26.66%;
+}
+
+.comparisonTable tr:last-child td {
+  border-bottom: none;
+}
+
+/* 5-column specific overrides */
+.fiveCol td:first-child {
+  width: 15%;
+}
+
+.fiveCol td:nth-child(2) {
+  text-align: left;
+  width: 30%;
+}
+
+.fiveCol td:not(:first-child):not(:nth-child(2)) {
+  text-align: center;
+  width: 18.33%;
+}
+
+@media (max-width: 1024px) {
+  .fiveCol td:first-child { width: 20%; }
+  .fiveCol td:nth-child(2) { width: 35%; }
+  .fiveCol td:not(:first-child):not(:nth-child(2)) { width: 15%; }
+}
+
+.factorsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.factorCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.factorCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+}
+
+.factorCard h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.factorCard p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.timelineGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.timelinePhaseCard {
+  display: flex;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.timelinePhaseCard:hover {
+  transform: translateX(10px);
+  border-color: var(--accent-color);
+}
+
+.phaseIndicator {
+  background-color: var(--brand-navy);
+  color: #ffffff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 140px;
+  text-align: center;
+}
+
+.phaseNumber {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.phaseTiming {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent-color);
+}
+
+.phaseContent {
+  padding: 2rem 3rem;
+  flex-grow: 1;
+}
+
+.phaseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.phaseTitle {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.phaseTimingLabel {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.phaseWhat {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.moduleCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.moduleLogo {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.moduleLogo img {
+  object-fit: contain;
+}
+
+.idealCard {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 2.5rem !important;
+}
+
+.idealIcon {
+  background-color: var(--bg-secondary);
+  color: var(--accent-color);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.sectionCredentials {
+  padding: 10rem 0;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-top: 1px solid var(--border-color);
+}
+
+.credentialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.credentialCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+}
+
+.credentialCard:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.credentialIcon {
+  width: 56px;
+  height: 56px;
+  background-color: var(--bg-secondary);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.credentialText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.faqGrid {
+  max-width: 900px;
+  margin: 4rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faqItem {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.faqItem:hover {
+  border-color: var(--accent-color);
+}
+
+.faqQuestion {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.faqAnswer {
+  padding: 0 2rem 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.faqIcon {
+  color: var(--accent-color);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .sectionAbout {
+    padding: 6rem 0;
+  }
+  .sectionCredentials {
+    padding: 6rem 0;
+  }
+  .managedTable td, .managedTable th, .comparisonTable td, .comparisonTable th {
+    padding: 1rem;
+  }
+  .serviceAreaName {
+    width: 40%;
+  }
+  .comparisonTable td:first-child {
+    width: 30%;
+  }
+  .factorsGrid {
+    grid-template-columns: 1fr;
+  }
+  .timelinePhaseCard {
+    flex-direction: column;
+  }
+  .phaseIndicator {
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    min-width: 100%;
+    justify-content: flex-start;
+  }
+  .phaseContent {
+    padding: 2rem;
+  }
+  .faqQuestion {
+    padding: 1.25rem 1.5rem;
+    font-size: 1.05rem;
+  }
+  .faqAnswer {
+    padding: 0 1.5rem 1.25rem;
+  }
+}
