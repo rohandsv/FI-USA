@@ -9,11 +9,6 @@ import "./globals.css";
 export const metadata = {
   title: "FI Digital | US SMB transformation partner",
   description: "Zoho Premium Partner plus product engineering, AI automation, and data engineering delivery from one execution partner.",
-  icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
-  },
 };
 
 export default function RootLayout({ children }) {
