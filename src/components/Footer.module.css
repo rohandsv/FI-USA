@@ -142,3 +142,13 @@
     align-items: flex-start;
   }
 }
+
+.partnerLogoWrapper {
+  margin-top: 0.5rem;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.partnerLogoWrapper:hover {
+  opacity: 1;
+}

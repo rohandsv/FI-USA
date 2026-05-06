@@ -22,6 +22,15 @@ export default function Footer() {
               style={{ objectFit: 'contain' }}
             />
           </Link>
+          <div className={styles.partnerLogoWrapper}>
+            <Image
+              src="/logos/zoho-premium-partner.png"
+              alt="Zoho Premium Partner"
+              width={160}
+              height={50}
+              style={{ objectFit: 'contain' }}
+            />
+          </div>
           <p className={styles.tagline}>
             Enterprise-grade transformation for US SMBs. Zoho Premium Partner.
           </p>
