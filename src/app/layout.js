@@ -1,6 +1,9 @@
 import { ThemeProvider } from "../context/ThemeContext";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ClientScripts from "../components/ClientScripts";
+import ZohoSalesIQ from "../components/ZohoSalesIQ";
+import FloatingContactButton from "../components/FloatingContactButton";
 import "./globals.css";
 
 export const metadata = {
@@ -62,6 +65,9 @@ export default function RootLayout({ children }) {
           <Header />
           <main>{children}</main>
           <Footer />
+          <FloatingContactButton />
+          <ZohoSalesIQ />
+          <ClientScripts />
         </ThemeProvider>
       </body>
     </html>

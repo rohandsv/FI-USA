@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FI Digital</title>
+    <style>
+        :root {
+            --text: #0B2D52;
+            --input-bg: #f8fafc;
+            --input-border: #cbd5e1;
+            --accent: #1A5276;
+            --bg-body: transparent;
+            color-scheme: light;
+        }
+        :root.dark-mode {
+            --text: #f1f5f9;
+            --input-bg: #1e293b;
+            --input-border: #334155;
+            --accent: #D6EAF8;
+            --bg-body: transparent;
+            color-scheme: dark;
+        }
+        html, body {
+            margin: 0px;
+            padding: 0px;
+            background-color: var(--bg-body);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            width: 100%;
+            overflow: hidden;
+            transition: color 0.3s ease;
+        }
+        *, *::before, *::after {
+            box-sizing: border-box !important;
+        }
+        #crmWebToEntityForm.zcwf_lblLeft {
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .formsubmit.zcwf_button {
+            color: white !important;
+            background-color: #0B2D52 !important; /* FI Navy */
+            border-radius: 8px !important;
+            padding: 16px 32px !important;
+            font-weight: 700 !important;
+            border: none !important;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            box-shadow: 0 4px 14px rgba(11, 45, 82, 0.2) !important;
+            width: 100%;
+            max-width: 320px;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        :root.dark-mode .formsubmit.zcwf_button {
+            background-color: #1A5276 !important;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3) !important;
+        }
+        .formsubmit.zcwf_button:hover {
+            transform: translateY(-2px) !important;
+            background-color: #1A5276 !important;
+            box-shadow: 0 6px 20px rgba(11, 45, 82, 0.3) !important;
+        }
+        :root.dark-mode .formsubmit.zcwf_button:hover {
+            background-color: #2471A3 !important;
+        }
+        .zcwf_lblLeft .zcwf_title {
+            display: none;
+        }
+        form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 24px;
+            row-gap: 20px;
+            width: 100%;
+        }
+        .zcwf_row {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .full-width {
+            grid-column: span 2;
+        }
+        @media (max-width: 768px) {
+            form {
+                grid-template-columns: 1fr;
+            }
+            .full-width {
+                grid-column: span 1;
+            }
+        }
+        .zcwf_lblLeft .zcwf_col_fld input[type=text],
+        .zcwf_lblLeft .zcwf_col_fld input[type=password],
+        .zcwf_lblLeft .zcwf_col_fld input[type=email],
+        .zcwf_lblLeft .zcwf_col_fld textarea {
+            width: 100% !important;
+            border: 1.5px solid var(--input-border) !important;
+            border-radius: 8px !important;
+            padding: 12px 16px !important;
+            font-family: inherit !important;
+            background-color: var(--input-bg) !important;
+            color: var(--text) !important;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            font-size: 14px !important;
+        }
+        .zcwf_lblLeft .zcwf_col_fld input:focus,
+        .zcwf_lblLeft .zcwf_col_fld textarea:focus {
+            border-color: #1A5276 !important;
+            outline: none !important;
+            background-color: #ffffff !important;
+            box-shadow: 0 0 0 4px rgba(26, 82, 118, 0.08) !important;
+        }
+        :root.dark-mode .zcwf_lblLeft .zcwf_col_fld input:focus,
+        :root.dark-mode .zcwf_lblLeft .zcwf_col_fld textarea:focus {
+            background-color: #0f172a !important;
+            border-color: #3498DB !important;
+        }
+        .zcwf_lblLeft .zcwf_col_lab {
+            width: 100% !important;
+            font-weight: 600 !important;
+            font-size: 0.85rem !important;
+            color: var(--text) !important;
+            opacity: 0.85;
+        }
+        .zcwf_lblLeft .zcwf_col_fld_slt {
+            width: 100% !important;
+            border: 1.5px solid var(--input-border) !important;
+            background-color: var(--input-bg) !important;
+            color: var(--text) !important;
+            border-radius: 8px !important;
+            font-size: 14px !important;
+            padding: 12px 16px !important;
+            appearance: none !important;
+            cursor: pointer !important;
+            transition: all 0.2s ease !important;
+        }
+        .captcha-container { 
+            margin-top: 4px; 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+            flex-wrap: wrap;
+        }
+        .captcha-container img { 
+            border-radius: 6px; 
+            border: 1px solid var(--input-border); 
+            height: 44px; 
+        }
+        .captcha-container a { 
+            color: #1A5276; 
+            font-weight: 700; 
+            text-decoration: none; 
+            font-size: 0.8rem; 
+            transition: color 0.2s;
+        }
+        :root.dark-mode .captcha-container a {
+            color: #3498DB;
+        }
+        .captcha-container a:hover {
+            text-decoration: underline;
+        }
+        .wfrm_fld_dpNn {
+            display: none;
+        }
+    </style>
+</head>
+<body style="background: transparent;">
+    <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
+        <form id='webform3209734000060050024' action='https://crm.zoho.com/crm/WebToLeadForm' name='WebToLeads3209734000060050024' method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory3209734000060050024()' accept-charset='UTF-8'>
+            <input type='hidden' name='xnQsjsdp' value='8249e7b9292ea4cb6d6e1db5ca2e0929391063c186a1fa1c7e9614fa768f3e8d'>
+            <input type='hidden' name='zc_gad' id='zc_gad' value=''>
+            <input type='hidden' name='xmIwtLD' value='017a975b10c1e6a1b8364fddfe51b8833d414be62a005b373a474f37e54282d3a52405bbfdd395a60c2f6335bb3d3d63'>
+            <input type='hidden' name='actionType' value='TGVhZHM='>
+            <input type='hidden' name='returnURL' value='null'>
+            
+            <div class='zcwf_row'>
+                <div class='zcwf_col_lab'><label for='First_Name'>First Name <span style='color:red;'>*</span></label></div>
+                <div class='zcwf_col_fld'><input type='text' id='First_Name' name='First Name' maxlength='40' placeholder="Enter first name"></div>
+            </div>
+            <div class='zcwf_row'>
+                <div class='zcwf_col_lab'><label for='Last_Name'>Last Name <span style='color:red;'>*</span></label></div>
+                <div class='zcwf_col_fld'><input type='text' id='Last_Name' name='Last Name' maxlength='80' placeholder="Enter last name"></div>
+            </div>
+
+            <div class='zcwf_row full-width'>
+                <div class='zcwf_col_lab'><label for='Email'>Work Email <span style='color:red;'>*</span></label></div>
+                <div class='zcwf_col_fld'><input type='text' ftype='email' id='Email' name='Email' maxlength='100' placeholder="name@company.com"></div>
+            </div>
+
+            <div class='zcwf_row'>
+                <div class='zcwf_col_lab'><label for='Mobile'>Mobile <span style='color:red;'>*</span></label></div>
+                <div class='zcwf_col_fld'><input type='text' id='Mobile' name='Mobile' maxlength='30' placeholder="+1 (000) 000-0000"></div>
+            </div>
+            <div class='zcwf_row'>
+                <div class='zcwf_col_lab'><label for='Company'>Company <span style='color:red;'>*</span></label></div>
+                <div class='zcwf_col_fld'><input type='text' id='Company' name='Company' maxlength='200' placeholder="Enter company name"></div>
+            </div>
+
+            <div class='zcwf_row full-width'>
+                <div class='zcwf_col_lab'><label for='LEADCF55'>Company Size</label></div>
+                <div class='zcwf_col_fld'>
+                    <select class='zcwf_col_fld_slt' id='LEADCF55' name='LEADCF55'>
+                        <option value='-None-'>Select size...</option>
+                        <option value='1-10'>1-10 Employees</option>
+                        <option value='11-50'>11-50 Employees</option>
+                        <option value='51-200'>51-200 Employees</option>
+                        <option value='201-500'>201-500 Employees</option>
+                        <option value='501+'>501+ Employees</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class='zcwf_row full-width'>
+                <div class='zcwf_col_lab'><label for='LEADCF130'>How can we help?</label></div>
+                <div class='zcwf_col_fld'>
+                    <textarea id='LEADCF130' name='LEADCF130' rows='4' placeholder="Describe your technical challenge or business goal..."></textarea>
+                </div>
+            </div>
+
+            <div class='zcwf_row full-width'>
+                <div class='zcwf_col_lab'><label>Enter the Captcha <span style='color:red;'>*</span></label></div>
+                <div class='zcwf_col_fld captcha-container'>
+                    <input type='text' id='captchaField3209734000060050024' name='enterdigest' style="max-width: 150px;"/>
+                    <img id='imgid3209734000060050024' src='https://crm.zoho.com/crm/CaptchaServlet?formId=017a975b10c1e6a1b8364fddfe51b8833d414be62a005b373a474f37e54282d3a52405bbfdd395a60c2f6335bb3d3d63&grpid=8249e7b9292ea4cb6d6e1db5ca2e0929391063c186a1fa1c7e9614fa768f3e8d'>
+                    <a href='javascript:;' onclick='reloadImg3209734000060050024();'>Reload</a>
+                </div>
+            </div>
+
+            <div class='zcwf_row full-width' style="margin-top: 10px;">
+                <div style="display: flex; justify-content: center;">
+                    <input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Send Message'>
+                </div>
+            </div>
+
+            <script>
+                function syncTheme() {
+                    try {
+                        const isDark = window.parent.document.documentElement.getAttribute('data-theme') === 'dark';
+                        document.documentElement.classList.toggle('dark-mode', isDark);
+                    } catch (e) {}
+                }
+                
+                function sendHeight() {
+                    const height = document.body.scrollHeight;
+                    window.parent.postMessage({ type: 'zoho-resize', height: height }, '*');
+                }
+
+                window.addEventListener('DOMContentLoaded', () => {
+                    syncTheme();
+                    sendHeight();
+                    setInterval(syncTheme, 500);
+                    setInterval(sendHeight, 1000);
+                });
+
+                window.addEventListener('resize', sendHeight);
+
+                function reloadImg3209734000060050024(){
+                    var captcha = document.getElementById('imgid3209734000060050024');
+                    captcha.src = captcha.src.includes('&d') ? captcha.src.split('&d')[0] + '&d' + Date.now() : captcha.src + '&d' + Date.now();
+                    setTimeout(sendHeight, 100);
+                }
+
+                function checkMandatory3209734000060050024() {
+                    var mnd = ['First Name', 'Last Name', 'Email', 'Mobile', 'Company', 'enterdigest'];
+                    var labels = ['First Name', 'Last Name', 'Email', 'Mobile', 'Company', 'Captcha'];
+                    for (var i=0; i<mnd.length; i++) {
+                        var f = document.forms[0][mnd[i]];
+                        if (!f.value.trim()) {
+                            alert(labels[i] + ' is required.');
+                            f.focus();
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+            </script>
+        </form>
+    </div>
+</body>
+</html>

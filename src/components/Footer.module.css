@@ -6,59 +6,28 @@
 }
 
 .footerGrid {
-  display: flex;
-  justify-content: space-between;
-  gap: 4rem;
+  display: grid;
+  grid-template-columns: 1.5fr repeat(5, 1fr);
+  gap: 3rem;
   padding-bottom: 4rem;
 }
 
-.brandSection {
-  max-width: 350px;
+.brandColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--text-primary);
-  display: block;
-  margin-bottom: 1rem;
-  letter-spacing: -0.02em;
+.footerLogo {
+  display: flex;
+  align-items: center;
 }
 
-
-.descriptor {
+.tagline {
+  font-size: 0.85rem;
   color: var(--text-secondary);
   line-height: 1.6;
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
-}
-
-.contactInfo p {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-
-.contactInfo strong {
-  color: var(--text-primary);
-}
-
-.contactInfo a:hover {
-  color: var(--accent-color);
-}
-
-.timezone {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border-color);
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-.linksSection {
-  display: flex;
-  gap: 4rem;
-  flex-wrap: wrap;
+  max-width: 240px;
 }
 
 .linkColumn {
@@ -67,59 +36,109 @@
 }
 
 .linkColumn h4 {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
   color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   margin-bottom: 1.5rem;
-  font-weight: 600;
 }
 
-.linkColumn a {
+.linkColumn a, .address {
+  font-size: 0.9rem;
   color: var(--text-secondary);
   margin-bottom: 0.75rem;
-  font-size: 0.9rem;
-  transition: color 0.2s;
+  transition: color 0.2s ease;
+  line-height: 1.5;
 }
 
 .linkColumn a:hover {
   color: var(--accent-color);
 }
 
+.footerContactLink {
+  font-weight: 500;
+}
+
+.address {
+  margin-top: 0.5rem;
+}
+
 .footerBottom {
   border-top: 1px solid var(--border-color);
-  padding: 1.5rem 0;
+  padding: 2.5rem 0;
 }
 
 .bottomFlex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--text-muted);
-  font-size: 0.85rem;
+  gap: 2rem;
   flex-wrap: wrap;
-  gap: 1rem;
 }
 
-.legalLinks {
+.bottomLeft {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
 }
 
-.legalLinks a {
-  transition: color 0.2s;
+.bottomLeft a:hover {
+  color: var(--accent-color);
 }
 
-.legalLinks a:hover {
-  color: var(--text-primary);
+.cookieBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-@media (max-width: 992px) {
+.cookieBtn:hover {
+  color: var(--accent-color);
+}
+
+.bottomRight {
+  display: flex;
+  align-items: center;
+}
+
+.zohoBadge {
+  background-color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+@media (max-width: 1200px) {
   .footerGrid {
-    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
   }
 }
 
 @media (max-width: 768px) {
-  .linksSection {
+  .footerGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  
+  .bottomFlex {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

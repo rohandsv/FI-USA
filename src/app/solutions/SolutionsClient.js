@@ -14,7 +14,7 @@ if (typeof window !== "undefined") {
 
 const practices = [
   {
-    title: "Zoho Implementation Stack",
+    title: "Zoho Implementation Stack (Hub)",
     promise: "Make Zoho One the operating system for your business.",
     useCases: "CRM rollouts · service desk foundations · managed optimization",
     who: "Operations-led SMBs that want to exit spreadsheets.",
@@ -23,7 +23,7 @@ const practices = [
     icon: "/images/real-zoho-practice.jpg"
   },
   {
-    title: "Product Engineering",
+    title: "Product Engineering (Hub)",
     promise: "Ship production software without staff-augmentation roulette.",
     useCases: "Discovery sprints · MVP builds · customer portals · app modernization",
     who: "Growth-stage product, operations, and service companies.",
@@ -32,7 +32,7 @@ const practices = [
     icon: "/images/real-product-practice.jpg"
   },
   {
-    title: "AI & Digital Workers",
+    title: "AI & Digital Workers (Hub)",
     promise: "Put AI where it earns its keep — with audit logs and a kill-switch.",
     useCases: "Support copilots · internal knowledge assistants · document AI",
     who: "Teams that want measurable AI lift in one workflow first.",
@@ -41,7 +41,7 @@ const practices = [
     icon: "/images/real-ai-practice.jpg"
   },
   {
-    title: "Data Engineering",
+    title: "Data Engineering (Hub)",
     promise: "Build the trustworthy data foundation AI and reporting both need.",
     useCases: "Data foundation assessments · lakehouses · ETL modernization · BI acceleration",
     who: "Teams with reporting chaos or an AI readiness gap.",

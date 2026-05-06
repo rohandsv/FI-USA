@@ -1,0 +1,290 @@
+/* SECTION 2: PACKAGED OUTCOMES */
+.sectionPackages {
+  padding: 8rem 0;
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.packagesTable {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+}
+
+.packagesTable th, .packagesTable td {
+  padding: 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.packagesTable th {
+  background-color: color-mix(in srgb, var(--bg-primary) 50%, transparent);
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.packagesTable tr:last-child td {
+  border-bottom: none;
+}
+
+.packagesTable tr:hover td {
+  background-color: color-mix(in srgb, var(--bg-secondary) 50%, transparent);
+}
+
+.packageName {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.packageOutcome {
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.packageTimeline, .packageModel {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.packageModel {
+  color: var(--accent-color);
+}
+
+/* SECTION 3: TECH STACK */
+.sectionTech {
+  padding: 8rem 0;
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+}
+
+.techText {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.techText p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.techCard {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.techCard:hover {
+  transform: translateY(-5px);
+  border-color: color-mix(in srgb, var(--accent-color) 50%, transparent);
+  box-shadow: var(--shadow-md);
+}
+
+.techCategory {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.techLogosRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.techLogoWrapper {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.techStackList {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* SECTION 4: ENTRY POINTS */
+.sectionEntry {
+  padding: 8rem 0;
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+}
+
+.entryGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 4rem auto 0;
+}
+
+.entryCard {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.entryCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: color-mix(in srgb, var(--accent-color) 50%, transparent);
+}
+
+.entryQuote {
+  flex: 1;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-style: italic;
+  position: relative;
+}
+
+.entryQuote::before {
+  content: '"';
+  position: absolute;
+  left: -1rem;
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+.entryArrow {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.entrySolution {
+  flex: 1;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .entryCard {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .entryQuote::before {
+    display: none;
+  }
+  .entrySolution {
+    text-align: center;
+  }
+  .entryArrow {
+    transform: rotate(90deg);
+  }
+}
+
+/* FAQ SECTION */
+.sectionFaq {
+  padding: 8rem 0;
+  background-color: var(--bg-primary);
+}
+
+.faqList {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  background-color: var(--bg-card);
+  overflow: hidden;
+}
+
+.faqQuestion {
+  padding: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.faqQuestion::-webkit-details-marker {
+  display: none;
+}
+
+.faqQuestion::after {
+  content: "+";
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  transition: transform 0.3s;
+}
+
+.faqItem[open] .faqQuestion::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.faqItem[open] .faqQuestion {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.faqAnswer {
+  padding: 1.5rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.faqAnswer p {
+  margin: 0;
+}
+
+.faqAnswer a {
+  color: var(--accent-color);
+  text-decoration: underline;
+}

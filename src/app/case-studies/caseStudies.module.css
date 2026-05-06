@@ -1,0 +1,306 @@
+.filterSection {
+  padding: 3rem 0;
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.filterGroup {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filterLabel {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  min-width: 140px;
+}
+
+.chipWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.filterChip {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.925rem;
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filterChip:hover {
+  background-color: color-mix(in srgb, var(--accent-color) 15%, var(--bg-primary));
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.filterChip.active {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--bg-primary);
+  font-weight: 600;
+}
+
+.gridSection {
+  padding: 6rem 0;
+  background-color: var(--bg-primary);
+}
+
+.casesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.caseCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.caseCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: color-mix(in srgb, var(--accent-color) 40%, transparent);
+}
+
+.cardImageWrapper {
+  width: 100%;
+  height: 240px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-secondary);
+}
+
+.imagePlaceholder {
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.cardBody {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cardMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.cardPracticeTag, .cardIndustryTag {
+  font-size: 0.775rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cardPracticeTag {
+  background-color: color-mix(in srgb, var(--accent-color) 10%, transparent);
+  color: var(--accent-color);
+}
+
+.cardIndustryTag {
+  background-color: var(--bg-secondary);
+  color: var(--text-muted);
+}
+
+.cardTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.cardDesc {
+  font-size: 1.025rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.metricPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.metricPill {
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: color-mix(in srgb, var(--bg-secondary) 70%, transparent);
+  color: var(--text-primary);
+  padding: 0.35rem 0.85rem;
+  border-radius: 2rem;
+  border: 1px solid var(--border-color);
+}
+
+.cardLink {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-decoration: none;
+  margin-top: auto;
+  transition: opacity 0.2s;
+}
+
+.cardLink:hover {
+  opacity: 0.8;
+}
+
+.noResults {
+  text-align: center;
+  padding: 4rem 0;
+  color: var(--text-muted);
+  font-size: 1.125rem;
+}
+
+/* CASE STUDY DETAIL TEMPLATE STYLES */
+.detailHeader {
+  padding: 10rem 0 4rem;
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.detailMeta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.detailTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.detailSub {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.detailBodyGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  padding: 6rem 0;
+}
+
+@media (max-width: 968px) {
+  .detailBodyGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.detailSection {
+  margin-bottom: 4rem;
+}
+
+.detailSection:last-child {
+  margin-bottom: 0;
+}
+
+.detailHeading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.detailParagraph {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.sidebarCard {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  position: sticky;
+  top: 120px;
+}
+
+.sidebarHeading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.sidebarMetricList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.sidebarMetricItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.metricValue {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--accent-color);
+}
+
+.metricLabel {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.quoteSection {
+  padding: 6rem 0;
+  background-color: color-mix(in srgb, var(--accent-color) 4%, var(--bg-card));
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.quoteContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quoteText {
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.quoteAuthor {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
