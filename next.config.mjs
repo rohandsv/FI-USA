@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  async rewrites() {
+    return [
+      {
+        source: '/zoho-form.html',
+        destination: '/zoho-form',
+      },
+    ];
+  },
 };
 
 export default nextConfig;
