@@ -1,0 +1,47 @@
+{
+  "defaults": {
+    "project": 1
+  },
+  "actives": {
+    "project": 2,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "17682000001459316",
+      "name": "AU-website",
+      "domain": {
+        "id": "50041673650",
+        "name": "au-website-60040289923.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60040289923",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "id": "17682000001532076",
+      "name": "FI-Digital-USA-Website",
+      "domain": {
+        "id": "50041958199",
+        "name": "fi-digital-usa-website-60040289923.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60040289923",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

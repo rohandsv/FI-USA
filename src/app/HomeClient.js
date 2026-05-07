@@ -217,36 +217,37 @@ export default function HomeClient() {
         <div className={styles.marqueeContainer}>
           <div className={styles.marqueeContent}>
             {/* 14 Brands listed by user */}
-            <span className={styles.techBadge}><img src="/logos/zoho.png" alt="Zoho" onError={(e) => e.target.style.display = 'none'} /> Zoho</span>
-            <span className={styles.techBadge}><img src="/logos/react.png" alt="React" onError={(e) => e.target.style.display = 'none'} /> React</span>
-            <span className={styles.techBadge}><img src="/logos/nextjs.png" alt="Next.js" onError={(e) => e.target.style.display = 'none'} /> Next.js</span>
-            <span className={styles.techBadge}><img src="/logos/python.png" alt="Python" onError={(e) => e.target.style.display = 'none'} /> Python</span>
-            <span className={styles.techBadge}><img src="/logos/aws.png" alt="AWS" onError={(e) => e.target.style.display = 'none'} /> AWS</span>
-            <span className={styles.techBadge}><img src="/logos/azure.png" alt="Azure" onError={(e) => e.target.style.display = 'none'} /> Azure</span>
-            <span className={styles.techBadge}><img src="/logos/claude.png" alt="Claude" onError={(e) => e.target.style.display = 'none'} /> Claude</span>
-            <span className={styles.techBadge}><img src="/logos/openai.png" alt="OpenAI" onError={(e) => e.target.style.display = 'none'} /> OpenAI</span>
-            <span className={styles.techBadge}><img src="/logos/databricks.png" alt="Databricks" onError={(e) => e.target.style.display = 'none'} /> Databricks</span>
-            <span className={styles.techBadge}><img src="/logos/snowflake.png" alt="Snowflake" onError={(e) => e.target.style.display = 'none'} /> Snowflake</span>
-            <span className={styles.techBadge}><img src="/logos/fabric.png" alt="Microsoft Fabric" onError={(e) => e.target.style.display = 'none'} /> Fabric</span>
-            <span className={styles.techBadge}><img src="/logos/dbt.png" alt="dbt" onError={(e) => e.target.style.display = 'none'} /> dbt</span>
-            <span className={styles.techBadge}><img src="/logos/fivetran.png" alt="Fivetran" onError={(e) => e.target.style.display = 'none'} /> Fivetran</span>
-            <span className={styles.techBadge}><img src="/logos/postgres.png" alt="Postgres" onError={(e) => e.target.style.display = 'none'} /> Postgres</span>
+            <span className={styles.techBadge}><Image src="/logos/zoho.png" alt="Zoho" width={24} height={24} style={{ objectFit: 'contain' }} /> Zoho</span>
+            <span className={styles.techBadge}><Image src="/logos/react.png" alt="React" width={24} height={24} style={{ objectFit: 'contain' }} /> React</span>
+            <span className={styles.techBadge}><Image src="/logos/nextjs.png" alt="Next.js" width={24} height={24} style={{ objectFit: 'contain' }} /> Next.js</span>
+            <span className={styles.techBadge}><Image src="/logos/python.png" alt="Python" width={24} height={24} style={{ objectFit: 'contain' }} /> Python</span>
+            <span className={styles.techBadge}><Image src="/logos/aws.png" alt="AWS" width={24} height={24} style={{ objectFit: 'contain' }} /> AWS</span>
+            <span className={styles.techBadge}><Image src="/logos/azure.png" alt="Azure" width={24} height={24} style={{ objectFit: 'contain' }} /> Azure</span>
+            <span className={styles.techBadge}><Image src="/logos/claude.png" alt="Claude" width={24} height={24} style={{ objectFit: 'contain' }} /> Claude</span>
+            <span className={styles.techBadge}><Image src="/logos/openai.png" alt="OpenAI" width={24} height={24} style={{ objectFit: 'contain' }} /> OpenAI</span>
+            <span className={styles.techBadge}><Image src="/logos/databricks.png" alt="Databricks" width={24} height={24} style={{ objectFit: 'contain' }} /> Databricks</span>
+            <span className={styles.techBadge}><Image src="/logos/snowflake.png" alt="Snowflake" width={24} height={24} style={{ objectFit: 'contain' }} /> Snowflake</span>
+            <span className={styles.techBadge}><Image src="/logos/fabric.png" alt="Microsoft Fabric" width={24} height={24} style={{ objectFit: 'contain' }} /> Fabric</span>
+            <span className={styles.techBadge}><Image src="/logos/dbt.png" alt="dbt" width={24} height={24} style={{ objectFit: 'contain' }} /> dbt</span>
+            <span className={styles.techBadge}><Image src="/logos/fivetran.png" alt="Fivetran" width={24} height={24} style={{ objectFit: 'contain' }} /> Fivetran</span>
+            <span className={styles.techBadge}><Image src="/logos/postgres.png" alt="Postgres" width={24} height={24} style={{ objectFit: 'contain' }} /> Postgres</span>
 
             {/* Duplicated for infinite loop effect */}
-            <span className={styles.techBadge} aria-hidden="true"><img src="/logos/zoho.png" alt="Zoho" onError={(e) => e.target.style.display = 'none'} /> Zoho</span>
-            <span className={styles.techBadge} aria-hidden="true"><img src="/logos/react.png" alt="React" onError={(e) => e.target.style.display = 'none'} /> React</span>
-            <span className={styles.techBadge} aria-hidden="true"><img src="/logos/nextjs.png" alt="Next.js" onError={(e) => e.target.style.display = 'none'} /> Next.js</span>
-            <span className={styles.techBadge} aria-hidden="true"><img src="/logos/python.png" alt="Python" onError={(e) => e.target.style.display = 'none'} /> Python</span>
-            <span className={styles.techBadge} aria-hidden="true"><img src="/logos/aws.png" alt="AWS" onError={(e) => e.target.style.display = 'none'} /> AWS</span>
-            <span className={styles.techBadge} aria-hidden="true"><img src="/logos/azure.png" alt="Azure" onError={(e) => e.target.style.display = 'none'} /> Azure</span>
-            <span className={styles.techBadge} aria-hidden="true"><img src="/logos/claude.png" alt="Claude" onError={(e) => e.target.style.display = 'none'} /> Claude</span>
-            <span className={styles.techBadge} aria-hidden="true"><img src="/logos/openai.png" alt="OpenAI" onError={(e) => e.target.style.display = 'none'} /> OpenAI</span>
-            <span className={styles.techBadge} aria-hidden="true"><img src="/logos/databricks.png" alt="Databricks" onError={(e) => e.target.style.display = 'none'} /> Databricks</span>
-            <span className={styles.techBadge} aria-hidden="true"><img src="/logos/snowflake.png" alt="Snowflake" onError={(e) => e.target.style.display = 'none'} /> Snowflake</span>
-            <span className={styles.techBadge} aria-hidden="true"><img src="/logos/fabric.png" alt="Fabric" onError={(e) => e.target.style.display = 'none'} /> Fabric</span>
-            <span className={styles.techBadge} aria-hidden="true"><img src="/logos/dbt.png" alt="dbt" onError={(e) => e.target.style.display = 'none'} /> dbt</span>
-            <span className={styles.techBadge} aria-hidden="true"><img src="/logos/fivetran.png" alt="Fivetran" onError={(e) => e.target.style.display = 'none'} /> Fivetran</span>
-            <span className={styles.techBadge} aria-hidden="true"><img src="/logos/postgres.png" alt="Postgres" onError={(e) => e.target.style.display = 'none'} /> Postgres</span>
+            <span className={styles.techBadge} aria-hidden="true"><Image src="/logos/zoho.png" alt="Zoho" width={24} height={24} style={{ objectFit: 'contain' }} /> Zoho</span>
+            <span className={styles.techBadge} aria-hidden="true"><Image src="/logos/react.png" alt="React" width={24} height={24} style={{ objectFit: 'contain' }} /> React</span>
+            <span className={styles.techBadge} aria-hidden="true"><Image src="/logos/nextjs.png" alt="Next.js" width={24} height={24} style={{ objectFit: 'contain' }} /> Next.js</span>
+            <span className={styles.techBadge} aria-hidden="true"><Image src="/logos/python.png" alt="Python" width={24} height={24} style={{ objectFit: 'contain' }} /> Python</span>
+            <span className={styles.techBadge} aria-hidden="true"><Image src="/logos/aws.png" alt="AWS" width={24} height={24} style={{ objectFit: 'contain' }} /> AWS</span>
+            <span className={styles.techBadge} aria-hidden="true"><Image src="/logos/azure.png" alt="Azure" width={24} height={24} style={{ objectFit: 'contain' }} /> Azure</span>
+            <span className={styles.techBadge} aria-hidden="true"><Image src="/logos/claude.png" alt="Claude" width={24} height={24} style={{ objectFit: 'contain' }} /> Claude</span>
+            <span className={styles.techBadge} aria-hidden="true"><Image src="/logos/openai.png" alt="OpenAI" width={24} height={24} style={{ objectFit: 'contain' }} /> OpenAI</span>
+            <span className={styles.techBadge} aria-hidden="true"><Image src="/logos/databricks.png" alt="Databricks" width={24} height={24} style={{ objectFit: 'contain' }} /> Databricks</span>
+            <span className={styles.techBadge} aria-hidden="true"><Image src="/logos/snowflake.png" alt="Snowflake" width={24} height={24} style={{ objectFit: 'contain' }} /> Snowflake</span>
+            <span className={styles.techBadge} aria-hidden="true"><Image src="/logos/fabric.png" alt="Fabric" width={24} height={24} style={{ objectFit: 'contain' }} /> Fabric</span>
+            <span className={styles.techBadge} aria-hidden="true"><Image src="/logos/dbt.png" alt="dbt" width={24} height={24} style={{ objectFit: 'contain' }} /> dbt</span>
+            <span className={styles.techBadge} aria-hidden="true"><Image src="/logos/fivetran.png" alt="Fivetran" width={24} height={24} style={{ objectFit: 'contain' }} /> Fivetran</span>
+            <span className={styles.techBadge} aria-hidden="true"><Image src="/logos/postgres.png" alt="Postgres" width={24} height={24} style={{ objectFit: 'contain' }} /> Postgres</span>
+
           </div>
         </div>
       </section>
@@ -433,11 +434,13 @@ export default function HomeClient() {
         </div>
 
         <div className={`container ${styles.badgeStrip}`} style={{ marginTop: '4rem', borderTop: '1px solid var(--border-color)', paddingTop: '4rem', display: 'flex', flexWrap: 'wrap', gap: '2rem', justifyContent: 'center', alignItems: 'center' }}>
-          <Image src="/images/zoho-premium-partner.png" alt="Zoho Premium Partner" width={140} height={50} style={{ objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7 }} />
-          <Image src="/images/soc2-badge.png" alt="SOC 2 Type II Aligned" width={100} height={50} style={{ objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7 }} />
-          <Image src="/images/aws-partner.png" alt="AWS Partner" width={100} height={50} style={{ objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7 }} />
-          <Image src="/images/microsoft-partner.png" alt="Microsoft Partner" width={140} height={50} style={{ objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7 }} />
+          <Image src="/logos/zoho-premium-partner.png" alt="Zoho Premium Partner" width={140} height={50} style={{ objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7 }} />
+          {/* Missing soc2-badge.png - pointing to /logos/ in case it's added there later */}
+          <Image src="/logos/soc2-badge.png" alt="SOC 2 Type II Aligned" width={100} height={50} style={{ objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7 }} onError={(e) => e.currentTarget.style.display = 'none'} />
+          <Image src="/logos/aws-partner.png" alt="AWS Partner" width={100} height={50} style={{ objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7 }} />
+          <Image src="/logos/microsoft-partner.png" alt="Microsoft Partner" width={140} height={50} style={{ objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7 }} />
         </div>
+
       </section>
 
     </div>
