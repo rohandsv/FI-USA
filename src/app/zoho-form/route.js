@@ -1,4 +1,11 @@
-const HTML = `<div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
+const HTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin:0;padding:0;background:transparent;overflow-x:hidden;">
+<div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	<META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
 	<form id='webform3209734000060050024' action='https://crm.zoho.com/crm/WebToLeadForm' name='WebToLeads3209734000060050024' method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory3209734000060050024()' accept-charset='UTF-8'>
@@ -394,13 +401,16 @@ const HTML = `<div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityFor
 		</script>
 	</form>
 	<iframe name='captchaFrame' style='display:none;'></iframe>
-</div>`;
+</div>
+</body>
+</html>`;
 
 export async function GET() {
   return new Response(HTML, {
     headers: {
       'Content-Type': 'text/html; charset=utf-8',
       'X-Frame-Options': 'SAMEORIGIN',
+      'Cross-Origin-Resource-Policy': 'same-origin',
     },
   });
 }

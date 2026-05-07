@@ -9,17 +9,18 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
 export default function ContactClient() {
+  const [iframeSrc, setIframeSrc] = useState('');
   const [iframeHeight, setIframeHeight] = useState(800);
   const containerRef = useRef(null);
 
   useGSAP(() => {
-    gsap.fromTo('.hero-animate', 
+    gsap.fromTo('.hero-animate',
       { opacity: 0, y: 30 },
-      { 
-        opacity: 1, 
-        y: 0, 
-        duration: 0.8, 
-        stagger: 0.15, 
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        stagger: 0.15,
         ease: "power3.out",
         delay: 0.1
       }
@@ -27,6 +28,8 @@ export default function ContactClient() {
   }, { scope: containerRef });
 
   useEffect(() => {
+    setIframeSrc('/zoho-form');
+
     const handleMessage = (event) => {
       if (event.data?.type === 'zoho-resize') {
         setIframeHeight(event.data.height + 40);
@@ -68,17 +71,19 @@ export default function ContactClient() {
       <section className={styles.formSection}>
         <div className="container" style={{ maxWidth: '800px' }}>
           <div className={styles.formCard}>
-            <iframe
-              src="/zoho-form"
-              style={{
-                width: '100%',
-                height: `${iframeHeight}px`,
-                border: 'none',
-                overflow: 'hidden',
-                transition: 'height 0.3s ease'
-              }}
-              title="Contact Form"
-            />
+            {iframeSrc && (
+              <iframe
+                src={iframeSrc}
+                style={{
+                  width: '100%',
+                  height: `${iframeHeight}px`,
+                  border: 'none',
+                  overflow: 'hidden',
+                  transition: 'height 0.3s ease'
+                }}
+                title="Contact Form"
+              />
+            )}
             <div style={{ marginTop: '2rem', textAlign: 'center' }}>
               <p className={styles.footerPrompt}>
                 Prefer to skip the form? <Link href="/book-a-fit-call/" style={{ color: 'var(--accent-color)', fontWeight: 600 }}>Book a fit call immediately &rarr;</Link>
