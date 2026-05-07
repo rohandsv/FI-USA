@@ -398,6 +398,9 @@ const HTML = `<div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityFor
 
 export async function GET() {
   return new Response(HTML, {
-    headers: { 'Content-Type': 'text/html; charset=utf-8' },
+    headers: {
+      'Content-Type': 'text/html; charset=utf-8',
+      'X-Frame-Options': 'SAMEORIGIN',
+    },
   });
 }

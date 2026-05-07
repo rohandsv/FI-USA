@@ -69,7 +69,7 @@ export default function ContactClient() {
         <div className="container" style={{ maxWidth: '800px' }}>
           <div className={styles.formCard}>
             <iframe
-              src="/zoho-form.html"
+              src="/zoho-form"
               style={{
                 width: '100%',
                 height: `${iframeHeight}px`,
