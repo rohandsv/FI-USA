@@ -409,8 +409,7 @@ export async function GET() {
   return new Response(HTML, {
     headers: {
       'Content-Type': 'text/html; charset=utf-8',
-      'X-Frame-Options': 'SAMEORIGIN',
-      'Cross-Origin-Resource-Policy': 'same-origin',
+      'Content-Security-Policy': "frame-ancestors 'self'",
     },
   });
 }
