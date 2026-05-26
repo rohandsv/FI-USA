@@ -1,16 +1,15 @@
 "use client";
 
-import { useState, useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import pageStyles from '../page.module.css';
 import styles from './contact.module.css';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import ZohoForm from '@/components/ZohoForm';
 
 export default function ContactClient() {
-  const [iframeSrc, setIframeSrc] = useState('');
-  const [iframeHeight, setIframeHeight] = useState(800);
   const containerRef = useRef(null);
 
   useGSAP(() => {
@@ -26,18 +25,6 @@ export default function ContactClient() {
       }
     );
   }, { scope: containerRef });
-
-  useEffect(() => {
-    setIframeSrc('/zoho-form');
-
-    const handleMessage = (event) => {
-      if (event.data?.type === 'zoho-resize') {
-        setIframeHeight(event.data.height + 40);
-      }
-    };
-    window.addEventListener('message', handleMessage);
-    return () => window.removeEventListener('message', handleMessage);
-  }, []);
 
   return (
     <div ref={containerRef}>
@@ -71,19 +58,7 @@ export default function ContactClient() {
       <section className={styles.formSection}>
         <div className="container" style={{ maxWidth: '800px' }}>
           <div className={styles.formCard}>
-            {iframeSrc && (
-              <iframe
-                src={iframeSrc}
-                style={{
-                  width: '100%',
-                  height: `${iframeHeight}px`,
-                  border: 'none',
-                  overflow: 'hidden',
-                  transition: 'height 0.3s ease'
-                }}
-                title="Contact Form"
-              />
-            )}
+            <ZohoForm />
             <div style={{ marginTop: '2rem', textAlign: 'center' }}>
               <p className={styles.footerPrompt}>
                 Prefer to skip the form? <Link href="/book-a-fit-call/" style={{ color: 'var(--accent-color)', fontWeight: 600 }}>Book a fit call immediately &rarr;</Link>
