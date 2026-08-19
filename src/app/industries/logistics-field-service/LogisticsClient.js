@@ -14,16 +14,16 @@ if (typeof window !== "undefined") {
 }
 
 const practicesData = [
-  { practice: "Zoho Implementation Stack", what: "Zoho CRM for sales and job intake; Zoho Creator for dispatch, work-order, and mobile crew apps; Zoho Desk for customer support", outcome: "Single system for sales, dispatch, and service" },
-  { practice: "Product Engineering", what: "Custom dispatch platforms, driver / technician mobile apps, customer-facing portals with live job status", outcome: "Cut dispatch cycle time 30% and self-service 40% of status calls" },
-  { practice: "AI & Digital Workers", what: "Inbound triage copilot, customer update drafter, dispatcher copilot, document AI on BOLs and invoices", outcome: "Dispatcher handles 25-30% more jobs per shift" },
-  { practice: "Data Engineering", what: "Telemetry + TMS + CRM + FSM unified in a warehouse; BI on OTIF, first-time-fix, utilization", outcome: "One BI view of fleet / crew utilization" }
+  { practice: "Zoho Implementation Stack", what: "Zoho CRM for sales and job intake; Zoho Creator for dispatch, work order, and mobile crew apps; Zoho Desk for customer support", outcome: "Single system for sales, dispatch, and service" },
+  { practice: "Product Engineering", what: "Custom dispatch platforms, driver / technician mobile apps, customer facing portals with live job status", outcome: "Cut dispatch cycle time 30% and self service 40% of status calls" },
+  { practice: "AI & Digital Workers", what: "Inbound triage copilot, customer update drafter, dispatcher copilot, document AI on BOLs and invoices", outcome: "Dispatcher handles 25 to 30% more jobs per shift" },
+  { practice: "Data Engineering", what: "Telemetry + TMS + CRM + FSM unified in a warehouse; BI on OTIF, first time fix, utilization", outcome: "One BI view of fleet / crew utilization" }
 ];
 
 const outcomesData = [
-  { firm: "Regional Last-Mile Operator", result: "Deflected 45% of status calls with a customer-facing portal." },
-  { firm: "Multi-State HVAC Firm", result: "Cut first-time-fix cycle time by 20% with a dispatcher copilot on Zoho Creator." },
-  { firm: "150-Truck Fleet", result: "Unified telemetry and TMS data into a Snowflake warehouse to drive weekly S&OP decisions." }
+  { firm: "Regional Last Mile Operator", result: "Deflected 45% of status calls with a customer facing portal." },
+  { firm: "Multi State HVAC Firm", result: "Cut first time fix cycle time by 20% with a dispatcher copilot on Zoho Creator." },
+  { firm: "150 Truck Fleet", result: "Unified telemetry and TMS data into a Snowflake warehouse to drive weekly S&OP decisions." }
 ];
 
 export default function LogisticsClient() {
@@ -84,15 +84,15 @@ export default function LogisticsClient() {
         <div className={`container ${pageStyles.heroContainer}`}>
           <div className={pageStyles.heroContent} style={{ maxWidth: '800px' }}>
             <div className="hero-animate">
-              <span className={pageStyles.eyebrow}>Built for US logistics, transportation, field-service, and home-services operators</span>
+              <span className={pageStyles.eyebrow}>Built for US logistics, transportation, field service, and home services operators</span>
             </div>
-            <h1 className={`hero-animate ${pageStyles.heroH1}`}>Dispatch, driver apps, and AI triage — built for US operators.</h1>
+            <h1 className={`hero-animate ${pageStyles.heroH1}`}>Dispatch, driver apps, and AI triage, built for US operators.</h1>
             <p className={`hero-animate ${pageStyles.heroSub}`} style={{ maxWidth: '750px' }}>
-              A dispatch screen that does not melt down on peak Fridays. A driver or technician app crews actually use. A service desk that stops dropping tickets. An AI layer that triages inbound work requests, drafts the update-the-customer text, and predicts the dispatch that your most experienced dispatcher would make. FI Digital ships that stack for US logistics and field-service operators with 50 to 500 employees.
+              A dispatch screen that does not melt down on peak Fridays. A driver or technician app crews actually use. A service desk that stops dropping tickets. An AI layer that triages inbound work requests, drafts the update the customer text, and predicts the dispatch that your most experienced dispatcher would make. FI Digital ships that stack for US logistics and field service operators with 50 to 500 employees.
             </p>
             <div className={`hero-animate ${pageStyles.heroCtas}`}>
-              <Link href="/book-a-fit-call/?industry=logistics-field-service" className="btn btn-primary">Book a fit call &rarr;</Link>
-              <Link href="/packages/" className="btn btn-secondary">See relevant packages &rarr;</Link>
+              <Link href="/book-a-fit-call/?industry=logistics-field-service" className="btn btn-primary">Book a fit call &#8594;</Link>
+              <Link href="/packages/" className="btn btn-secondary">See relevant packages &#8594;</Link>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function LogisticsClient() {
           <div className={styles.whyTextCentered}>
             <h2 className={pageStyles.sectionTitleCentered}>The Industry Challenge</h2>
             <p className={styles.whyParagraphCentered}>
-              Logistics and field-service operators in the US run on a mix of FSM tools (ServiceTitan, FieldEdge, Jobber, Housecall Pro), TMS tools, and custom apps glued together by spreadsheets and text messages. Our clients come to us when they have outgrown packaged FSM or when they need a custom system because their workflow does not fit the package. We ship dispatch, driver / technician, and customer-facing apps, and we deploy AI on the highest-cost touch points: inbound triage, scheduling, customer updates, and parts ordering.
+              Logistics and field service operators in the US run on a mix of FSM tools (ServiceTitan, FieldEdge, Jobber, Housecall Pro), TMS tools, and custom apps glued together by spreadsheets and text messages. Our clients come to us when they have outgrown packaged FSM or when they need a custom system because their workflow does not fit the package. We ship dispatch, driver / technician, and customer facing apps, and we deploy AI on the highest cost touch points: inbound triage, scheduling, customer updates, and parts ordering.
             </p>
           </div>
         </div>

@@ -25,27 +25,27 @@ const faqSchema = {
       "name": "Do you support GLBA Safeguards Rule?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Financial-services scopes include GLBA-aligned data handling, access control, and vendor-risk documentation."
+        "text": "Yes. Financial services scopes include GLBA aligned data handling, access control, and vendor risk documentation."
       },
-      "uiText": "Yes. Financial-services scopes include GLBA-aligned <a href='/solutions/data-engineering/'>data handling</a>, access control, and vendor-risk documentation."
+      "uiText": "Yes. Financial services scopes include GLBA aligned <a href='/solutions/data-engineering/'>data handling</a>, access control, and vendor risk documentation."
     },
     {
       "@type": "Question",
       "name": "Can you comply with state AI laws?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Every AI pilot in financial services ships with a state-specific disclosure plan covering Colorado, Utah, Illinois, and NYC at minimum."
+        "text": "Yes. Every AI pilot in financial services ships with a state specific disclosure plan covering Colorado, Utah, Illinois, and NYC at minimum."
       },
-      "uiText": "Yes. Every <a href='/solutions/ai-digital-workers/'>AI pilot</a> in financial services ships with a state-specific disclosure plan covering Colorado, Utah, Illinois, and NYC at minimum."
+      "uiText": "Yes. Every <a href='/solutions/ai-digital-workers/'>AI pilot</a> in financial services ships with a state specific disclosure plan covering Colorado, Utah, Illinois, and NYC at minimum."
     },
     {
       "@type": "Question",
       "name": "Do you integrate with Redtail / Wealthbox / Salesforce FSC / Orion / Addepar / Tamarac?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Custodian and practice-management integration is a standard scope in our RIA engagements."
+        "text": "Yes. Custodian and practice management integration is a standard scope in our RIA engagements."
       },
-      "uiText": "Yes. Custodian and <a href='/solutions/zoho-implementation/'>practice-management integration</a> is a standard scope in our RIA <a href='/packages/'>engagements</a>."
+      "uiText": "Yes. Custodian and <a href='/solutions/zoho-implementation/'>practice management integration</a> is a standard scope in our RIA <a href='/packages/'>engagements</a>."
     },
     {
       "@type": "Question",
@@ -74,7 +74,7 @@ export default function FinancialServices() {
         {/* FAQ SECTION (Static Server Component) */}
         <section className={finStyles.sectionFaq}>
           <div className="container">
-            <h2 className={styles.sectionTitleCentered}>Frequently Asked Questions — Financial Services</h2>
+            <h2 className={styles.sectionTitleCentered}>Frequently Asked Questions, Financial Services</h2>
             
             <div className={finStyles.faqList}>
               {faqSchema.mainEntity.map((faq, index) => (

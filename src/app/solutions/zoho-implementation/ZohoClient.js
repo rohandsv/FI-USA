@@ -13,14 +13,14 @@ if (typeof window !== "undefined") {
 }
 
 const packagesData = [
-  { name: "Zoho CRM QuickStart", outcome: "Production CRM, lead routing, pipeline, reports, and user training", timeline: "3-5 weeks", model: "Fixed fee, starting from published price" },
-  { name: "Zoho Desk Setup", outcome: "Production service desk, queues, SLAs, macros, and customer portal", timeline: "3-4 weeks", model: "Fixed fee" },
-  { name: "Zoho Marketing Automation Launch", outcome: "Zoho Campaigns + MarketingHub with lead-nurture journeys and reports", timeline: "4-6 weeks", model: "Fixed fee" },
-  { name: "Zoho One Rollout", outcome: "Full Zoho One deployment across CRM, Desk, Books, People, Projects, Analytics", timeline: "10-16 weeks", model: "Custom proposal after discovery" },
-  { name: "Zoho Creator App Build", outcome: "Custom low-code app on Zoho Creator (field ops, partner portal, approvals)", timeline: "6-12 weeks", model: "Fixed fee or milestone" },
-  { name: "Zoho Analytics Foundation", outcome: "Unified reporting layer across CRM, Desk, Books, and external sources", timeline: "4-6 weeks", model: "Fixed fee" },
+  { name: "Zoho CRM QuickStart", outcome: "Production CRM, lead routing, pipeline, reports, and user training", timeline: "3 to 5 weeks", model: "Fixed fee, starting from published price" },
+  { name: "Zoho Desk Setup", outcome: "Production service desk, queues, SLAs, macros, and customer portal", timeline: "3 to 4 weeks", model: "Fixed fee" },
+  { name: "Zoho Marketing Automation Launch", outcome: "Zoho Campaigns + MarketingHub with lead nurture journeys and reports", timeline: "4 to 6 weeks", model: "Fixed fee" },
+  { name: "Zoho One Rollout", outcome: "Full Zoho One deployment across CRM, Desk, Books, People, Projects, Analytics", timeline: "10 to 16 weeks", model: "Custom proposal after discovery" },
+  { name: "Zoho Creator App Build", outcome: "Custom low code app on Zoho Creator (field ops, partner portal, approvals)", timeline: "6 to 12 weeks", model: "Fixed fee or milestone" },
+  { name: "Zoho Analytics Foundation", outcome: "Unified reporting layer across CRM, Desk, Books, and external sources", timeline: "4 to 6 weeks", model: "Fixed fee" },
   { name: "Zoho Managed Services", outcome: "Ongoing optimization, admin, and enhancement retainer", timeline: "Month to month", model: "Monthly starting point" },
-  { name: "Zoho Optimization Audit", outcome: "Audit of an existing, underperforming Zoho implementation with a remediation plan", timeline: "2-3 weeks", model: "Fixed fee" }
+  { name: "Zoho Optimization Audit", outcome: "Audit of an existing, underperforming Zoho implementation with a remediation plan", timeline: "2 to 3 weeks", model: "Fixed fee" }
 ];
 
 const integrations = [
@@ -118,11 +118,11 @@ export default function ZohoClient() {
             </div>
             <h1 className={`hero-animate ${styles.heroH1}`}>Make Zoho the operating system for your business.</h1>
             <p className={`hero-animate ${styles.heroSub}`}>
-              CRM that your salespeople actually use. A service desk that does not drop tickets. Marketing automation that nurtures without spamming. A unified Zoho One rollout that replaces six tools with one system. Delivered by a Zoho Premium Partner with fixed-fee QuickStarts, US-based account leads, and a managed-services bench for day-two operations.
+              CRM that your salespeople actually use. A service desk that does not drop tickets. Marketing automation that nurtures without spamming. A unified Zoho One rollout that replaces six tools with one system. Delivered by a Zoho Premium Partner with fixed fee QuickStarts, US based account leads, and a managed services bench for day two operations.
             </p>
             <div className={`hero-animate ${styles.heroCtas}`}>
-              <Link href="/packages/#zoho-crm-quickstart" className="btn btn-primary">Start with a Zoho CRM QuickStart &rarr;</Link>
-              <Link href="/book-a-fit-call/?practice=zoho" className="btn btn-secondary">Book a Zoho fit call &rarr;</Link>
+              <Link href="/packages/#zoho-crm-quickstart" className="btn btn-primary">Start with a Zoho CRM QuickStart &#8594;</Link>
+              <Link href="/book-a-fit-call/?practice=zoho" className="btn btn-secondary">Book a Zoho fit call &#8594;</Link>
             </div>
           </div>
         </div>
@@ -148,13 +148,13 @@ export default function ZohoClient() {
           <div className={styles.whyTextCol}>
             <h2 className={styles.sectionTitle}>Why SMBs Pick Zoho (and Why They Pick FI Digital to Deliver It)</h2>
             <p>
-              Zoho One is the most cost-effective all-in-one business platform for US SMBs under 500 employees. CRM, service, project management, marketing, books, analytics, people, and creator (low-code) all inside one license, one SSO, and one data layer. 
+              Zoho One is the most cost effective all in one business platform for US SMBs under 500 employees. CRM, service, project management, marketing, books, analytics, people, and creator (low code) all inside one license, one SSO, and one data layer. 
             </p>
             <p>
-              The catch: it is only powerful if it is implemented well. The same platform that can run a 200-person distribution company can also become an expensive address book if it is rolled out by a partner that does not understand SMB operations.
+              The catch: it is only powerful if it is implemented well. The same platform that can run a 200 person distribution company can also become an expensive address book if it is rolled out by a partner that does not understand SMB operations.
             </p>
             <p>
-              FI Digital is a Zoho Premium Partner — a level Zoho reserves for partners with deep delivery credentials and long tenure. We have shipped more than 200 Zoho engagements across CRM, Desk, Creator, Books, People, and Analytics. Our US-based account leads scope every project, and our Zoho-certified consultants own the build. We do not sell generic &quot;Zoho consultations.&quot; We sell fixed-fee QuickStarts, outcome-led implementations, and managed services.
+              FI Digital is a Zoho Premium Partner, a level Zoho reserves for partners with deep delivery credentials and long tenure. We have shipped more than 200 Zoho engagements across CRM, Desk, Creator, Books, People, and Analytics. Our US based account leads scope every project, and our Zoho certified consultants own the build. We do not sell generic &quot;Zoho consultations.&quot; We sell fixed fee QuickStarts, outcome led implementations, and managed services.
             </p>
           </div>
           <div className={styles.whyImageCol}>
@@ -172,7 +172,7 @@ export default function ZohoClient() {
       {/* SECTION 2: PACKAGED OUTCOMES */}
       <section className={`${styles.sectionPackages} scroll-section`}>
         <div className="container">
-          <h2 className={styles.sectionTitleCentered}>What We Build — Packaged Outcomes</h2>
+          <h2 className={styles.sectionTitleCentered}>What We Build, Packaged Outcomes</h2>
           
           <div className={styles.tableWrapper}>
             <table className={styles.packagesTable}>
@@ -224,7 +224,7 @@ export default function ZohoClient() {
               <div className={styles.methodStep}>
                 <div className={styles.stepIcon}>3</div>
                 <div className={styles.stepContent}>
-                  <h4>Build (Weeks 2-4)</h4>
+                  <h4>Build (Weeks 2 to 4)</h4>
                   <p>We configure, migrate data, connect integrations, and iterate with a pilot user group.</p>
                 </div>
               </div>
@@ -232,14 +232,14 @@ export default function ZohoClient() {
                 <div className={styles.stepIcon}>4</div>
                 <div className={styles.stepContent}>
                   <h4>Train & Cut Over (Week 5)</h4>
-                  <p>We run role-specific training, issue playbooks, and go-live support.</p>
+                  <p>We run role specific training, issue playbooks, and go live support.</p>
                 </div>
               </div>
               <div className={styles.methodStep}>
                 <div className={styles.stepIcon}>5</div>
                 <div className={styles.stepContent}>
                   <h4>Operate (Month 2 Onward)</h4>
-                  <p>We hand over to your admin, or we run the platform for you under a managed-services retainer.</p>
+                  <p>We hand over to your admin, or we run the platform for you under a managed services retainer.</p>
                 </div>
               </div>
             </div>
@@ -262,7 +262,7 @@ export default function ZohoClient() {
         <div className="container">
           <div className={styles.integrationsText}>
             <h2 className={styles.sectionTitleCentered}>Integrations We Ship with Zoho</h2>
-            <p>Our integration engineering squad handles the non-trivial cases — multi-entity finance, multi-brand marketing, and regulated-data handoffs.</p>
+            <p>Our integration engineering squad handles the non trivial cases, multi entity finance, multi brand marketing, and regulated data handoffs.</p>
           </div>
 
           <div className={`${styles.integrationsGrid} stagger-grid`}>
@@ -305,7 +305,7 @@ export default function ZohoClient() {
             </div>
             
             <ul className={styles.trustListItems}>
-              <li>Zoho Premium Partner — reviewed annually against delivery quality and client growth.</li>
+              <li>Zoho Premium Partner, reviewed annually against delivery quality and client growth.</li>
               <li>Zoho Authorized Partner USA.</li>
               <li>Zoho CRM, Desk, Creator, Books, People, Analytics, and Campaigns certified consultants on staff.</li>
               <li>200+ Zoho engagements across 10 years.</li>

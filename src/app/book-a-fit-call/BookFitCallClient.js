@@ -1,15 +1,12 @@
 "use client";
 
 import { useRef } from 'react';
-import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import pageStyles from '../page.module.css';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
 export default function BookFitCallClient() {
-  const searchParams = useSearchParams();
-  const practiceParam = searchParams.get('practice') || '';
   const containerRef = useRef(null);
 
   useGSAP(() => {
@@ -46,9 +43,9 @@ export default function BookFitCallClient() {
 
         <div className={`container ${pageStyles.heroContainer}`}>
           <div className={pageStyles.heroContent} style={{ maxWidth: '850px' }}>
-            <h1 className={`hero-animate ${pageStyles.heroH1}`}>Book a 30-minute fit call</h1>
+            <h1 className={`hero-animate ${pageStyles.heroH1}`}>Book a 30 minute fit call</h1>
             <p className={`hero-animate ${pageStyles.heroSub}`} style={{ maxWidth: '750px' }}>
-              A fit call is 30 minutes, US-based, scoping-first. No deck. No pitch. In the call we will: understand what you are trying to solve, recommend one of the fixed-fee starting offers (or tell you that none are a fit), and — where helpful — refer you to a better-fit partner. You will leave the call with a recommended next step and a ballpark investment range.
+              A fit call is 30 minutes, US based, scoping first. No deck. No pitch. In the call we will: understand what you are trying to solve, recommend one of the fixed fee starting offers (or tell you that none are a fit), and where helpful, refer you to a better fit partner. You will leave the call with a recommended next step and a ballpark investment range.
             </p>
           </div>
         </div>
@@ -57,20 +54,7 @@ export default function BookFitCallClient() {
       {/* CALENDAR EMBED SECTION */}
       <section style={{ padding: '4rem 0 6rem', backgroundColor: 'var(--bg-primary)' }}>
         <div className="container" style={{ maxWidth: '900px' }}>
-          <div style={{ 
-            backgroundColor: 'var(--bg-card)', 
-            border: '1px solid var(--border-color)', 
-            borderRadius: '1rem', 
-            overflow: 'hidden',
-            boxShadow: 'var(--shadow-sm)',
-            marginBottom: '4rem'
-          }}>
-            <iframe 
-              src={`https://cal.com/fi-digital/fit-call${practiceParam ? `?practice=${encodeURIComponent(practiceParam)}` : ''}`}
-              style={{ width: '100%', height: '700px', border: 'none' }}
-              title="Book a Fit Call"
-            ></iframe>
-          </div>
+          {/* TODO: restore cal.com schedule-meeting embed when ready */}
 
           <div style={{ 
             backgroundColor: 'var(--bg-card)', 
@@ -93,7 +77,7 @@ export default function BookFitCallClient() {
             }}>
               <li style={{ position: 'relative', paddingLeft: '1.5rem' }}>
                 <span style={{ position: 'absolute', left: 0, color: 'var(--accent-color)' }}>•</span>
-                We email you a 1-page recap within 1 business day with recommended starting offer, ballpark fee range, and links to the relevant practice page and case studies.
+                We email you a 1 page recap within 1 business day with recommended starting offer, ballpark fee range, and links to the relevant practice page and case studies.
               </li>
               <li style={{ position: 'relative', paddingLeft: '1.5rem' }}>
                 <span style={{ position: 'absolute', left: 0, color: 'var(--accent-color)' }}>•</span>

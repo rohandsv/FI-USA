@@ -16,9 +16,9 @@ const faqSchema = {
       "name": "Do you work with law firms under ABA Model Rule 1.6 confidentiality?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Every AI and data engagement in legal scopes the confidentiality and privilege boundary up front. We default to tenant-isolated, US-hosted, no-training-on-prompts deployments and sign jurisdiction-appropriate confidentiality agreements."
+        "text": "Yes. Every AI and data engagement in legal scopes the confidentiality and privilege boundary up front. We default to tenant isolated, US hosted, no training on prompts deployments and sign jurisdiction appropriate confidentiality agreements."
       },
-      "uiText": "Yes. Every <a href='/solutions/ai-digital-workers/'>AI</a> and <a href='/solutions/data-engineering/'>data</a> engagement in legal scopes the confidentiality and privilege boundary up front. We default to tenant-isolated, US-hosted, no-training-on-prompts deployments and sign jurisdiction-appropriate confidentiality agreements."
+      "uiText": "Yes. Every <a href='/solutions/ai-digital-workers/'>AI</a> and <a href='/solutions/data-engineering/'>data</a> engagement in legal scopes the confidentiality and privilege boundary up front. We default to tenant isolated, US hosted, no training on prompts deployments and sign jurisdiction appropriate confidentiality agreements."
     },
     {
       "@type": "Question",
@@ -42,9 +42,9 @@ const faqSchema = {
       "name": "How do you price?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Fixed-fee starts for QuickStart, Discovery Sprint, AI Pilot, and Data Foundation Assessment; custom proposal after discovery for broader rollouts."
+        "text": "Fixed fee starts for QuickStart, Discovery Sprint, AI Pilot, and Data Foundation Assessment; custom proposal after discovery for broader rollouts."
       },
-      "uiText": "Fixed-fee starts for QuickStart, Discovery Sprint, AI Pilot, and Data Foundation Assessment; custom proposal after discovery for broader rollouts. See our <a href='/packages/'>Packages</a>."
+      "uiText": "Fixed fee starts for QuickStart, Discovery Sprint, AI Pilot, and Data Foundation Assessment; custom proposal after discovery for broader rollouts. See our <a href='/packages/'>Packages</a>."
     },
     {
       "@type": "Question",
@@ -73,7 +73,7 @@ export default function ProfessionalServices() {
         {/* FAQ SECTION (Static Server Component) */}
         <section className={proStyles.sectionFaq}>
           <div className="container">
-            <h2 className={styles.sectionTitleCentered}>Frequently Asked Questions — Professional Services</h2>
+            <h2 className={styles.sectionTitleCentered}>Frequently Asked Questions, Professional Services</h2>
             
             <div className={proStyles.faqList}>
               {faqSchema.mainEntity.map((faq, index) => (

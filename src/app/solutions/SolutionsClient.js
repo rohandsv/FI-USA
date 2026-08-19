@@ -17,23 +17,23 @@ const practices = [
     title: "Zoho Implementation Stack (Hub)",
     promise: "Make Zoho One the operating system for your business.",
     useCases: "CRM rollouts · service desk foundations · managed optimization",
-    who: "Operations-led SMBs that want to exit spreadsheets.",
+    who: "Operations led SMBs that want to exit spreadsheets.",
     link: "/solutions/zoho-implementation/",
     ctaText: "See the Zoho practice",
     icon: "/images/real-zoho-practice.jpg"
   },
   {
     title: "Product Engineering (Hub)",
-    promise: "Ship production software without staff-augmentation roulette.",
+    promise: "Ship production software without staff augmentation roulette.",
     useCases: "Discovery sprints · MVP builds · customer portals · app modernization",
-    who: "Growth-stage product, operations, and service companies.",
+    who: "Growth stage product, operations, and service companies.",
     link: "/solutions/product-engineering/",
     ctaText: "See the Product Engineering practice",
     icon: "/images/real-product-practice.jpg"
   },
   {
     title: "AI & Digital Workers (Hub)",
-    promise: "Put AI where it earns its keep — with audit logs and a kill-switch.",
+    promise: "Put AI where it earns its keep, with audit logs and a kill switch.",
     useCases: "Support copilots · internal knowledge assistants · document AI",
     who: "Teams that want measurable AI lift in one workflow first.",
     link: "/solutions/ai-digital-workers/",
@@ -124,8 +124,8 @@ export default function SolutionsClient() {
               Most SMB technology problems do not live in one practice. A CRM rollout needs integration engineering. An AI pilot needs clean data. A customer portal needs Zoho as the system of record. FI Digital delivers all four as one team so the seams disappear.
             </p>
             <div className={`hero-animate ${styles.heroCtas}`}>
-              <Link href="/packages/" className="btn btn-primary">See packages &rarr;</Link>
-              <Link href="/book-a-fit-call/" className="btn btn-secondary">Talk to a solution expert &rarr;</Link>
+              <Link href="/packages/" className="btn btn-primary">See packages &#8594;</Link>
+              <Link href="/book-a-fit-call/" className="btn btn-secondary">Talk to a solution expert &#8594;</Link>
             </div>
           </div>
         </div>
@@ -167,7 +167,7 @@ export default function SolutionsClient() {
                   </div>
 
                   <Link href={practice.link} className={styles.cardCta}>
-                    {practice.ctaText} &rarr;
+                    {practice.ctaText} &#8594;
                   </Link>
                 </div>
               </div>
@@ -182,20 +182,20 @@ export default function SolutionsClient() {
           <div className={styles.connectorTextCol}>
             <h2>How the Four Practices Connect</h2>
             <p>
-              Zoho gives you a system of record. Product Engineering gives you the custom software that Zoho will never ship natively — customer portals, partner apps, and workflow tools.
+              Zoho gives you a system of record. Product Engineering gives you the custom software that Zoho will never ship natively, including customer portals, partner apps, and workflow tools.
             </p>
             <p>
               AI & Digital Workers layer on top of Zoho and your custom apps to triage, summarize, draft, and route. Data Engineering gives all three a single source of truth so the reports, the copilots, and the AI agents all speak the same language.
             </p>
             <div className={styles.connectorWarning}>
-              <p>Buying one practice and skipping the others is the most expensive mistake SMBs make — we design the bundles to prevent it.</p>
+              <p>Buying one practice and skipping the others is the most expensive mistake SMBs make, and we design the bundles to prevent it.</p>
             </div>
           </div>
 
           <div className={styles.connectorImageCol}>
             <Image
               src="/images/real-solutions-connector.jpg"
-              alt="Team collaborating on the 4-node connected architecture"
+              alt="Team collaborating on the 4 node connected architecture"
               fill
               className={styles.connectorImage}
               onError={(e) => e.target.style.display = 'none'}

@@ -3,7 +3,7 @@ import ProductClient from './ProductClient';
 
 export const metadata = {
   title: 'Product Engineering Services for US SMBs | MVPs, Portals, Apps',
-  description: 'Ship MVPs, customer portals, and custom software with a US-led product engineering squad. Fixed-fee Product Discovery Sprints. Senior engineers, no staff aug.',
+  description: 'Ship MVPs, customer portals, and custom software with a US led product engineering squad. Fixed fee Product Discovery Sprints. Senior engineers, no staff aug.',
 };
 
 export default function ProductEngineeringHub() {
@@ -16,7 +16,7 @@ export default function ProductEngineeringHub() {
         "name": "Do you do staff augmentation?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. We deliver scoped outcomes with a US account lead. If you want bodies-in-seats, we will politely decline and suggest a staff-aug firm."
+          "text": "No. We deliver scoped outcomes with a US account lead. If you want bodies in seats, we will politely decline and suggest a staff aug firm."
         }
       },
       {
@@ -24,7 +24,7 @@ export default function ProductEngineeringHub() {
         "name": "How senior are your engineers?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our product squad leads are senior engineers with 8+ years of US SMB and growth-stage delivery experience. We do not put junior engineers in lead roles."
+          "text": "Our product squad leads are senior engineers with 8+ years of US SMB and growth stage delivery experience. We do not put junior engineers in lead roles."
         }
       },
       {
@@ -32,7 +32,7 @@ export default function ProductEngineeringHub() {
         "name": "Where are your engineers based?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "US-based account leads and senior engineers drive every engagement. Our global engineering bench supports delivery under US leadership."
+          "text": "US based account leads and senior engineers drive every engagement. Our global engineering bench supports delivery under US leadership."
         }
       },
       {
@@ -48,7 +48,7 @@ export default function ProductEngineeringHub() {
         "name": "Can you work with our existing engineering team?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Many engagements are hybrid — our squad leads delivery while your engineers ramp up on the codebase. We leave your team with a code handover, documentation, and a runbook."
+          "text": "Yes. Many engagements are hybrid. Our squad leads delivery while your engineers ramp up on the codebase. We leave your team with a code handover, documentation, and a runbook."
         }
       },
       {
@@ -56,7 +56,7 @@ export default function ProductEngineeringHub() {
         "name": "What is a Product Discovery Sprint?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A 2-week fixed-fee engagement that produces a reference architecture, a scope, a fixed-fee build estimate, and a decision-ready report. It is the cheapest way to find out whether you should build or buy."
+          "text": "A 2 week fixed fee engagement that produces a reference architecture, a scope, a fixed fee build estimate, and a decision ready report. It is the cheapest way to find out whether you should build or buy."
         }
       },
       {
@@ -64,7 +64,7 @@ export default function ProductEngineeringHub() {
         "name": "How long does a typical MVP take?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Most production MVPs ship in 10 to 12 weeks after Discovery. Complex, multi-tenant, or regulated builds take 14 to 20 weeks."
+          "text": "Most production MVPs ship in 10 to 12 weeks after Discovery. Complex, multi tenant, or regulated builds take 14 to 20 weeks."
         }
       },
       {
@@ -80,7 +80,7 @@ export default function ProductEngineeringHub() {
         "name": "What about security?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Every build ships with authentication, authorization, input validation, encryption at rest and in transit, and a security review before go-live. For regulated workloads we add SOC 2- or HIPAA-aligned controls from day one."
+          "text": "Every build ships with authentication, authorization, input validation, encryption at rest and in transit, and a security review before go live. For regulated workloads we add SOC 2 or HIPAA aligned controls from day one."
         }
       },
       {
@@ -107,7 +107,7 @@ export default function ProductEngineeringHub() {
         {/* FAQ SECTION (Static Server Component for perfect SEO) */}
         <section className={`${styles.sectionFaq} scroll-section`}>
           <div className="container">
-            <h2 className={styles.sectionTitleCentered}>Frequently Asked Questions — Product Engineering</h2>
+            <h2 className={styles.sectionTitleCentered}>Frequently Asked Questions, Product Engineering</h2>
             
             <div className={styles.faqList}>
               {faqSchema.mainEntity.map((faq, index) => (

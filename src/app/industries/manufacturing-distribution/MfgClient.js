@@ -14,16 +14,16 @@ if (typeof window !== "undefined") {
 }
 
 const practicesData = [
-  { practice: "Zoho Implementation Stack", what: "Zoho CRM for quote-to-order, integrated with NetSuite / Dynamics / Sage / SAP Business One; Zoho Creator for shop-floor workflow apps", outcome: "Quote-to-order in one system, no double entry" },
-  { practice: "Product Engineering", what: "Customer / distributor portal, warranty and claims workflows, mobile apps for field sales, EDI and API integrations", outcome: "Reduce inbound order-status email by 40%" },
-  { practice: "AI & Digital Workers", what: "Document AI on POs, invoices, and BOLs; sales-assistant copilot for quote lookup; planner copilot for demand signals", outcome: "Order / invoice cycle time cut by 30%" },
+  { practice: "Zoho Implementation Stack", what: "Zoho CRM for quote to order, integrated with NetSuite / Dynamics / Sage / SAP Business One; Zoho Creator for shop floor workflow apps", outcome: "Quote to order in one system, no double entry" },
+  { practice: "Product Engineering", what: "Customer / distributor portal, warranty and claims workflows, mobile apps for field sales, EDI and API integrations", outcome: "Reduce inbound order status email by 40%" },
+  { practice: "AI & Digital Workers", what: "Document AI on POs, invoices, and BOLs; sales assistant copilot for quote lookup; planner copilot for demand signals", outcome: "Order / invoice cycle time cut by 30%" },
   { practice: "Data Engineering", what: "Snowflake / Fabric warehouse unifying ERP, CRM, WMS, and fulfillment; BI on inventory turns, backorders, OTIF", outcome: "One version of the truth for S&OP" }
 ];
 
 const outcomesData = [
-  { firm: "250-Person Distributor", result: "Reduced quote turnaround from 48 hours to 4 with a Zoho + NetSuite integration." },
-  { firm: "Regional Food Manufacturer", result: "Cut invoice-matching AP labor by 60% with a document-AI workflow on SAP Business One." },
-  { firm: "Building-Products Distributor", result: "Unified Dynamics 365 Business Central with a custom distributor portal that deflected 35% of inbound support calls." }
+  { firm: "250 Person Distributor", result: "Reduced quote turnaround from 48 hours to 4 with a Zoho + NetSuite integration." },
+  { firm: "Regional Food Manufacturer", result: "Cut invoice matching AP labor by 60% with a document AI workflow on SAP Business One." },
+  { firm: "Building Products Distributor", result: "Unified Dynamics 365 Business Central with a custom distributor portal that deflected 35% of inbound support calls." }
 ];
 
 export default function MfgClient() {
@@ -86,13 +86,13 @@ export default function MfgClient() {
             <div className="hero-animate">
               <span className={pageStyles.eyebrow}>Built for US manufacturers and distributors, 50 to 500 employees</span>
             </div>
-            <h1 className={`hero-animate ${pageStyles.heroH1}`}>Connect ERP, CRM, and the shop floor — without an SAP-scale budget.</h1>
+            <h1 className={`hero-animate ${pageStyles.heroH1}`}>Connect ERP, CRM, and the shop floor, without an SAP scale budget.</h1>
             <p className={`hero-animate ${pageStyles.heroSub}`} style={{ maxWidth: '750px' }}>
-              Mid-market manufacturers and distributors do not have Fortune-500 budgets, but they have Fortune-500 problems. Six planning spreadsheets. A CRM nobody updates because the ERP is still the source of truth. Inventory counts that go stale by Tuesday. A BI tool that three people know how to use. FI Digital connects the ERP, CRM, and shop floor, adds integration engineering that finally makes the data flow, and deploys AI on the workflows that are draining your cost to serve.
+              Mid market manufacturers and distributors do not have Fortune 500 budgets, but they have Fortune 500 problems. Six planning spreadsheets. A CRM nobody updates because the ERP is still the source of truth. Inventory counts that go stale by Tuesday. A BI tool that three people know how to use. FI Digital connects the ERP, CRM, and shop floor, adds integration engineering that finally makes the data flow, and deploys AI on the workflows that are draining your cost to serve.
             </p>
             <div className={`hero-animate ${pageStyles.heroCtas}`}>
-              <Link href="/book-a-fit-call/?industry=manufacturing-distribution" className="btn btn-primary">Book a fit call &rarr;</Link>
-              <Link href="/packages/" className="btn btn-secondary">See relevant packages &rarr;</Link>
+              <Link href="/book-a-fit-call/?industry=manufacturing-distribution" className="btn btn-primary">Book a fit call &#8594;</Link>
+              <Link href="/packages/" className="btn btn-secondary">See relevant packages &#8594;</Link>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function MfgClient() {
           <div className={styles.whyTextCentered}>
             <h2 className={pageStyles.sectionTitleCentered}>The Industry Challenge</h2>
             <p className={styles.whyParagraphCentered}>
-              US manufacturing and distribution buyers tell us the same story: the business runs on NetSuite, Dynamics, Sage, SAP Business One, or Microsoft Dynamics 365 Business Central, and each one has a customer service team, a planning team, and a sales team looking at a different dashboard. Meanwhile, AI vendors are pitching the C-suite on agents that cannot access half the data they need. The order of operations is the opposite: connect the systems, trust the reporting, then layer AI on the workflows where cost to serve is highest.
+              US manufacturing and distribution buyers tell us the same story: the business runs on NetSuite, Dynamics, Sage, SAP Business One, or Microsoft Dynamics 365 Business Central, and each one has a customer service team, a planning team, and a sales team looking at a different dashboard. Meanwhile, AI vendors are pitching the C suite on agents that cannot access half the data they need. The order of operations is the opposite: connect the systems, trust the reporting, then layer AI on the workflows where cost to serve is highest.
             </p>
           </div>
         </div>

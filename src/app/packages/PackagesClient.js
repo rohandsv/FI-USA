@@ -16,24 +16,24 @@ if (typeof window !== "undefined") {
 const packagesData = [
   {
     title: "Zoho CRM QuickStart",
-    who: "Operations-led SMBs with 25 to 150 users who want to exit spreadsheets and legacy CRM in 3 to 5 weeks.",
+    who: "Operations led SMBs with 25 to 150 users who want to exit spreadsheets and legacy CRM in 3 to 5 weeks.",
     included: [
       "Sales process design",
       "CRM configuration (up to 3 pipelines, 2 roles)",
       "Lead and deal automation",
       "Data migration from one source (CSV, HubSpot, Salesforce, Pipedrive)",
       "Integration with one email / calendar tool",
-      "User training (up to 2 role-specific sessions)",
-      "30 days of post-go-live admin support"
+      "User training (up to 2 role specific sessions)",
+      "30 days of post go live admin support"
     ],
     timeline: "3 to 5 weeks",
     model: "Fixed fee",
     priceFloor: "[public price floor to be confirmed]",
-    variables: "Number of users, additional pipelines, data-migration volume, additional integrations, and custom objects or Zoho Creator apps."
+    variables: "Number of users, additional pipelines, data migration volume, additional integrations, and custom objects or Zoho Creator apps."
   },
   {
     title: "Zoho Managed Services",
-    who: "SMBs live on Zoho who need ongoing admin, optimization, and enhancement without a full-time Zoho resource in-house.",
+    who: "SMBs live on Zoho who need ongoing admin, optimization, and enhancement without a full time Zoho resource in house.",
     included: [
       "Monthly admin hours (tiered)",
       "Incident response with published SLA",
@@ -42,21 +42,21 @@ const packagesData = [
       "Small enhancement work",
       "Monthly reporting"
     ],
-    timeline: "Month to month (90-day minimum)",
+    timeline: "Month to month (90 day minimum)",
     model: "Monthly retainer",
     priceFloor: "[public price floor to be confirmed]",
-    variables: "Hours, number of modules, number of users, and response-time SLA tier."
+    variables: "Hours, number of modules, number of users, and response time SLA tier."
   },
   {
     title: "Product Discovery Sprint",
-    who: "Growth-stage companies about to build or modernize software.",
+    who: "Growth stage companies about to build or modernize software.",
     included: [
       "2 weeks of 1 senior engineer + 1 account/product lead + 1 optional designer",
       "Stakeholder interviews",
       "Reference architecture",
       "Risk register",
-      "Fixed-fee build proposal",
-      "Decision-ready report"
+      "Fixed fee build proposal",
+      "Decision ready report"
     ],
     timeline: "2 weeks",
     model: "Fixed fee",
@@ -64,28 +64,28 @@ const packagesData = [
     variables: "One flat fee across most engagements; regulated workloads (HIPAA, PCI, GLBA) priced separately."
   },
   {
-    title: "One-Workflow AI Pilot",
+    title: "One Workflow AI Pilot",
     who: "Teams that have one workflow draining headcount and want measured AI lift in 4 to 6 weeks.",
     included: [
       "Workflow discovery",
-      "Foundation-model selection",
+      "Foundation model selection",
       "Prompt and guardrail design",
       "Integration with 1 source system and 1 destination system",
-      "Shadow-mode deployment",
-      "2-week measured production",
+      "Shadow mode deployment",
+      "2 week measured production",
       "Final report with lift, cost, and scaling plan"
     ],
     timeline: "4 to 6 weeks",
     model: "Fixed fee",
     priceFloor: "[public price floor to be confirmed]",
-    variables: "Number of integrations, data volume, governance scope (state AI laws, HIPAA, GLBA), and whether a production go-live is in scope."
+    variables: "Number of integrations, data volume, governance scope (state AI laws, HIPAA, GLBA), and whether a production go live is in scope."
   },
   {
     title: "AI Opportunity Workshop",
     who: "Leadership teams that want a scored map of AI candidates before committing to a pilot.",
     included: [
-      "1-2 week workshop with 1 AI engineer + 1 account lead",
-      "Candidate workflow long-list",
+      "1 to 2 week workshop with 1 AI engineer + 1 account lead",
+      "Candidate workflow long list",
       "ROI hypotheses",
       "Governance readiness score",
       "Recommended pilot"
@@ -93,17 +93,17 @@ const packagesData = [
     timeline: "1 to 2 weeks",
     model: "Fixed fee",
     priceFloor: "[public price floor to be confirmed]",
-    variables: "One flat fee across most engagements; highly customized or cross-functional scopes priced on discovery."
+    variables: "One flat fee across most engagements; highly customized or cross functional scopes priced on discovery."
   },
   {
     title: "Data Foundation Assessment",
-    who: "Teams facing a platform decision (Databricks / Snowflake / Fabric / warehouse-plus-dbt) or teams whose reporting is unreliable.",
+    who: "Teams facing a platform decision (Databricks / Snowflake / Fabric / warehouse plus dbt) or teams whose reporting is unreliable.",
     included: [
-      "Current-state data audit",
+      "Current state data audit",
       "Reference architecture",
       "Platform recommendation",
       "Governance plan",
-      "Fixed-fee build proposal"
+      "Fixed fee build proposal"
     ],
     timeline: "2 to 3 weeks",
     model: "Fixed fee",
@@ -120,17 +120,17 @@ const packagesData = [
       "Small enhancement",
       "Monthly review"
     ],
-    timeline: "Month to month (90-day minimum)",
+    timeline: "Month to month (90 day minimum)",
     model: "Monthly retainer",
     priceFloor: "[public price floor to be confirmed]",
     variables: "Hours per month, response SLA, and number of data platform pipelines."
   },
   {
     title: "Custom Build (Proposal after Discovery)",
-    who: "Engagements that do not fit a package — MVP builds, multi-system data platforms, multi-workflow AI rollouts, or full Zoho One deployments.",
+    who: "Engagements that do not fit a package, such as MVP builds, multi system data platforms, multi workflow AI rollouts, or full Zoho One deployments.",
     included: [
       "Scoped after Discovery Sprint or Assessment",
-      "Milestone-based proposal",
+      "Milestone based proposal",
       "Fixed fee per milestone"
     ],
     timeline: "Varies (typically 10 to 24 weeks)",
@@ -199,10 +199,10 @@ export default function PackagesClient() {
           <div className={pageStyles.heroContent} style={{ maxWidth: '800px' }}>
             <h1 className={`hero-animate ${pageStyles.heroH1}`}>Start where you feel the pain.</h1>
             <p className={`hero-animate ${pageStyles.heroSub}`} style={{ maxWidth: '750px' }}>
-              FI Digital does not publish hourly rates. We publish packages, fixed-fee diagnostics, and monthly starting points — because US SMB buyers should know what a project starts at before they sit on three sales calls. Every package below tells you who it is for, what is included, how long it takes, and how pricing is presented. Pricing numbers are placeholders on this brief — the US sales leader will confirm the public floor price for each offer before publish.
+              FI Digital does not publish hourly rates. We publish packages, fixed fee diagnostics, and monthly starting points, because US SMB buyers should know what a project starts at before they sit on three sales calls. Every package below tells you who it is for, what is included, how long it takes, and how pricing is presented. Pricing numbers are placeholders on this brief, the US sales leader will confirm the public floor price for each offer before publish.
             </p>
             <div className={`hero-animate ${pageStyles.heroCtas}`}>
-              <Link href="/book-a-fit-call/" className="btn btn-primary">Book a fit call to scope your package &rarr;</Link>
+              <Link href="/book-a-fit-call/" className="btn btn-primary">Book a fit call to scope your package &#8594;</Link>
             </div>
           </div>
         </div>
@@ -225,7 +225,7 @@ export default function PackagesClient() {
                   </p>
                   <div style={{ marginTop: '2.5rem' }}>
                     <Link href="/book-a-fit-call/" className="btn btn-primary">
-                      Book a Fit Call &rarr;
+                      Book a Fit Call &#8594;
                     </Link>
                   </div>
                 </div>

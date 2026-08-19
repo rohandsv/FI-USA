@@ -21,19 +21,19 @@ const practicesData = [
   },
   {
     title: "Product Engineering",
-    desc: "Custom software should solve problems, not create technical debt. We build highly scalable, enterprise-grade web applications, client portals, and bespoke SaaS platforms using Next.js, React, and Python, tailored entirely for your unique business logic.",
+    desc: "Custom software should solve problems, not create technical debt. We build highly scalable, enterprise grade web applications, client portals, and bespoke SaaS platforms using Next.js, React, and Python, tailored entirely for your unique business logic.",
     link: "/solutions/product-engineering/",
     img: "/images/practice-product-v2.png"
   },
   {
     title: "AI & Digital Workers",
-    desc: "Move beyond AI hype into actual operational leverage. We deploy custom LLM agents, RAG-based knowledge retrieval systems, and autonomous digital workers that handle everything from customer support triage to complex data summarization directly within your environment.",
+    desc: "Move beyond AI hype into actual operational leverage. We deploy custom LLM agents, RAG based knowledge retrieval systems, and autonomous digital workers that handle everything from customer support triage to complex data summarization directly within your environment.",
     link: "/solutions/ai-digital-workers/",
     img: "/images/practice-ai-v2.png"
   },
   {
     title: "Data Engineering",
-    desc: "Siloed data is useless data. We construct resilient, high-performance data pipelines, cloud data warehouses on AWS or Azure, and real-time BI dashboards that give leadership absolute visibility and control over their entire operational landscape.",
+    desc: "Siloed data is useless data. We construct resilient, high performance data pipelines, cloud data warehouses on AWS or Azure, and real time BI dashboards that give leadership absolute visibility and control over their entire operational landscape.",
     link: "/solutions/data-engineering/",
     img: "/images/practice-data-v2.png"
   }
@@ -151,11 +151,11 @@ export default function HomeClient() {
             </div>
             <h1 className={`hero-animate ${styles.heroH1}`}>Modernize operations.<br />Ship digital products.<br />Deploy AI workers.<br />Unify data.</h1>
             <p className={`hero-animate ${styles.heroSub}`}>
-              One execution partner for four integrated practices — Zoho Implementation, Product Engineering, AI and Digital Workers, and Data Engineering — delivered by US-based account leads with fixed-fee starting points.
+              One execution partner for four integrated practices, Zoho Implementation, Product Engineering, AI and Digital Workers, and Data Engineering, delivered by US based account leads with fixed fee starting points.
             </p>
             <div className={`hero-animate ${styles.heroCtas}`}>
-              <Link href="/packages/" className="btn btn-primary">See packages &rarr;</Link>
-              <Link href="/book-a-fit-call/" className="btn btn-secondary">Talk to a solution expert &rarr;</Link>
+              <Link href="/packages/" className="btn btn-primary">See packages &#8594;</Link>
+              <Link href="/book-a-fit-call/" className="btn btn-secondary">Talk to a solution expert &#8594;</Link>
             </div>
           </div>
         </div>
@@ -166,7 +166,7 @@ export default function HomeClient() {
               <li className="hero-animate">Zoho Premium Partner</li>
               <li className="hero-animate">200+ projects delivered &middot; 10 years</li>
               <li className="hero-animate">SOC 2 Type II aligned delivery</li>
-              <li className="hero-animate">US-based account leads</li>
+              <li className="hero-animate">US based account leads</li>
               <li className="hero-animate">AWS and Azure delivery partners</li>
             </ul>
           </div>
@@ -179,7 +179,7 @@ export default function HomeClient() {
           <div className={styles.sectionHeaderCentered}>
             <h2 className={styles.sectionTitle}>Four practices. One partner. All outcomes.</h2>
             <p className={styles.sectionIntro}>
-              Most US SMBs buy technology help in pieces — a Zoho partner here, a web-app shop there, an AI freelancer off a Slack community, a data contractor on a retainer — and then spend the next 12 months stitching the pieces together. FI Digital is built to end that pattern. We deliver four connected practices as one team, with one account lead, one contract, and one outcome.
+              Most US SMBs buy technology help in pieces, a Zoho partner here, a web app shop there, an AI freelancer off a Slack community, a data contractor on a retainer, and then spend the next 12 months stitching the pieces together. FI Digital is built to end that pattern. We deliver four connected practices as one team, with one account lead, one contract, and one outcome.
             </p>
           </div>
 
@@ -195,7 +195,7 @@ export default function HomeClient() {
                 <div className={styles.practiceTextCol}>
                   <h3>{prac.title}</h3>
                   <p>{prac.desc}</p>
-                  <Link href={prac.link} className={styles.practiceCta}>Explore &rarr;</Link>
+                  <Link href={prac.link} className={styles.practiceCta}>Explore &#8594;</Link>
                 </div>
               </div>
             ))}
@@ -209,7 +209,7 @@ export default function HomeClient() {
           <div className={styles.sectionHeaderCentered}>
             <h2 className={styles.sectionTitle}>We build on the platforms your team already trusts.</h2>
             <p className={styles.sectionIntro}>
-              We are platform-opinionated where it matters and platform-agnostic where it does not. We deploy on AWS, Azure, and GCP. If your stack looks different, we will tell you honestly before we take your money.
+              We are platform opinionated where it matters and platform agnostic where it does not. We deploy on AWS, Azure, and GCP. If your stack looks different, we will tell you honestly before we take your money.
             </p>
           </div>
         </div>
@@ -255,34 +255,34 @@ export default function HomeClient() {
       {/* SECTION 3: ICPs */}
       <section className={`${styles.sectionIcp} scroll-section`}>
         <div className="container">
-          <h2 className={styles.sectionTitle}>Built for US SMBs that are done duct-taping their stack.</h2>
+          <h2 className={styles.sectionTitle}>Built for US SMBs that are done duct taping their stack.</h2>
 
           <div className={`${styles.icpGrid} stagger-grid`}>
             <div className={`stagger-card ${styles.icpCard}`}>
               <div className={styles.icpHeader}>
-                <h4>Operations-led SMBs</h4>
-                <span className={styles.icpSize}>25–250 employees</span>
+                <h4>Operations led SMBs</h4>
+                <span className={styles.icpSize}>25 to 250 employees</span>
               </div>
-              <p>Founder-, CEO-, COO-, or VP Operations-led. Professional services, property operations, manufacturing, distribution, logistics, field service, selected financial services workflows. You feel the bottleneck in manual handoffs, weak reporting, and a service team running on spreadsheets.</p>
-              <Link href="/solutions/zoho-implementation/" className={styles.cardCta}>Start with a Zoho QuickStart &rarr;</Link>
+              <p>Founder, CEO, COO, or VP Operations led. Professional services, property operations, manufacturing, distribution, logistics, field service, selected financial services workflows. You feel the bottleneck in manual handoffs, weak reporting, and a service team running on spreadsheets.</p>
+              <Link href="/solutions/zoho-implementation/" className={styles.cardCta}>Start with a Zoho QuickStart &#8594;</Link>
             </div>
 
             <div className={`stagger-card ${styles.icpCard}`}>
               <div className={styles.icpHeader}>
-                <h4>Growth-stage companies</h4>
-                <span className={styles.icpSize}>20–150 employees</span>
+                <h4>Growth stage companies</h4>
+                <span className={styles.icpSize}>20 to 150 employees</span>
               </div>
-              <p>Founder-, product-leader-, or CTO-led. You have an MVP in your head, an integration backlog that will not clear, or a customer portal you keep putting off.</p>
-              <Link href="/solutions/product-engineering/" className={styles.cardCta}>Start with a Product Discovery Sprint &rarr;</Link>
+              <p>Founder, product leader, or CTO led. You have an MVP in your head, an integration backlog that will not clear, or a customer portal you keep putting off.</p>
+              <Link href="/solutions/product-engineering/" className={styles.cardCta}>Start with a Product Discovery Sprint &#8594;</Link>
             </div>
 
             <div className={`stagger-card ${styles.icpCard}`}>
               <div className={styles.icpHeader}>
                 <h4>SMBs moving to AI readiness</h4>
-                <span className={styles.icpSize}>50–500 employees</span>
+                <span className={styles.icpSize}>50 to 500 employees</span>
               </div>
-              <p>COO-, CIO-, or BI-lead. Siloed systems, unreliable dashboards, AI ambitions that keep stalling because the data is not ready.</p>
-              <Link href="/solutions/data-engineering/" className={styles.cardCta}>Start with a Data Foundation Assessment &rarr;</Link>
+              <p>COO, CIO, or BI lead. Siloed systems, unreliable dashboards, AI ambitions that keep stalling because the data is not ready.</p>
+              <Link href="/solutions/data-engineering/" className={styles.cardCta}>Start with a Data Foundation Assessment &#8594;</Link>
             </div>
           </div>
         </div>
@@ -292,37 +292,37 @@ export default function HomeClient() {
       <section className={`${styles.sectionOffers} scroll-section`}>
         <div className={`container ${styles.offersContainer}`}>
           <div className={styles.offersText}>
-            <h2 className={styles.sectionTitle}>No six-month discovery. Start where you feel the pain.</h2>
-            <p>We publish fixed-fee starting offers because US SMB buyers should not have to sit through three sales calls just to learn what a project might cost. Pick the offer that matches the problem you have today. Each one carries a defined scope, a defined deliverable, and a defined fee. None are &quot;free consultations dressed up as workshops.&quot;</p>
-            <Link href="/packages/" className="btn btn-primary">See all packages &rarr;</Link>
+            <h2 className={styles.sectionTitle}>No six month discovery. Start where you feel the pain.</h2>
+            <p>We publish fixed fee starting offers because US SMB buyers should not have to sit through three sales calls just to learn what a project might cost. Pick the offer that matches the problem you have today. Each one carries a defined scope, a defined deliverable, and a defined fee. None are &quot;free consultations dressed up as workshops.&quot;</p>
+            <Link href="/packages/" className="btn btn-primary">See all packages &#8594;</Link>
           </div>
 
           <div className={`${styles.offersTable} stagger-grid`}>
             <div className={`stagger-card ${styles.offerRow}`}>
               <div className={styles.offerHead}>
                 <h4>Zoho CRM QuickStart</h4>
-                <span className={styles.offerTime}>3-5 weeks</span>
+                <span className={styles.offerTime}>3 to 5 weeks</span>
               </div>
-              <p>Operations-led teams ready to exit spreadsheets. Fixed fee, starting at a published price.</p>
+              <p>Operations led teams ready to exit spreadsheets. Fixed fee, starting at a published price.</p>
             </div>
             <div className={`stagger-card ${styles.offerRow}`}>
               <div className={styles.offerHead}>
                 <h4>Product Discovery Sprint</h4>
                 <span className={styles.offerTime}>2 weeks</span>
               </div>
-              <p>Growth-stage teams about to build or modernize. Fixed fee, published price.</p>
+              <p>Growth stage teams about to build or modernize. Fixed fee, published price.</p>
             </div>
             <div className={`stagger-card ${styles.offerRow}`}>
               <div className={styles.offerHead}>
-                <h4>One-Workflow AI Pilot</h4>
-                <span className={styles.offerTime}>4-6 weeks</span>
+                <h4>One Workflow AI Pilot</h4>
+                <span className={styles.offerTime}>4 to 6 weeks</span>
               </div>
               <p>Teams that want AI proof before committing at scale. Fixed fee, published price.</p>
             </div>
             <div className={`stagger-card ${styles.offerRow}`}>
               <div className={styles.offerHead}>
                 <h4>Data Foundation Assessment</h4>
-                <span className={styles.offerTime}>2-3 weeks</span>
+                <span className={styles.offerTime}>2 to 3 weeks</span>
               </div>
               <p>Teams staring at a data platform decision. Fixed fee, published price.</p>
             </div>
@@ -331,7 +331,7 @@ export default function HomeClient() {
                 <h4>Managed Services</h4>
                 <span className={styles.offerTime}>Monthly</span>
               </div>
-              <p>Teams that want the system kept healthy after go-live. Monthly retainer.</p>
+              <p>Teams that want the system kept healthy after go live. Monthly retainer.</p>
             </div>
           </div>
         </div>
@@ -341,13 +341,13 @@ export default function HomeClient() {
       <section className={`${styles.sectionTimeline} scroll-section`}>
         <div className="container">
           <h2 className={styles.sectionTitleCentered}>How Engagement Works</h2>
-          <p className={styles.sectionIntroCentered}>No PowerPoint-only engagements. Every phase ends with something you can touch.</p>
+          <p className={styles.sectionIntroCentered}>No PowerPoint only engagements. Every phase ends with something you can touch.</p>
 
           <div className={`${styles.timelineGrid} stagger-grid`}>
             <div className={`stagger-card ${styles.timelineStep}`}>
               <div className={styles.stepNum}>1</div>
               <h4>Discover</h4>
-              <p>Short, time-boxed, and fixed-fee. We audit systems, quantify pain, and produce a decision-ready recommendation.</p>
+              <p>Short, time boxed, and fixed fee. We audit systems, quantify pain, and produce a decision ready recommendation.</p>
             </div>
             <div className={`stagger-card ${styles.timelineStep}`}>
               <div className={styles.stepNum}>2</div>
@@ -357,12 +357,12 @@ export default function HomeClient() {
             <div className={`stagger-card ${styles.timelineStep}`}>
               <div className={styles.stepNum}>3</div>
               <h4>Build</h4>
-              <p>US-based leads and a senior engineering squad ship production code, configuration, and integrations.</p>
+              <p>US based leads and a senior engineering squad ship production code, configuration, and integrations.</p>
             </div>
             <div className={`stagger-card ${styles.timelineStep}`}>
               <div className={styles.stepNum}>4</div>
               <h4>Operate</h4>
-              <p>Most clients choose a managed-service retainer so the platform keeps earning after go-live.</p>
+              <p>Most clients choose a managed service retainer so the platform keeps earning after go live.</p>
             </div>
           </div>
         </div>
@@ -392,7 +392,7 @@ export default function HomeClient() {
                 <h4>{industriesData[activeIndustry].name}</h4>
                 <p>{industriesData[activeIndustry].desc}</p>
                 <Link href={industriesData[activeIndustry].link} className="btn btn-primary">
-                  Explore {industriesData[activeIndustry].name} &rarr;
+                  Explore {industriesData[activeIndustry].name} &#8594;
                 </Link>
               </div>
               <div className={styles.tabImageCol}>
@@ -416,20 +416,20 @@ export default function HomeClient() {
           <div className={styles.proofBlock}>
             <h2>Client & Social Proof</h2>
             <span className={styles.proofMetric}>200+</span>
-            <p>projects delivered across 10 years. Zoho Premium Partner. SOC 2 Type II aligned delivery. Clients include operations-led SMBs, growth-stage product companies, mid-market manufacturers, RIAs, CPA firms, logistics operators, and regional healthcare providers.</p>
+            <p>projects delivered across 10 years. Zoho Premium Partner. SOC 2 Type II aligned delivery. Clients include operations led SMBs, growth stage product companies, mid market manufacturers, RIAs, CPA firms, logistics operators, and regional healthcare providers.</p>
             <p>We publish metrics, not adjectives.</p>
-            <Link href="/case-studies/" className="btn btn-secondary">Read our case studies &rarr;</Link>
+            <Link href="/case-studies/" className="btn btn-secondary">Read our case studies &#8594;</Link>
           </div>
 
           <div className={styles.trustBlock}>
             <h2>Trust & Security</h2>
-            <p>FI Digital LLC is a US legal entity headquartered in Atlanta, Georgia. Our US-based account leads are on every engagement. Our delivery bench includes senior engineers, Zoho-certified consultants, data platform architects, and AI engineers.</p>
+            <p>FI Digital LLC is a US legal entity headquartered in Atlanta, Georgia. Our US based account leads are on every engagement. Our delivery bench includes senior engineers, Zoho certified consultants, data platform architects, and AI engineers.</p>
             <ul className={styles.trustChecklist}>
               <li>Professional indemnity insurance</li>
               <li>NDAs, MSAs, DPAs, and BAAs available</li>
               <li>Default deployment on US regions (AWS, Azure, Zoho)</li>
             </ul>
-            <Link href="/trust-security/" className="btn btn-secondary">View Security Summary &rarr;</Link>
+            <Link href="/trust-security/" className="btn btn-secondary">View Security Summary &#8594;</Link>
           </div>
         </div>
 

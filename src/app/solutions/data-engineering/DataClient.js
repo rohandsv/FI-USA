@@ -14,14 +14,14 @@ if (typeof window !== "undefined") {
 }
 
 const packagesData = [
-  { name: "Data Foundation Assessment", outcome: "Decision-ready architecture, platform recommendation, and fixed-fee build plan", timeline: "2-3 weeks", model: "Fixed fee" },
-  { name: "ETL / ELT Modernization", outcome: "Fivetran / Airbyte / dbt ingestion layer replacing brittle scripts and manual exports", timeline: "6-10 weeks", model: "Fixed fee" },
-  { name: "Databricks Lakehouse", outcome: "Bronze / silver / gold medallion architecture on Databricks with unity catalog governance", timeline: "10-16 weeks", model: "Milestone" },
-  { name: "Snowflake Analytics Foundation", outcome: "Snowflake warehouse with dbt models, role-based access, and reporting layer", timeline: "8-12 weeks", model: "Milestone" },
-  { name: "Microsoft Fabric", outcome: "Unified Fabric deployment (OneLake, Warehouses, Data Factory, Power BI)", timeline: "10-14 weeks", model: "Milestone" },
-  { name: "BI Acceleration", outcome: "Power BI / Tableau / Looker / Zoho Analytics semantic layer and dashboards", timeline: "6-10 weeks", model: "Fixed fee" },
-  { name: "Data Governance", outcome: "Catalog, lineage, access, PII handling, and retention policy", timeline: "4-8 weeks", model: "Fixed fee" },
-  { name: "AI-Ready Data Foundation", outcome: "Curated, permissioned data surfaces ready for RAG and AI workloads", timeline: "8-12 weeks", model: "Fixed fee" },
+  { name: "Data Foundation Assessment", outcome: "Decision ready architecture, platform recommendation, and fixed fee build plan", timeline: "2 to 3 weeks", model: "Fixed fee" },
+  { name: "ETL / ELT Modernization", outcome: "Fivetran / Airbyte / dbt ingestion layer replacing brittle scripts and manual exports", timeline: "6 to 10 weeks", model: "Fixed fee" },
+  { name: "Databricks Lakehouse", outcome: "Bronze / silver / gold medallion architecture on Databricks with unity catalog governance", timeline: "10 to 16 weeks", model: "Milestone" },
+  { name: "Snowflake Analytics Foundation", outcome: "Snowflake warehouse with dbt models, role based access, and reporting layer", timeline: "8 to 12 weeks", model: "Milestone" },
+  { name: "Microsoft Fabric", outcome: "Unified Fabric deployment (OneLake, Warehouses, Data Factory, Power BI)", timeline: "10 to 14 weeks", model: "Milestone" },
+  { name: "BI Acceleration", outcome: "Power BI / Tableau / Looker / Zoho Analytics semantic layer and dashboards", timeline: "6 to 10 weeks", model: "Fixed fee" },
+  { name: "Data Governance", outcome: "Catalog, lineage, access, PII handling, and retention policy", timeline: "4 to 8 weeks", model: "Fixed fee" },
+  { name: "AI Ready Data Foundation", outcome: "Curated, permissioned data surfaces ready for RAG and AI workloads", timeline: "8 to 12 weeks", model: "Fixed fee" },
   { name: "Analytics Managed Services", outcome: "Ongoing pipeline operations, dashboard maintenance, and model refresh", timeline: "Monthly", model: "Monthly starting point" }
 ];
 
@@ -35,7 +35,7 @@ const platformStack = [
   },
   { 
     category: "Snowflake", 
-    desc: "Role-based access control, dbt projects, Snowpark, semantic layer, Snowpipe for streaming",
+    desc: "Role based access control, dbt projects, Snowpark, semantic layer, Snowpipe for streaming",
     logos: [
       { name: "Snowflake", path: "/logos/snowflake.png" }
     ]
@@ -78,7 +78,7 @@ const platformStack = [
 
 const buyerEntryPoints = [
   { quote: "Need CRM + ERP + support + finance data in one place?", solution: "ETL / ELT Modernization + Warehouse", link: "/packages/#etl-elt-modernization" },
-  { quote: "Need AI-ready data without rebuilding everything?", solution: "AI-Ready Data Foundation", link: "/packages/#ai-ready-data-foundation" },
+  { quote: "Need AI ready data without rebuilding everything?", solution: "AI Ready Data Foundation", link: "/packages/#ai-ready-data-foundation" },
   { quote: "Tired of Power BI saying something different every Monday?", solution: "BI Acceleration", link: "/packages/#bi-acceleration" },
   { quote: "Considering Databricks, Snowflake, or Fabric and not sure?", solution: "Data Foundation Assessment", link: "/packages/#data-foundation-assessment" },
   { quote: "Our data is in Zoho Analytics and we've hit the ceiling.", solution: "Zoho to warehouse migration", link: "/solutions/zoho-implementation/" }
@@ -152,11 +152,11 @@ export default function DataClient() {
               Turn sprawl into one source of truth.
             </h1>
             <p className={`hero-animate ${styles.heroSub}`}>
-              Reliable reporting. AI-ready data foundations. ETL / ELT that does not break on a Tuesday night. We ship fixed-fee Data Foundation Assessments that tell you whether you need Databricks, Snowflake, Microsoft Fabric, or a warehouse-plus-dbt starter — and we implement whichever answer fits your team, not our sales quota.
+              Reliable reporting. AI ready data foundations. ETL / ELT that does not break on a Tuesday night. We ship fixed fee Data Foundation Assessments that tell you whether you need Databricks, Snowflake, Microsoft Fabric, or a warehouse plus dbt starter, and we implement whichever answer fits your team, not our sales quota.
             </p>
             <div className={`hero-animate ${styles.heroCtas}`}>
-              <Link href="/packages/#data-foundation-assessment" className="btn btn-primary">Book a Data Foundation Assessment &rarr;</Link>
-              <Link href="/book-a-fit-call/?practice=data" className="btn btn-outline">Talk to a data architect &rarr;</Link>
+              <Link href="/packages/#data-foundation-assessment" className="btn btn-primary">Book a Data Foundation Assessment &#8594;</Link>
+              <Link href="/book-a-fit-call/?practice=data" className="btn btn-outline">Talk to a data architect &#8594;</Link>
             </div>
           </div>
         </div>
@@ -177,7 +177,7 @@ export default function DataClient() {
                 <Image src="/logos/databricks.png" alt="Databricks Partner" width={140} height={45} style={{ objectFit: 'contain' }} />
               </div>
               <div className={`${dataStyles.partnerBadgeText} hero-animate`}>
-                <span>US-based Data Architects</span>
+                <span>US based Data Architects</span>
               </div>
               <div className={`${dataStyles.partnerBadgeText} hero-animate`}>
                 <span>SOC 2 Type II Aligned</span>
@@ -193,7 +193,7 @@ export default function DataClient() {
           <div className={styles.sectionHeaderCentered}>
             <h2 className={styles.sectionTitleCentered}>Why SMBs Stall on Data</h2>
             <p className={styles.sectionIntroCentered}>
-              Three patterns. One: reporting is unreliable — every dashboard tells a slightly different story and everyone has lost trust in the BI tool. Two: AI ambitions are blocked — a pilot stalled because "the data is not ready" and nobody owns the fix. Three: a platform decision is looming — Databricks, Snowflake, Microsoft Fabric, or a pure warehouse-plus-dbt stack — and there is no-one internally who can scope it independently. All three are data engineering problems. The answer is not buying a bigger platform. The answer is starting with an assessment that chooses the right one.
+              Three patterns. One: reporting is unreliable, every dashboard tells a slightly different story and everyone has lost trust in the BI tool. Two: AI ambitions are blocked, a pilot stalled because "the data is not ready" and nobody owns the fix. Three: a platform decision is looming, Databricks, Snowflake, Microsoft Fabric, or a pure warehouse plus dbt stack, and there is no one internally who can scope it independently. All three are data engineering problems. The answer is not buying a bigger platform. The answer is starting with an assessment that chooses the right one.
             </p>
           </div>
         </div>
@@ -280,7 +280,7 @@ export default function DataClient() {
             {buyerEntryPoints.map((entry, i) => (
               <Link href={entry.link} key={i} className={`stagger-card ${dataStyles.entryCard}`}>
                 <div className={dataStyles.entryQuote}>{entry.quote}</div>
-                <div className={dataStyles.entryArrow}>&rarr;</div>
+                <div className={dataStyles.entryArrow}>&#8594;</div>
                 <div className={dataStyles.entrySolution}>{entry.solution}</div>
               </Link>
             ))}

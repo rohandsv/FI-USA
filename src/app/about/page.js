@@ -4,7 +4,7 @@ import aboutStyles from './about.module.css';
 
 export const metadata = {
   title: 'Why FI Digital | US SMB Transformation Partner | About Us',
-  description: 'FI Digital LLC is a US-registered transformation partner for SMBs. Four integrated practices, US-based account leads, fixed-fee starts, and 200+ projects delivered.',
+  description: 'FI Digital LLC is a US registered transformation partner for SMBs. Four integrated practices, US based account leads, fixed fee starts, and 200+ projects delivered.',
 };
 
 const faqSchema = {
@@ -16,7 +16,7 @@ const faqSchema = {
       "name": "Who owns FI Digital?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "FI Digital LLC is a US-registered limited liability company headquartered in Atlanta, Georgia. For financial transparency, see the SAM.gov or Georgia Secretary of State registration linked on the Trust & Security page."
+        "text": "FI Digital LLC is a US registered limited liability company headquartered in Atlanta, Georgia. For financial transparency, see the SAM.gov or Georgia Secretary of State registration linked on the Trust & Security page."
       }
     },
     {
@@ -24,7 +24,7 @@ const faqSchema = {
       "name": "How many people does FI Digital employ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "FI Digital carries a senior-heavy delivery bench across four practices. Exact headcount is shared under NDA on request."
+        "text": "FI Digital carries a senior heavy delivery bench across four practices. Exact headcount is shared under NDA on request."
       }
     },
     {
@@ -40,7 +40,7 @@ const faqSchema = {
       "name": "What does a typical engagement look like?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Fit call (30 minutes), scoping (1 week), fixed-fee starting offer (2 to 6 weeks), fixed-fee or milestone build (8 to 16 weeks), optional managed services (month to month)."
+        "text": "Fit call (30 minutes), scoping (1 week), fixed fee starting offer (2 to 6 weeks), fixed fee or milestone build (8 to 16 weeks), optional managed services (month to month)."
       }
     }
   ]
@@ -61,7 +61,7 @@ export default function AboutPage() {
         {/* FAQ SECTION */}
         <section className={aboutStyles.sectionFaq}>
           <div className="container">
-            <h2 className={styles.sectionTitleCentered}>Frequently Asked Questions — About</h2>
+            <h2 className={styles.sectionTitleCentered}>Frequently Asked Questions, About</h2>
             
             <div className={aboutStyles.faqList}>
               {faqSchema.mainEntity.map((faq, index) => (

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import pageStyles from '../page.module.css';
@@ -11,6 +11,7 @@ import ZohoForm from '@/components/ZohoForm';
 
 export default function ContactClient() {
   const containerRef = useRef(null);
+  const [submitted, setSubmitted] = useState(false);
 
   useGSAP(() => {
     gsap.fromTo('.hero-animate',
@@ -48,7 +49,7 @@ export default function ContactClient() {
           <div className={pageStyles.heroContent} style={{ maxWidth: '850px' }}>
             <h1 className={`hero-animate ${pageStyles.heroH1}`}>Contact FI Digital</h1>
             <p className={`hero-animate ${pageStyles.heroSub}`} style={{ maxWidth: '750px' }}>
-              We are a US-registered firm with US-based account leads. Tell us what you are trying to solve and we will route your inquiry to the right practice lead within one US business day.
+              We are a US registered firm with US based account leads. Tell us what you are trying to solve and we will route your inquiry to the right practice lead within one US business day.
             </p>
           </div>
         </div>
@@ -58,12 +59,30 @@ export default function ContactClient() {
       <section className={styles.formSection}>
         <div className="container" style={{ maxWidth: '800px' }}>
           <div className={styles.formCard}>
-            <ZohoForm />
-            <div style={{ marginTop: '2rem', textAlign: 'center' }}>
-              <p className={styles.footerPrompt}>
-                Prefer to skip the form? <Link href="/book-a-fit-call/" style={{ color: 'var(--accent-color)', fontWeight: 600 }}>Book a fit call immediately &rarr;</Link>
-              </p>
-            </div>
+            {submitted ? (
+              <div style={{ textAlign: 'center', padding: '2rem 0' }}>
+                <div className={styles.successIcon}>&#10003;</div>
+                <h2 style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--text-primary)' }}>Thank You!</h2>
+                <p style={{ fontSize: '1.05rem', color: 'var(--text-secondary)', maxWidth: '480px', margin: '0 auto 1.5rem', lineHeight: 1.6 }}>
+                  Your inquiry has been received. A practice lead will get back to you within one US business day.
+                </p>
+                <button
+                  onClick={() => setSubmitted(false)}
+                  style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontWeight: 600, cursor: 'pointer', fontSize: '1rem' }}
+                >
+                  Submit another inquiry &#8594;
+                </button>
+              </div>
+            ) : (
+              <>
+                <ZohoForm onSubmitted={() => setSubmitted(true)} />
+                <div style={{ marginTop: '2rem', textAlign: 'center' }}>
+                  <p className={styles.footerPrompt}>
+                    Prefer to skip the form? <Link href="/book-a-fit-call/" style={{ color: 'var(--accent-color)', fontWeight: 600 }}>Book a fit call immediately &#8594;</Link>
+                  </p>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </section>
@@ -82,7 +101,7 @@ export default function ContactClient() {
               <strong>Contact Channels:</strong> hello@fidigital.com | privacy@fidigital.com | security@fidigital.com
             </div>
             <div className={styles.trustItem}>
-              <strong>Operational Hours:</strong> Monday-Friday, 9am-6pm ET (24/5 for managed-services clients)
+              <strong>Operational Hours:</strong> Monday to Friday, 9am to 6pm ET (24/5 for managed services clients)
             </div>
             <div className={styles.trustItem}>
               <strong>Response SLA:</strong> One US business day on every form submission

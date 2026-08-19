@@ -15,8 +15,8 @@ const ALL_CASE_STUDIES = [
     industry: "Professional Services",
     practice: "Zoho Implementation",
     title: "CPA Zoho & AI Automation",
-    description: "Unified lead-to-cash pipelines for CPA firm with integrated custom AI document intelligence.",
-    challenge: "Traditional workflows relied on heavily customized on-premise systems and manual email extraction of client tax records. Lack of unified CRM access degraded partner efficiency and visibility, while manual documentation analysis slowed process realization time.",
+    description: "Unified lead to cash pipelines for CPA firm with integrated custom AI document intelligence.",
+    challenge: "Traditional workflows relied on heavily customized on premise systems and manual email extraction of client tax records. Lack of unified CRM access degraded partner efficiency and visibility, while manual documentation analysis slowed process realization time.",
     solution: "We deployed a unified Zoho One solution with dynamic pipeline models integrated with bespoke AI document scanning. This allows automated classification and intake of incoming CPA client records.",
     delivery: "Timeline: 5 weeks. Squad size: 1 Zoho Solutions Lead, 1 Data Integration Engineer.",
     metrics: ["Realization +9 Points", "95% Partner Adoption", "100% Tax Document AI Intake"],
@@ -29,10 +29,10 @@ const ALL_CASE_STUDIES = [
     practice: "Product Engineering",
     title: "Law Firm Engagement Automation",
     description: "Developed a custom client engagement portal that reduced onboarding times from 9 days to 2 days.",
-    challenge: "Law partners were spending excessive administrative hours managing paper-based conflict checks and manually drafting engagement letters, reducing available billable hours.",
-    solution: "We engineered a secure Progressive Web Application (PWA) with built-in conflict assessment and automated contract generation. Client input extracts matching metadata that creates accurate engagement proposals instantly.",
-    delivery: "Timeline: 6 weeks. Squad size: 1 Full-Stack Engineer, 1 UI/UX Specialist.",
-    metrics: ["Engagement Time: 9 to 2 days", "85% Less Partner Admin Time", "Zero-Paper Process"],
+    challenge: "Law partners were spending excessive administrative hours managing paper based conflict checks and manually drafting engagement letters, reducing available billable hours.",
+    solution: "We engineered a secure Progressive Web Application (PWA) with built in conflict assessment and automated contract generation. Client input extracts matching metadata that creates accurate engagement proposals instantly.",
+    delivery: "Timeline: 6 weeks. Squad size: 1 Full Stack Engineer, 1 UI/UX Specialist.",
+    metrics: ["Engagement Time: 9 to 2 days", "85% Less Partner Admin Time", "Zero Paper Process"],
     image: "/images/practice-product-v2.png"
   },
   {
@@ -41,11 +41,11 @@ const ALL_CASE_STUDIES = [
     industry: "Manufacturing & Distribution",
     practice: "Zoho Implementation",
     title: "Instant Industrial Quote Turnaround",
-    description: "Unified disparate inventory, sales pipelines, and customer portals onto a high-performance Zoho One stack.",
+    description: "Unified disparate inventory, sales pipelines, and customer portals onto a high performance Zoho One stack.",
     challenge: "Complex quote requests manually routed via paper or fragmented spreadsheets required up to 48 hours to complete. This resulted in missed bids and frustrated customers.",
     solution: "We integrated Zoho Inventory directly with a custom quote engine. Product specs route in real time through pricing rules, generating precise industrial quotes in 4 hours.",
     delivery: "Timeline: 8 weeks. Squad size: 1 Zoho Developer, 1 Backend Integration Engineer.",
-    metrics: ["Quotes: 48h to 4h", "30% Quote Increase", "Cloud-Native Tracking"],
+    metrics: ["Quotes: 48h to 4h", "30% Quote Increase", "Cloud Native Tracking"],
     image: "/images/industry-mfg-v2.png"
   },
   {
@@ -69,22 +69,22 @@ const ALL_CASE_STUDIES = [
     title: "Logistics Portal Support Deflection",
     description: "Dynamic AI route tracking and customer support deflection reducing overhead.",
     challenge: "Customer service departments were overwhelmed with redundant calls requesting delivery status checks, impacting overall team capacity.",
-    solution: "We engineered a client portal using modern APIs and intelligent conversational workers. Customers can check real-time truck tracking data and resolve WISMO queries independently.",
-    delivery: "Timeline: 6 weeks. Squad size: 1 Product Manager, 2 Full-Stack Engineers.",
+    solution: "We engineered a client portal using modern APIs and intelligent conversational workers. Customers can check real time truck tracking data and resolve WISMO queries independently.",
+    delivery: "Timeline: 6 weeks. Squad size: 1 Product Manager, 2 Full Stack Engineers.",
     metrics: ["45% Status Calls Deflected", "24/7 Portal Availability", "High Customer Satisfaction"],
     image: "/images/industry-logistics-v2.png"
   },
   {
     slug: "hvac-zoho-ai-dispatcher",
-    client: "Thermo-Fix Solutions",
+    client: "Thermo Fix Solutions",
     industry: "Logistics & Field Service",
     practice: "Zoho Implementation",
     title: "Field Service Dispatcher AI Copilot",
-    description: "Introduced a Zoho CRM integrated dispatcher assistant increasing first-time fixes by 20%.",
-    challenge: "Dispatchers lacked insight into technician skill sets and dynamic parts availability when booking jobs, resulting in poor first-time fix rates.",
+    description: "Introduced a Zoho CRM integrated dispatcher assistant increasing first time fixes by 20%.",
+    challenge: "Dispatchers lacked insight into technician skill sets and dynamic parts availability when booking jobs, resulting in poor first time fix rates.",
     solution: "We designed a custom scheduling assistant within Zoho that parses technician credentials and predicts parts needed based on equipment models, resulting in higher efficiency.",
     delivery: "Timeline: 5 weeks. Squad size: 1 Zoho Architect, 1 Python AI Developer.",
-    metrics: ["First-Time-Fix +20%", "30% Lower Fuel Usage", "Optimized Mobile Dispatch"],
+    metrics: ["First Time Fix +20%", "30% Lower Fuel Usage", "Optimized Mobile Dispatch"],
     image: "/images/practice-zoho.webp"
   },
   {
@@ -93,11 +93,11 @@ const ALL_CASE_STUDIES = [
     industry: "Financial Services",
     practice: "Data Engineering",
     title: "Unified RIA Client Reporting Engine",
-    description: "Engineered a centralized data warehouse and business intelligence platform for a top-tier advisory network.",
+    description: "Engineered a centralized data warehouse and business intelligence platform for a top tier advisory network.",
     challenge: "Advisors manually assembled asset balances from disconnected CRMs, causing monthly client reports to take weeks to produce and increasing manual errors.",
-    solution: "We unified CRM pipelines with Snowflake, centralizing client performance analytics and automating end-of-month reporting output.",
+    solution: "We unified CRM pipelines with Snowflake, centralizing client performance analytics and automating end of month reporting output.",
     delivery: "Timeline: 6 weeks. Squad size: 1 Lead Analytics Engineer, 1 Financial Data Architect.",
-    metrics: ["Client-Report Cycle -70%", "GLBA Compliance Enabled", "100% Cloud-Native Data"],
+    metrics: ["Client Report Cycle -70%", "GLBA Compliance Enabled", "100% Cloud Native Data"],
     image: "/images/industry-finance-v2.png"
   },
   {
@@ -107,7 +107,7 @@ const ALL_CASE_STUDIES = [
     practice: "AI & Digital Workers",
     title: "Underwriter Meeting AI Assistant",
     description: "Deployed custom NLP and generative AI worker automating loan documentation workflows.",
-    challenge: "Underwriters spent 6+ hours weekly transcribing client interviews, cross-referencing audit logs, and documenting loan files.",
+    challenge: "Underwriters spent 6+ hours weekly transcribing client interviews, cross referencing audit logs, and documenting loan files.",
     solution: "We deployed an AI worker using whisper models and AWS Bedrock to automatically summarize meeting records and compare financial points against lender underwriting standards.",
     delivery: "Timeline: 4 weeks. Squad size: 1 Senior AI/ML Developer, 1 Account Architect.",
     metrics: ["6 Hours Saved Weekly", "Zero Human Bias", "Complete Audit Logs"],
@@ -252,7 +252,7 @@ export default function CaseStudiesClient() {
                     </div>
 
                     <Link href={`/case-studies/${study.slug}/`} className={styles.cardLink}>
-                      Read Full Case Study &rarr;
+                      Read Full Case Study &#8594;
                     </Link>
                   </div>
                 </div>

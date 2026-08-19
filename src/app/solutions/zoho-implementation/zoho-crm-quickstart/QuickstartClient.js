@@ -16,8 +16,8 @@ if (typeof window !== "undefined") {
 const deliverables = [
   {
     name: "Sales Process Design",
-    what: "Stakeholder interviews, current-state sales process audit, and a Scope and Configuration Map delivered before build begins.",
-    scope: "Week 1 — included"
+    what: "Stakeholder interviews, current state sales process audit, and a Scope and Configuration Map delivered before build begins.",
+    scope: "Week 1, included"
   },
   {
     name: "CRM Configuration",
@@ -26,46 +26,46 @@ const deliverables = [
   },
   {
     name: "Lead & Deal Automation",
-    what: "Automated lead assignment, follow-up task creation, stage-change notifications, and workflow rules.",
+    what: "Automated lead assignment, follow up task creation, stage change notifications, and workflow rules.",
     scope: "Standard automation included"
   },
   {
     name: "Data Migration",
-    what: "Migration from one source system — Salesforce, HubSpot, Pipedrive, or CSV. Field mapping, accounts, contacts, deals, activities, and notes migrated and validated.",
+    what: "Migration from one source system: Salesforce, HubSpot, Pipedrive, or CSV. Field mapping, accounts, contacts, deals, activities, and notes migrated and validated.",
     scope: "1 source system included"
   },
   {
     name: "Email & Calendar Integration",
-    what: "Connection with one email and calendar tool — Google Workspace or Microsoft 365 / Outlook — so all emails and meetings log automatically.",
+    what: "Connection with one email and calendar tool, Google Workspace or Microsoft 365 / Outlook, so all emails and meetings log automatically.",
     scope: "1 tool included (Google or M365)"
   },
   {
-    name: "User Training & Go-Live Support",
-    what: "Up to 2 role-specific training sessions, admin playbooks, and 30 days of post-go-live admin support.",
-    scope: "2 sessions + 30-day support"
+    name: "User Training & Go Live Support",
+    what: "Up to 2 role specific training sessions, admin playbooks, and 30 days of post go live admin support.",
+    scope: "2 sessions + 30 day support"
   }
 ];
 
 const timeline = [
   { phase: "Discover", timing: "Week 1", what: "Stakeholder interviews, sales process audit, data source review.", deliverable: "Scope and Configuration Map" },
-  { phase: "Design", timing: "Week 2", what: "Field model, pipeline stages, automation rules, and migration mapping agreed and signed off.", deliverable: "Signed-off configuration spec" },
-  { phase: "Build", timing: "Weeks 2–4", what: "CRM configured and tested, data migrated and validated, integrations connected, pilot-user review conducted.", deliverable: "Configured CRM, data validation report" },
-  { phase: "Train & Go Live", timing: "Week 4–5", what: "Role-specific training (up to 2 sessions), admin playbooks handed over, go-live cutover managed.", deliverable: "Live CRM, training recordings, playbooks" },
-  { phase: "Operate", timing: "Month 2 onward", what: "Optional. Monthly admin retainer, SLA-backed incident response, quarterly optimization review.", deliverable: "Zoho Managed Services retainer (optional)" }
+  { phase: "Design", timing: "Week 2", what: "Field model, pipeline stages, automation rules, and migration mapping agreed and signed off.", deliverable: "Signed off configuration spec" },
+  { phase: "Build", timing: "Weeks 2 to 4", what: "CRM configured and tested, data migrated and validated, integrations connected, pilot user review conducted.", deliverable: "Configured CRM, data validation report" },
+  { phase: "Train & Go Live", timing: "Week 4 to 5", what: "Role specific training (up to 2 sessions), admin playbooks handed over, go live cutover managed.", deliverable: "Live CRM, training recordings, playbooks" },
+  { phase: "Operate", timing: "Month 2 onward", what: "Optional. Monthly admin retainer, SLA backed incident response, quarterly optimization review.", deliverable: "Zoho Managed Services retainer (optional)" }
 ];
 
 const factors = [
   { title: "Number of users and roles", desc: "Standard scope covers up to 2 roles. Additional role hierarchies and profiles are quoted separately." },
-  { title: "Data migration volume and source-system complexity", desc: "Standard scope covers one source system. Multiple sources, legacy databases, or complex object mapping are quoted as migration add-ons." },
-  { title: "Number of sales pipelines", desc: "Standard scope covers up to 3 pipelines. Additional pipelines or product-specific variants add to scope." },
-  { title: "Additional integrations", desc: "Standard scope includes one email and calendar tool. ERP connections (QuickBooks, NetSuite, Xero), telephony (RingCentral, JustCall), ecommerce (Shopify), and doc signing are quoted separately." },
-  { title: "Zoho Creator custom apps or complex automation", desc: "Custom low-code apps inside Zoho Creator, multi-branch conditional automation, or webhook-driven integrations are scoped as separate fixed-fee engagements." }
+  { title: "Data migration volume and source system complexity", desc: "Standard scope covers one source system. Multiple sources, legacy databases, or complex object mapping are quoted as migration add ons." },
+  { title: "Number of sales pipelines", desc: "Standard scope covers up to 3 pipelines. Additional pipelines or product specific variants add to scope." },
+  { title: "Additional integrations", desc: "Standard scope includes one email and calendar tool. ERP connections (QuickBooks, NetSuite, Xero), telephony (RingCentral, JustCall), ecommerce (Shopify), and document signing are quoted separately." },
+  { title: "Zoho Creator custom apps or complex automation", desc: "Custom low code apps inside Zoho Creator, multi branch conditional automation, or webhook driven integrations are scoped as separate fixed fee engagements." }
 ];
 
 const criteria = [
-  "Operations-led SMBs with 25 to 150 users running their sales team on spreadsheets, a shared inbox, or a CRM no one logs into.",
+  "Operations led SMBs with 25 to 150 users running their sales team on spreadsheets, a shared inbox, or a CRM no one logs into.",
   "Companies migrating away from Salesforce or HubSpot because the price is too high or the team never fully adopted the platform.",
-  "Growth-stage companies scaling from 5 to 50+ sales users and needing a CRM configured properly — with role hierarchies, deal stages, and automation that grows with the team.",
+  "Growth stage companies scaling from 5 to 50+ sales users and needing a CRM configured properly, with role hierarchies, deal stages, and automation that grows with the team.",
   "Businesses starting a Zoho One rollout with CRM as Phase 1. The QuickStart is designed as a foundation that extends to Zoho Desk, Marketing Automation, and additional modules.",
   "US SMBs across Professional Services, Manufacturing and Distribution, Logistics and Field Service, and Financial Services where CRM configuration must match operational reality, not a generic template.",
   "Any team that needs a live, production CRM within a defined timeline at a fixed fee they can plan around."
@@ -80,16 +80,16 @@ const integrations = [
   { category: "Document signing", tools: "DocuSign, Adobe Sign" },
   { category: "Collaboration", tools: "Microsoft Teams, Slack" },
   { category: "Marketing", tools: "Mailchimp, Zoho Campaigns" },
-  { category: "Custom", tools: "REST / GraphQL APIs for non-standard source systems" }
+  { category: "Custom", tools: "REST / GraphQL APIs for nonstandard source systems" }
 ];
 
 const credentials = [
   { title: "Zoho Premium Partner", desc: "Reviewed annually against delivery quality and client growth." },
-  { title: "Zoho Authorized Partner USA", desc: "US-based certified partner." },
+  { title: "Zoho Authorized Partner USA", desc: "US based certified partner." },
   { title: "Zoho Certified Consultants", desc: "Zoho CRM, Desk, Creator, Books, People, Analytics, and Campaigns certified consultants on staff." },
   { title: "200+ Zoho Engagements", desc: "Delivered across 10 years of operations." },
   { title: "SOC 2 Type II Aligned", desc: "Delivery Security Summary available on NDA." },
-  { title: "US-Based Account Lead", desc: "On every engagement. FI Digital LLC, Atlanta, Georgia." },
+  { title: "US Based Account Lead", desc: "On every engagement. FI Digital LLC, Atlanta, Georgia." },
   { title: "US Data Residency", desc: "Zoho US data centers by default. Confirmed in writing on request." }
 ];
 
@@ -205,14 +205,14 @@ export default function QuickstartClient() {
               <span className={homeStyles.eyebrow}>Zoho Premium Partner &middot; Atlanta, GA &middot; Serving US SMBs</span>
             </div>
             <h1 className={`hero-animate ${homeStyles.heroH1}`}>
-              Get a Production Zoho CRM Live in 3 to 5 Weeks — Fixed Fee
+              Get a Production Zoho CRM Live in 3 to 5 Weeks, Fixed Fee
             </h1>
             <p className={`hero-animate ${homeStyles.heroSub}`}>
-              A fixed-fee implementation that gives your sales team a CRM they will actually use — configured pipelines, data migration from one source system, lead and deal automation, email and calendar integration, user training, and 30 days of post-go-live admin support. One scope. One fee. Live in 3 to 5 weeks.
+              A fixed fee implementation that gives your sales team a CRM they will actually use, configured pipelines, data migration from one source system, lead and deal automation, email and calendar integration, user training, and 30 days of post go live admin support. One scope. One fee. Live in 3 to 5 weeks.
             </p>
             <div className={`hero-animate ${homeStyles.heroCtas}`}>
-              <Link href="/packages/#zoho-crm-quickstart" className="btn btn-primary">Start with a Zoho CRM QuickStart &rarr;</Link>
-              <Link href="/book-a-fit-call/?practice=zoho" className="btn btn-secondary">Book a Zoho fit call &rarr;</Link>
+              <Link href="/packages/#zoho-crm-quickstart" className="btn btn-primary">Start with a Zoho CRM QuickStart &#8594;</Link>
+              <Link href="/book-a-fit-call/?practice=zoho" className="btn btn-secondary">Book a Zoho fit call &#8594;</Link>
             </div>
           </div>
         </div>
@@ -221,8 +221,8 @@ export default function QuickstartClient() {
           <div className="container">
             <ul className={homeStyles.trustList}>
               <li className="hero-animate">Zoho Premium Partner badge</li>
-              <li className="hero-animate">Fixed fee — not hourly</li>
-              <li className="hero-animate">US-based account lead</li>
+              <li className="hero-animate">Fixed fee, not hourly</li>
+              <li className="hero-animate">US based account lead</li>
               <li className="hero-animate">200+ Zoho projects delivered</li>
               <li className="hero-animate">SOC 2 Type II aligned delivery</li>
             </ul>
@@ -238,13 +238,13 @@ export default function QuickstartClient() {
               <h2 className={homeStyles.sectionTitle} style={{ marginBottom: '2rem' }}>Section 1: What Is the Zoho CRM QuickStart?</h2>
               <div style={{ fontSize: '1.1rem', lineHeight: '1.7', color: 'var(--text-secondary)' }}>
                 <p style={{ marginBottom: '1.5rem' }}>
-                  The Zoho CRM QuickStart is FI Digital&apos;s fixed-fee implementation package for US SMBs that are ready to exit spreadsheets, retire an underperforming legacy CRM, or launch Zoho CRM for the first time. It is designed to deliver a production CRM — one your salespeople will actually use — in 3 to 5 weeks.
+                  The Zoho CRM QuickStart is FI Digital&apos;s fixed fee implementation package for US SMBs that are ready to exit spreadsheets, retire an underperforming legacy CRM, or launch Zoho CRM for the first time. It is designed to deliver a production CRM, one your salespeople will actually use, in 3 to 5 weeks.
                 </p>
                 <p style={{ marginBottom: '1.5rem' }}>
-                  Every QuickStart is scoped around six deliverables: sales process design, CRM configuration (up to 3 pipelines, 2 roles), lead and deal automation, data migration from one source system, email and calendar integration with one tool, and user training with 30 days of post-go-live admin support. The fixed fee covers all six. Items outside this scope are quoted separately in writing before work begins.
+                  Every QuickStart is scoped around six deliverables: sales process design, CRM configuration (up to 3 pipelines, 2 roles), lead and deal automation, data migration from one source system, email and calendar integration with one tool, and user training with 30 days of post go live admin support. The fixed fee covers all six. Items outside this scope are quoted separately in writing before work begins.
                 </p>
                 <p>
-                  FI Digital is a Zoho Premium Partner — a designation Zoho reserves for a small number of partners with deep delivery credentials, long tenure, and sustained client growth. We have delivered more than 200 Zoho engagements across 10 years. We do not sell generic Zoho consultations. We sell fixed-fee, outcome-led QuickStarts.
+                  FI Digital is a Zoho Premium Partner, a designation Zoho reserves for a small number of partners with deep delivery credentials, long tenure, and sustained client growth. We have delivered more than 200 Zoho engagements across 10 years. We do not sell generic Zoho consultations. We sell fixed fee, outcome led QuickStarts.
                 </p>
               </div>
             </div>
@@ -266,7 +266,7 @@ export default function QuickstartClient() {
         <div className="container">
           <div className={homeStyles.sectionHeaderCentered}>
             <h2 className={homeStyles.sectionTitle}>Section 2: What Is Included</h2>
-            <p className={homeStyles.sectionSubtitle}>Every QuickStart includes the following six deliverables. Nothing is held behind an add-on tier.</p>
+            <p className={homeStyles.sectionSubtitle}>Every QuickStart includes the following six deliverables. Nothing is held behind an add on tier.</p>
           </div>
 
           <div className={styles.tableWrapper}>
@@ -296,8 +296,8 @@ export default function QuickstartClient() {
       <section className={`${homeStyles.sectionAbout} scroll-section`} style={{ padding: '10rem 0' }}>
         <div className="container">
           <div className={homeStyles.sectionHeaderCentered}>
-            <h2 className={homeStyles.sectionTitle}>Section 3: Delivery Timeline — 3 to 5 Weeks, Start to Finish</h2>
-            <p className={homeStyles.sectionSubtitle}>Every QuickStart follows the same five-phase cadence. You know what is happening each week — and so does your team.</p>
+            <h2 className={homeStyles.sectionTitle}>Section 3: Delivery Timeline, 3 to 5 Weeks, Start to Finish</h2>
+            <p className={homeStyles.sectionSubtitle}>Every QuickStart follows the same five phase cadence. You know what is happening each week, and so does your team.</p>
           </div>
 
           <div className={`${styles.timelineGrid} timeline-trigger`}>
@@ -328,7 +328,7 @@ export default function QuickstartClient() {
         <div className="container">
           <div className={homeStyles.sectionHeaderCentered}>
             <h2 className={homeStyles.sectionTitle}>Section 4: What Changes the Price</h2>
-            <p className={homeStyles.sectionSubtitle}>The QuickStart is fixed fee. The price on the Packages page is the starting-from floor for a standard scope. Five factors push the final fee above the floor:</p>
+            <p className={homeStyles.sectionSubtitle}>The QuickStart is fixed fee. The price on the Packages page is the starting from floor for a standard scope. Five factors push the final fee above the floor:</p>
           </div>
 
           <div className={`${styles.factorsGrid} factors-trigger`}>
@@ -341,7 +341,7 @@ export default function QuickstartClient() {
           </div>
 
           <div className={styles.pricingCallout}>
-            <p>We provide a written scope before any work begins. There are no billable-hour surprises.</p>
+            <p>We provide a written scope before any work begins. There are no billable hour surprises.</p>
           </div>
         </div>
       </section>
@@ -369,16 +369,16 @@ export default function QuickstartClient() {
       <section className={`${homeStyles.sectionAbout} scroll-section`} style={{ padding: '10rem 0' }}>
         <div className="container">
           <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-            <h2 className={homeStyles.sectionTitle} style={{ textAlign: 'center', marginBottom: '3rem' }}>Section 6: Why FI Digital — Not Just Any Zoho Partner</h2>
+            <h2 className={homeStyles.sectionTitle} style={{ textAlign: 'center', marginBottom: '3rem' }}>Section 6: Why FI Digital, Not Just Any Zoho Partner</h2>
             <div style={{ fontSize: '1.2rem', lineHeight: '1.8', color: 'var(--text-secondary)' }}>
               <p style={{ marginBottom: '2rem' }}>
-                Zoho has hundreds of authorized partners in the US. FI Digital is a Zoho Premium Partner — a level Zoho reserves for firms with deep delivery credentials and long tenure, reviewed annually against delivery quality and client growth.
+                Zoho has hundreds of authorized partners in the US. FI Digital is a Zoho Premium Partner, a level Zoho reserves for firms with deep delivery credentials and long tenure, reviewed annually against delivery quality and client growth.
               </p>
               <p style={{ marginBottom: '2rem' }}>
-                We have delivered more than 200 Zoho engagements across CRM, Desk, Creator, Books, People, Analytics, and Campaigns. Our US-based account leads scope every project. Our Zoho-certified consultants own the build. We publish fixed-fee starting prices so you can plan before you get on a call with us. Most Zoho partners hide pricing and bill hourly. We do not.
+                We have delivered more than 200 Zoho engagements across CRM, Desk, Creator, Books, People, Analytics, and Campaigns. Our US based account leads scope every project. Our Zoho certified consultants own the build. We publish fixed fee starting prices so you can plan before you get on a call with us. Most Zoho partners hide pricing and bill hourly. We do not.
               </p>
               <p>
-                After your QuickStart, you can hand off to an internal admin with our playbooks, or continue with a Zoho Managed Services retainer where the same team maintains, optimizes, and enhances your platform month to month. You do not need to find a new partner for day-two operations.
+                After your QuickStart, you can hand off to an internal admin with our playbooks, or continue with a Zoho Managed Services retainer where the same team maintains, optimizes, and enhances your platform month to month. You do not need to find a new partner for day two operations.
               </p>
             </div>
           </div>
@@ -391,7 +391,7 @@ export default function QuickstartClient() {
           <div className={homeStyles.sectionHeaderCentered}>
             <h2 className={homeStyles.sectionTitle}>Section 7: Integrations We Ship with Zoho CRM</h2>
             <p className={homeStyles.sectionSubtitle}>
-              The QuickStart includes one email and calendar integration. Our integration engineering squad handles the more complex cases — ERP, accounting, telephony, ecommerce, and document signing — as separate scopes or as part of a broader Zoho One rollout.
+              The QuickStart includes one email and calendar integration. Our integration engineering squad handles the more complex cases, including ERP, accounting, telephony, ecommerce, and document signing, as separate scopes or as part of a broader Zoho One rollout.
             </p>
           </div>
 
@@ -426,7 +426,7 @@ export default function QuickstartClient() {
           </div>
 
           <div style={{ textAlign: 'center', marginTop: '6rem' }}>
-            <Link href="/contact" className="btn btn-primary" style={{ padding: '1.2rem 3rem', fontSize: '1.2rem' }}>Get Started with FI Digital &rarr;</Link>
+            <Link href="/contact" className="btn btn-primary" style={{ padding: '1.2rem 3rem', fontSize: '1.2rem' }}>Get Started with FI Digital &#8594;</Link>
           </div>
         </div>
       </section>

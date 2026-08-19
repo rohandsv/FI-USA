@@ -72,10 +72,10 @@ export default function TrustClient() {
           <div className={pageStyles.heroContent} style={{ maxWidth: '800px' }}>
             <h1 className={`hero-animate ${pageStyles.heroH1}`}>Trust & Security at FI Digital</h1>
             <p className={`hero-animate ${pageStyles.heroSub}`} style={{ maxWidth: '750px' }}>
-              US SMB buyers now expect clarity on AI use, data handling, access controls, and implementation posture early in the buying cycle. This page pre-answers the questions your security, compliance, and legal teams will ask. If something is not covered here, email privacy@fidigital.com and we will send the relevant documentation under NDA.
+              US SMB buyers now expect clarity on AI use, data handling, access controls, and implementation posture early in the buying cycle. This page pre answers the questions your security, compliance, and legal teams will ask. If something is not covered here, email privacy@fidigital.com and we will send the relevant documentation under NDA.
             </p>
             <div className={`hero-animate ${pageStyles.heroCtas}`}>
-              <Link href="/book-a-fit-call/" className="btn btn-primary">Book a Fit Call &rarr;</Link>
+              <Link href="/book-a-fit-call/" className="btn btn-primary">Book a Fit Call &#8594;</Link>
             </div>
           </div>
         </div>
@@ -91,7 +91,7 @@ export default function TrustClient() {
               {[
                 {
                   title: "SOC 2 Type II Alignment",
-                  text: "Our delivery practices align with SOC 2 Type II controls — access management, change management, monitoring, and vendor risk."
+                  text: "Our delivery practices align with SOC 2 Type II controls, including access management, change management, monitoring, and vendor risk."
                 },
                 {
                   title: "Signed Summaries",
@@ -106,12 +106,12 @@ export default function TrustClient() {
                   text: "All engagements start with a signed MSA plus a DPA. BAAs are signed when PHI is in scope."
                 },
                 {
-                  title: "RBAC & Time-Bounded Access",
-                  text: "Role-based access control, least-privilege, and time-bounded access for FI Digital staff on client systems."
+                  title: "RBAC & Time Bounded Access",
+                  text: "Role based access control, least privilege, and time bounded access for FI Digital staff on client systems."
                 },
                 {
                   title: "No Derivative Rights",
-                  text: "All client code is versioned in client-owned repositories; we do not retain derivative rights."
+                  text: "All client code is versioned in client owned repositories; we do not retain derivative rights."
                 }
               ].map((item, i) => (
                 <div key={i} className={styles.postureCard}>
@@ -132,7 +132,7 @@ export default function TrustClient() {
           <div className={styles.introTextCentered}>
             <h2 className={pageStyles.sectionTitleCentered}>Data Handling & Privacy</h2>
             <p className={styles.introParagraphCentered}>
-              Enterprise-grade compliance frameworks applied to all data ingestion, migration, and transformation processes.
+              Enterprise grade compliance frameworks applied to all data ingestion, migration, and transformation processes.
             </p>
           </div>
           
@@ -144,11 +144,11 @@ export default function TrustClient() {
               },
               {
                 title: "Financial Security Expectations",
-                text: "GLBA Safeguards Rule aligned handling for financial-services client workloads."
+                text: "GLBA Safeguards Rule aligned handling for financial services client workloads."
               },
               {
                 title: "Healthcare Compliance & BAA",
-                text: "HIPAA-aligned delivery with signed BAA for healthcare-adjacent workflows."
+                text: "HIPAA aligned delivery with signed BAA for healthcare adjacent workflows."
               },
               {
                 title: "Classification & Encryption",
@@ -177,7 +177,7 @@ export default function TrustClient() {
           <div className={styles.introTextCentered}>
             <h2 className={pageStyles.sectionTitleCentered}>AI Governance</h2>
             <p className={styles.introParagraphCentered}>
-              Every AI pilot ships with: a model card; prompt and output logs retained 90+ days; an evaluation set run before every production change; a human-in-the-loop escalation path; and a kill-switch that turns off the AI without a deploy. We do not ship autonomous agents into customer-facing workflows without approved guardrails.
+              Every AI pilot ships with: a model card; prompt and output logs retained 90+ days; an evaluation set run before every production change; a human in the loop escalation path; and a kill switch that turns off the AI without a deploy. We do not ship autonomous agents into customer facing workflows without approved guardrails.
             </p>
           </div>
           
@@ -185,11 +185,11 @@ export default function TrustClient() {
             {[
               {
                 title: "Enterprise Foundation Models",
-                text: "Claude (Anthropic), GPT-4o / GPT-5 (OpenAI), AWS Bedrock, Azure OpenAI, and open models (Llama, Mistral) on AWS / Azure where air-gap is required."
+                text: "Claude (Anthropic), GPT 4o / GPT 5 (OpenAI), AWS Bedrock, Azure OpenAI, and open models (Llama, Mistral) on AWS / Azure where air gap is required."
               },
               {
                 title: "No Training on Prompts",
-                text: "All enterprise / API plans confirm no-training-on-prompts, safeguarding corporate IP."
+                text: "All enterprise / API plans confirm no training on prompts, safeguarding corporate IP."
               },
               {
                 title: "State AI Law Alignment",
@@ -218,7 +218,7 @@ export default function TrustClient() {
           <div className={styles.introTextCentered}>
             <h2 className={pageStyles.sectionTitleCentered}>Access Model</h2>
             <p className={styles.introParagraphCentered}>
-              Zero-trust architecture governing staff interactions with systems.
+              Zero trust architecture governing staff interactions with systems.
             </p>
           </div>
           
@@ -226,7 +226,7 @@ export default function TrustClient() {
             {[
               {
                 title: "Strict SSO & MFA Policies",
-                text: "Our staff access to client systems is SSO-enforced, MFA-enforced, time-bounded, and logged."
+                text: "Our staff access to client systems is SSO enforced, MFA enforced, time bounded, and logged."
               },
               {
                 title: "Rapid Offboarding Protocols",
@@ -267,7 +267,7 @@ export default function TrustClient() {
             {[
               {
                 title: "US Registered Entity",
-                text: "FI Digital LLC — a US legal entity headquartered in Atlanta, Georgia."
+                text: "FI Digital LLC, a US legal entity headquartered in Atlanta, Georgia."
               },
               {
                 title: "Professional Indemnity Insurance",

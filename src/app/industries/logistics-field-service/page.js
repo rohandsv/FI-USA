@@ -25,9 +25,9 @@ const faqSchema = {
       "name": "Can you build DOT / FMCSA-aware workflows?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. HOS, eLog awareness, and DVIR workflows can be built into custom apps; we are not a DOT-compliance vendor but we build on DOT-aware data."
+        "text": "Yes. HOS, eLog awareness, and DVIR workflows can be built into custom apps; we are not a DOT compliance vendor but we build on DOT aware data."
       },
-      "uiText": "Yes. HOS, eLog awareness, and DVIR workflows can be built into <a href='/solutions/zoho-implementation/'>custom apps</a>; we are not a DOT-compliance vendor but we build on DOT-aware <a href='/solutions/data-engineering/'>data</a>."
+      "uiText": "Yes. HOS, eLog awareness, and DVIR workflows can be built into <a href='/solutions/zoho-implementation/'>custom apps</a>; we are not a DOT compliance vendor but we build on DOT aware <a href='/solutions/data-engineering/'>data</a>."
     },
     {
       "@type": "Question",
@@ -43,9 +43,9 @@ const faqSchema = {
       "name": "Can you do route optimization?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We integrate with Routific, OptimoRoute, or custom OR-Tools solvers. We do not build a route-optimization engine from scratch."
+        "text": "We integrate with Routific, OptimoRoute, or custom OR Tools solvers. We do not build a route optimization engine from scratch."
       },
-      "uiText": "We integrate with Routific, OptimoRoute, or custom OR-Tools solvers. We do not build a route-optimization engine from scratch. <a href='/solutions/ai-digital-workers/'>AI & Digital Workers</a> can help automate the dispatch flow."
+      "uiText": "We integrate with Routific, OptimoRoute, or custom OR Tools solvers. We do not build a route optimization engine from scratch. <a href='/solutions/ai-digital-workers/'>AI & Digital Workers</a> can help automate the dispatch flow."
     },
     {
       "@type": "Question",
@@ -66,7 +66,7 @@ export default function LogisticsFieldService() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <h1 className="visually-hidden" style={{ position: 'absolute', width: '1px', height: '1px', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', borderWidth: '0' }}>Dispatch, driver apps, and AI triage — built for US operators.</h1>
+      <h1 className="visually-hidden" style={{ position: 'absolute', width: '1px', height: '1px', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', borderWidth: '0' }}>Dispatch, driver apps, and AI triage, built for US operators.</h1>
       
       <main>
         <LogisticsClient />
@@ -74,7 +74,7 @@ export default function LogisticsFieldService() {
         {/* FAQ SECTION (Static Server Component) */}
         <section className={logStyles.sectionFaq}>
           <div className="container">
-            <h2 className={styles.sectionTitleCentered}>Frequently Asked Questions — Logistics & Field Service</h2>
+            <h2 className={styles.sectionTitleCentered}>Frequently Asked Questions, Logistics & Field Service</h2>
             
             <div className={logStyles.faqList}>
               {faqSchema.mainEntity.map((faq, index) => (

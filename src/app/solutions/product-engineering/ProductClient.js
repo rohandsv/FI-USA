@@ -13,18 +13,18 @@ if (typeof window !== "undefined") {
 }
 
 const packagesData = [
-  { name: "Product Discovery Sprint", outcome: "Architecture, scope, fixed-fee estimate, and decision-ready report", timeline: "2 weeks", model: "Fixed fee" },
-  { name: "MVP Build", outcome: "Production MVP on React / Next.js + Node / Python + Postgres", timeline: "10-12 weeks", model: "Fixed fee after discovery" },
-  { name: "Customer Portal", outcome: "Authenticated portal with Zoho / Salesforce / NetSuite integration", timeline: "8-12 weeks", model: "Fixed fee after discovery" },
-  { name: "Internal Workflow App", outcome: "Operations app for dispatch, approvals, planning, or inventory", timeline: "6-10 weeks", model: "Fixed fee after discovery" },
-  { name: "Mobile App (React Native)", outcome: "iOS + Android app on a shared React Native codebase", timeline: "10-14 weeks", model: "Fixed fee after discovery" },
-  { name: "App Modernization", outcome: "Incremental modernization of a legacy codebase without a rewrite", timeline: "12-24 weeks", model: "Milestone-based" },
-  { name: "Integration Engineering", outcome: "Custom integrations between CRM, ERP, fulfillment, and payment", timeline: "4-12 weeks", model: "Fixed fee or milestone" }
+  { name: "Product Discovery Sprint", outcome: "Architecture, scope, fixed fee estimate, and decision ready report", timeline: "2 weeks", model: "Fixed fee" },
+  { name: "MVP Build", outcome: "Production MVP on React / Next.js + Node / Python + Postgres", timeline: "10 to 12 weeks", model: "Fixed fee after discovery" },
+  { name: "Customer Portal", outcome: "Authenticated portal with Zoho / Salesforce / NetSuite integration", timeline: "8 to 12 weeks", model: "Fixed fee after discovery" },
+  { name: "Internal Workflow App", outcome: "Operations app for dispatch, approvals, planning, or inventory", timeline: "6 to 10 weeks", model: "Fixed fee after discovery" },
+  { name: "Mobile App (React Native)", outcome: "iOS + Android app on a shared React Native codebase", timeline: "10 to 14 weeks", model: "Fixed fee after discovery" },
+  { name: "App Modernization", outcome: "Incremental modernization of a legacy codebase without a rewrite", timeline: "12 to 24 weeks", model: "Milestone based" },
+  { name: "Integration Engineering", outcome: "Custom integrations between CRM, ERP, fulfillment, and payment", timeline: "4 to 12 weeks", model: "Fixed fee or milestone" }
 ];
 
 const techStack = [
   {
-    category: "Front-end",
+    category: "Front end",
     stack: "React, Next.js, React Native, TypeScript, Tailwind",
     logos: [
       { name: "React", path: "/logos/react.png" }, 
@@ -35,7 +35,7 @@ const techStack = [
     ]
   },
   {
-    category: "Back-end",
+    category: "Back end",
     stack: "Node, Python / FastAPI, .NET, Ruby on Rails",
     logos: [
       { name: "Node.js", path: "/logos/nodejs.png" },
@@ -104,9 +104,9 @@ const techStack = [
 const pricingFactors = [
   { icon: "📐", title: "Scope", desc: "Number of screens, user roles, and major workflows." },
   { icon: "🔌", title: "Integrations", desc: "Number of external systems (CRM, ERP, payment, auth) and their API maturity." },
-  { icon: "💾", title: "Data Complexity", desc: "Legacy data migrations, multi-tenant requirements, reporting depth." },
+  { icon: "💾", title: "Data Complexity", desc: "Legacy data migrations, multi tenant requirements, reporting depth." },
   { icon: "🛡️", title: "Compliance", desc: "SOC 2, HIPAA, GLBA, CCPA / CPRA requirements." },
-  { icon: "📱", title: "Mobile", desc: "Whether iOS + Android are in scope and whether offline-first is required." },
+  { icon: "📱", title: "Mobile", desc: "Whether iOS + Android are in scope and whether offline first is required." },
   { icon: "🔑", title: "Ownership", desc: "Whether we transfer code, IP, and DevOps to your team on day one or hand over after an operate phase." }
 ];
 
@@ -175,15 +175,15 @@ export default function ProductClient() {
         <div className={`container ${styles.heroContainer}`}>
           <div className={styles.heroContent}>
             <div className="hero-animate">
-              <span className={styles.eyebrow}>Engineering-led product delivery for US SMB and growth-stage companies</span>
+              <span className={styles.eyebrow}>Engineering led product delivery for US SMB and growth stage companies</span>
             </div>
             <h1 className={`hero-animate ${styles.heroH1}`}>Ship software, not slide decks.</h1>
             <p className={`hero-animate ${styles.heroSub}`}>
-              A 2-week fixed-fee Product Discovery Sprint. A 10- to 12-week production MVP. A customer portal that deflects 40% of inbound support. An app modernization plan that does not require a rewrite your board will not sign. FI Digital&apos;s Product Engineering practice is built for the US SMBs and growth-stage companies who are done with offshore staff-augmentation lotteries and consultancy slide decks.
+              A 2 week fixed fee Product Discovery Sprint. A 10 to 12 week production MVP. A customer portal that deflects 40% of inbound support. An app modernization plan that does not require a rewrite your board will not sign. FI Digital&apos;s Product Engineering practice is built for the US SMBs and growth stage companies who are done with offshore staff augmentation lotteries and consultancy slide decks.
             </p>
             <div className={`hero-animate ${styles.heroCtas}`}>
-              <Link href="/packages/#product-discovery-sprint" className="btn btn-primary">Book a Product Discovery Sprint &rarr;</Link>
-              <Link href="/book-a-fit-call/?practice=product" className="btn btn-secondary">Talk to our engineering lead &rarr;</Link>
+              <Link href="/packages/#product-discovery-sprint" className="btn btn-primary">Book a Product Discovery Sprint &#8594;</Link>
+              <Link href="/book-a-fit-call/?practice=product" className="btn btn-secondary">Talk to our engineering lead &#8594;</Link>
             </div>
           </div>
         </div>
@@ -199,7 +199,7 @@ export default function ProductClient() {
               <Image src="/logos/aws-partner.png" alt="AWS Partner" width={140} height={45} style={{ objectFit: 'contain' }} />
             </div>
             <div className={`${styles.partnerBadgeText} hero-animate`}>
-              <span>US-based Account Leads</span>
+              <span>US based Account Leads</span>
             </div>
             <div className={`${styles.partnerBadgeText} hero-animate`}>
               <span>Senior Engineering Bench</span>
@@ -220,13 +220,13 @@ export default function ProductClient() {
               Three patterns trigger this hire. <strong>Pattern one:</strong> the founder or product leader has an MVP commitment and no engineering bench that can ship it on time.
             </p>
             <p>
-              <strong>Pattern two:</strong> the operations-led business has outgrown off-the-shelf tools and needs a customer portal, a partner app, or a workflow tool that Zoho, Salesforce, or NetSuite will not ship natively.
+              <strong>Pattern two:</strong> the operations led business has outgrown off the shelf tools and needs a customer portal, a partner app, or a workflow tool that Zoho, Salesforce, or NetSuite will not ship natively.
             </p>
             <p>
-              <strong>Pattern three:</strong> the technology debt from a legacy app (Classic ASP, old .NET, old Rails, on-prem Laravel) is slowing the business down and a rewrite is too risky.
+              <strong>Pattern three:</strong> the technology debt from a legacy app (Classic ASP, old .NET, old Rails, on prem Laravel) is slowing the business down and a rewrite is too risky.
             </p>
             <p>
-              All three are product engineering problems, not staff-augmentation problems. We solve them with a US account lead, a senior engineering squad, and a scope that publishes a fixed fee after the Discovery Sprint.
+              All three are product engineering problems, not staff augmentation problems. We solve them with a US account lead, a senior engineering squad, and a scope that publishes a fixed fee after the Discovery Sprint.
             </p>
           </div>
           <div className={styles.whyImageCol}>
@@ -275,7 +275,7 @@ export default function ProductClient() {
       <section className={`${styles.sectionMethod} scroll-section`}>
         <div className="container">
           <h2 className={styles.sectionTitleCentered}>Our Engineering Method</h2>
-          <p className={styles.sectionIntroCentered}>Every Product Engineering engagement begins with a 2-week Product Discovery Sprint to eliminate risk before we write a line of code.</p>
+          <p className={styles.sectionIntroCentered}>Every Product Engineering engagement begins with a 2 week Product Discovery Sprint to eliminate risk before we write a line of code.</p>
 
           <div className={styles.methodGrid}>
             <div className={styles.methodTimeline}>
@@ -283,7 +283,7 @@ export default function ProductClient() {
                 <div className={styles.stepIcon}>1</div>
                 <div className={styles.stepContent}>
                   <h4>Discover</h4>
-                  <p>We run stakeholder interviews, decompose the problem, produce a reference architecture, identify integration risk, scope the build, and deliver a fixed-fee proposal. You can take the artifacts and walk — we will not lock you into a build.</p>
+                  <p>We run stakeholder interviews, decompose the problem, produce a reference architecture, identify integration risk, scope the build, and deliver a fixed fee proposal. You can take the artifacts and walk, we will not lock you into a build.</p>
                 </div>
               </div>
               <div className={styles.methodStep}>
@@ -297,7 +297,7 @@ export default function ProductClient() {
                 <div className={styles.stepIcon}>3</div>
                 <div className={styles.stepContent}>
                   <h4>Build</h4>
-                  <p>We ship on 2-week iterations with a live preview environment, so you never wait 10 weeks to see what we built.</p>
+                  <p>We ship on 2 week iterations with a live preview environment, so you never wait 10 weeks to see what we built.</p>
                 </div>
               </div>
               <div className={styles.methodStep}>
@@ -327,7 +327,7 @@ export default function ProductClient() {
         <div className="container">
           <div className={styles.techText}>
             <h2 className={styles.sectionTitleCentered}>Technology Stack</h2>
-            <p>We are not &quot;technology agnostic&quot; — we are opinionated. We will tell you which stack fits your ops team, not the one that gets us the most hours.</p>
+            <p>We are not &quot;technology agnostic,&quot; we are opinionated. We will tell you which stack fits your ops team, not the one that gets us the most hours.</p>
           </div>
 
           <div className={`${styles.techGrid} stagger-grid`}>

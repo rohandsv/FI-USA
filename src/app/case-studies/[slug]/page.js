@@ -10,8 +10,8 @@ const ALL_CASE_STUDIES = [
     industry: "Professional Services (CPA)",
     practice: "Zoho Implementation",
     title: "CPA Zoho & AI Automation",
-    description: "Unified lead-to-cash pipelines for CPA firm with integrated custom AI document intelligence.",
-    challenge: "Traditional workflows relied on heavily customized on-premise systems and manual email extraction of client tax records. Lack of unified CRM access degraded partner efficiency and visibility, while manual documentation analysis slowed process realization time.",
+    description: "Unified lead to cash pipelines for CPA firm with integrated custom AI document intelligence.",
+    challenge: "Traditional workflows relied on heavily customized on premise systems and manual email extraction of client tax records. Lack of unified CRM access degraded partner efficiency and visibility, while manual documentation analysis slowed process realization time.",
     solution: "We deployed a unified Zoho One solution with dynamic pipeline models integrated with bespoke AI document scanning. This allows automated classification and intake of incoming CPA client records.",
     delivery: "Our engineering squad delivered the solution in 5 weeks. The team consisted of 1 Zoho Solutions Lead and 1 Data Integration Engineer, working under rigorous accounting and SOC 2 data protection standards.",
     outcome: "With modern CRM tracking and automatic document parsing, the firm significantly improved realization points, boosted user engagement, and cut manual intake workloads.",
@@ -31,14 +31,14 @@ const ALL_CASE_STUDIES = [
     practice: "Product Engineering",
     title: "Law Firm Engagement Automation",
     description: "Developed a custom client engagement portal that reduced onboarding times from 9 days to 2 days.",
-    challenge: "Law partners were spending excessive administrative hours managing paper-based conflict checks and manually drafting engagement letters, reducing available billable hours.",
-    solution: "We engineered a secure Progressive Web Application (PWA) with built-in conflict assessment and automated contract generation. Client input extracts matching metadata that creates accurate engagement proposals instantly.",
-    delivery: "Built and launched in 6 weeks. The squad included 1 Full-Stack React Engineer and 1 UI/UX Specialist working in close lockstep with internal legal team members.",
+    challenge: "Law partners were spending excessive administrative hours managing paper based conflict checks and manually drafting engagement letters, reducing available billable hours.",
+    solution: "We engineered a secure Progressive Web Application (PWA) with built in conflict assessment and automated contract generation. Client input extracts matching metadata that creates accurate engagement proposals instantly.",
+    delivery: "Built and launched in 6 weeks. The squad included 1 Full Stack React Engineer and 1 UI/UX Specialist working in close lockstep with internal legal team members.",
     outcome: "Dynamic client onboarding eliminated continuous paper cycles and drastically reduced partner administrative time.",
     metrics: [
       { label: "Onboarding cycle time down from 9 days to", value: "2 Days" },
       { label: "Manual partner admin time saved", value: "85%" },
-      { label: "Paper-based workflows eliminated", value: "100%" }
+      { label: "Paper based workflows eliminated", value: "100%" }
     ],
     quote: "Onboarding now flows in hours rather than days, directly boosting our quarterly realization.",
     author: "Managing Partner, Vance & Sterling LLC",
@@ -50,7 +50,7 @@ const ALL_CASE_STUDIES = [
     industry: "Manufacturing & Distribution",
     practice: "Zoho Implementation",
     title: "Instant Industrial Quote Turnaround",
-    description: "Unified disparate inventory, sales pipelines, and customer portals onto a high-performance Zoho One stack.",
+    description: "Unified disparate inventory, sales pipelines, and customer portals onto a high performance Zoho One stack.",
     challenge: "Complex quote requests manually routed via paper or fragmented spreadsheets required up to 48 hours to complete. This resulted in missed bids and frustrated customers.",
     solution: "We integrated Zoho Inventory directly with a custom quote engine. Product specs route in real time through pricing rules, generating precise industrial quotes in 4 hours.",
     delivery: "Built over 8 weeks. The delivery squad consisted of 1 Zoho Implementation Architect and 1 Backend Integration Engineer working alongside internal manufacturing leads.",
@@ -58,7 +58,7 @@ const ALL_CASE_STUDIES = [
     metrics: [
       { label: "Quote turnaround time reduced to", value: "4 Hours" },
       { label: "Average sales quote increase", value: "30%" },
-      { label: "Cloud-native tracking operations", value: "100%" }
+      { label: "Cloud native tracking operations", value: "100%" }
     ],
     quote: "Speed is a competitive advantage in manufacturing. We now close custom bids before competitors even open the specs.",
     author: "VP of Sales, Precision Parts Mfg",
@@ -80,7 +80,7 @@ const ALL_CASE_STUDIES = [
       { label: "Document scanning parsing accuracy", value: "100%" },
       { label: "Direct ERP matching integration", value: "Yes" }
     ],
-    quote: "Our back-office overhead has dropped by 60% with Document AI parsing invoice logs.",
+    quote: "Our back office overhead has dropped by 60% with Document AI parsing invoice logs.",
     author: "Head of Supply Chain, Alliance Distribution",
     image: "/images/practice-data-v2.png"
   },
@@ -92,12 +92,12 @@ const ALL_CASE_STUDIES = [
     title: "Logistics Portal Support Deflection",
     description: "Dynamic AI route tracking and customer support deflection reducing overhead.",
     challenge: "Customer service departments were overwhelmed with redundant calls requesting delivery status checks, impacting overall team capacity.",
-    solution: "We engineered a client portal using modern APIs and intelligent conversational workers. Customers can check real-time truck tracking data and resolve WISMO queries independently.",
-    delivery: "Built in 6 weeks. The team consisted of 1 Product Manager and 2 Full-Stack Developers working alongside operations leads.",
-    outcome: "Dynamic customer self-service capabilities deflected a massive portion of typical WISMO call center volume.",
+    solution: "We engineered a client portal using modern APIs and intelligent conversational workers. Customers can check real time truck tracking data and resolve WISMO queries independently.",
+    delivery: "Built in 6 weeks. The team consisted of 1 Product Manager and 2 Full Stack Developers working alongside operations leads.",
+    outcome: "Dynamic customer self service capabilities deflected a massive portion of typical WISMO call center volume.",
     metrics: [
       { label: "WISMO status calls deflected via portal", value: "45%" },
-      { label: "Round-the-clock portal uptime", value: "24/7" },
+      { label: "Round the clock portal uptime", value: "24/7" },
       { label: "Increase in customer satisfaction", value: "High" }
     ],
     quote: "Our tracking deflection portal has significantly freed up our core support team's capacity.",
@@ -106,17 +106,17 @@ const ALL_CASE_STUDIES = [
   },
   {
     slug: "hvac-zoho-ai-dispatcher",
-    client: "Thermo-Fix Solutions",
+    client: "Thermo Fix Solutions",
     industry: "Logistics & Field Service",
     practice: "Zoho Implementation",
     title: "Field Service Dispatcher AI Copilot",
-    description: "Introduced a Zoho CRM integrated dispatcher assistant increasing first-time fixes by 20%.",
-    challenge: "Dispatchers lacked insight into technician skill sets and dynamic parts availability when booking jobs, resulting in poor first-time fix rates.",
+    description: "Introduced a Zoho CRM integrated dispatcher assistant increasing first time fixes by 20%.",
+    challenge: "Dispatchers lacked insight into technician skill sets and dynamic parts availability when booking jobs, resulting in poor first time fix rates.",
     solution: "We designed a custom scheduling assistant within Zoho that parses technician credentials and predicts parts needed based on equipment models, resulting in higher efficiency.",
     delivery: "Our engineering squad delivered the dispatcher within 5 weeks. The squad featured 1 Zoho CRM Architect and 1 Python AI Developer.",
-    outcome: "Predictive parts allocation and matching boosted operational first-time resolution figures.",
+    outcome: "Predictive parts allocation and matching boosted operational first time resolution figures.",
     metrics: [
-      { label: "First-visit job resolution performance", value: "+20%" },
+      { label: "First visit job resolution performance", value: "+20%" },
       { label: "Total dispatcher fuel usage reduction", value: "30%" },
       { label: "Field team route optimization", value: "100%" }
     ],
@@ -130,15 +130,15 @@ const ALL_CASE_STUDIES = [
     industry: "Financial Services",
     practice: "Data Engineering",
     title: "Unified RIA Client Reporting Engine",
-    description: "Engineered a centralized data warehouse and business intelligence platform for a top-tier advisory network.",
+    description: "Engineered a centralized data warehouse and business intelligence platform for a top tier advisory network.",
     challenge: "Advisors manually assembled asset balances from disconnected CRMs, causing monthly client reports to take weeks to produce and increasing manual errors.",
-    solution: "We unified CRM pipelines with Snowflake, centralizing client performance analytics and automating end-of-month reporting output.",
+    solution: "We unified CRM pipelines with Snowflake, centralizing client performance analytics and automating end of month reporting output.",
     delivery: "The implementation took exactly 6 weeks. The delivery squad consisted of 1 Lead Analytics Engineer and 1 Financial Data Architect.",
     outcome: "Unified reporting instantly reduced operational friction across the advisory group.",
     metrics: [
       { label: "Time saved producing client report analytics", value: "-70%" },
       { label: "GLBA regulatory compliance enabled", value: "Yes" },
-      { label: "Consolidated enterprise-grade reporting", value: "100%" }
+      { label: "Consolidated enterprise grade reporting", value: "100%" }
     ],
     quote: "Consolidating our platforms saved weeks of manual labor each month.",
     author: "Managing Director, Cascade Wealth RIA",
@@ -151,7 +151,7 @@ const ALL_CASE_STUDIES = [
     practice: "AI & Digital Workers",
     title: "Underwriter Meeting AI Assistant",
     description: "Deployed custom NLP and generative AI worker automating loan documentation workflows.",
-    challenge: "Underwriters spent 6+ hours weekly transcribing client interviews, cross-referencing audit logs, and documenting loan files.",
+    challenge: "Underwriters spent 6+ hours weekly transcribing client interviews, cross referencing audit logs, and documenting loan files.",
     solution: "We deployed an AI worker using whisper models and AWS Bedrock to automatically summarize meeting records and compare financial points against lender underwriting standards.",
     delivery: "The assistant launched in 4 weeks. The delivery squad featured 1 Senior AI/ML Engineer and 1 Account Architect.",
     outcome: "The AI assistant eliminated repetitive data extraction, maximizing underwriters' productive time.",
@@ -290,7 +290,7 @@ export default async function CaseStudyDetailPage({ params }) {
                 </div>
 
                 <Link href="/book-a-fit-call/" className="btn btn-primary" style={{ width: '100%', display: 'inline-block', textAlign: 'center' }}>
-                  Book a Fit Call &rarr;
+                  Book a Fit Call &#8594;
                 </Link>
               </div>
             </aside>
@@ -304,7 +304,7 @@ export default async function CaseStudyDetailPage({ params }) {
               <blockquote className={styles.quoteText}>
                 "{study.quote}"
               </blockquote>
-              <cite className={styles.quoteAuthor}>— {study.author}</cite>
+              <cite className={styles.quoteAuthor}>{study.author}</cite>
             </div>
           </div>
         </section>

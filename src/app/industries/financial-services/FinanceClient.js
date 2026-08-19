@@ -16,14 +16,14 @@ if (typeof window !== "undefined") {
 const practicesData = [
   { practice: "Zoho Implementation Stack", what: "Zoho CRM for RIA / CPA / fintech sales and onboarding; Zoho Desk for service; integrations to Redtail, Wealthbox, Salesforce FSC", outcome: "Single CRM, unified client view, no double entry" },
   { practice: "Product Engineering", what: "Client portals, onboarding workflows, KYC / KYB apps, lender application workflows, custom fintech UIs", outcome: "Cut onboarding cycle time 40% with a branded portal" },
-  { practice: "AI & Digital Workers", what: "Document AI on statements, tax docs, applications; meeting-summary copilots with compliance guardrails; RAG over internal knowledge", outcome: "Back-office document cycle time cut 50% with HITL" },
+  { practice: "AI & Digital Workers", what: "Document AI on statements, tax docs, applications; meeting summary copilots with compliance guardrails; RAG over internal knowledge", outcome: "Back office document cycle time cut 50% with HITL" },
   { practice: "Data Engineering", what: "Snowflake / Fabric warehouse unifying CRM, custodian, accounting, marketing; BI on AUM, pipeline, realization", outcome: "One trusted BI view the compliance officer approves" }
 ];
 
 const outcomesData = [
-  { firm: "20-Advisor RIA", result: "Consolidated Redtail + Orion + Microsoft 365 into a Zoho + Snowflake reporting stack that cut quarterly client-report cycle time by 70%." },
-  { firm: "Regional CPA Firm", result: "Shipped a document-AI workflow on tax statements that pulled 4 FTE-hours out of every engagement." },
-  { firm: "Fintech Lender", result: "Deployed a governed meeting-summary copilot that saved 6 hours per underwriter per week while meeting GLBA Safeguards Rule expectations." }
+  { firm: "20 Advisor RIA", result: "Consolidated Redtail + Orion + Microsoft 365 into a Zoho + Snowflake reporting stack that cut quarterly client report cycle time by 70%." },
+  { firm: "Regional CPA Firm", result: "Shipped a document AI workflow on tax statements that pulled 4 FTE hours out of every engagement." },
+  { firm: "Fintech Lender", result: "Deployed a governed meeting summary copilot that saved 6 hours per underwriter per week while meeting GLBA Safeguards Rule expectations." }
 ];
 
 export default function FinanceClient() {
@@ -88,11 +88,11 @@ export default function FinanceClient() {
             </div>
             <h1 className={`hero-animate ${pageStyles.heroH1}`}>CRM, reporting, and governed AI for RIAs, CPA firms, fintech, and lenders.</h1>
             <p className={`hero-animate ${pageStyles.heroSub}`} style={{ maxWidth: '750px' }}>
-              A CRM that every advisor updates. A reporting layer that satisfies SOC 2, GLBA, and the state you operate in. A document-AI workflow that reads statements, extracts KYC data, and routes exceptions to a human. A governed AI pilot that drafts the low-risk client email without ever touching regulated content. FI Digital ships that stack for RIAs, CPA firms, fintech operators, and mid-market lenders.
+              A CRM that every advisor updates. A reporting layer that satisfies SOC 2, GLBA, and the state you operate in. A document AI workflow that reads statements, extracts KYC data, and routes exceptions to a human. A governed AI pilot that drafts the low risk client email without ever touching regulated content. FI Digital ships that stack for RIAs, CPA firms, fintech operators, and mid market lenders.
             </p>
             <div className={`hero-animate ${pageStyles.heroCtas}`}>
-              <Link href="/book-a-fit-call/?industry=financial-services" className="btn btn-primary">Book a fit call &rarr;</Link>
-              <Link href="/packages/" className="btn btn-secondary">See relevant packages &rarr;</Link>
+              <Link href="/book-a-fit-call/?industry=financial-services" className="btn btn-primary">Book a fit call &#8594;</Link>
+              <Link href="/packages/" className="btn btn-secondary">See relevant packages &#8594;</Link>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function FinanceClient() {
           <div className={styles.whyTextCentered}>
             <h2 className={pageStyles.sectionTitleCentered}>The Industry Challenge</h2>
             <p className={styles.whyParagraphCentered}>
-              US financial-services SMBs sit on three hard constraints: regulated data, regulated workflows, and state-by-state AI disclosure. The cloud-native AI demos that run on other SMB sites do not survive contact with a custodian, a compliance officer, or a state insurance regulator. FI Digital engages financial-services clients with that constraint first — governance, then workflow, then technology. Our AI pilots ship with audit logs, a kill-switch, human-in-the-loop approval, and a disclosure plan mapped to the states where your clients live.
+              US financial services SMBs sit on three hard constraints: regulated data, regulated workflows, and state by state AI disclosure. The cloud native AI demos that run on other SMB sites do not survive contact with a custodian, a compliance officer, or a state insurance regulator. FI Digital engages financial services clients with that constraint first, governance, then workflow, then technology. Our AI pilots ship with audit logs, a kill switch, human in the loop approval, and a disclosure plan mapped to the states where your clients live.
             </p>
           </div>
         </div>

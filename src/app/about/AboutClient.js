@@ -70,12 +70,12 @@ export default function AboutClient() {
 
         <div className={`container ${pageStyles.heroContainer}`}>
           <div className={pageStyles.heroContent} style={{ maxWidth: '800px' }}>
-            <h1 className={`hero-animate ${pageStyles.heroH1}`}>Built to end the duct-tape stack.</h1>
+            <h1 className={`hero-animate ${pageStyles.heroH1}`}>Built to end the duct tape stack.</h1>
             <p className={`hero-animate ${pageStyles.heroSub}`} style={{ maxWidth: '750px' }}>
-              FI Digital is a US SMB transformation partner. We were founded to solve the pattern we kept watching SMBs fall into — a Zoho partner here, a web-app shop there, an AI freelancer off a Slack community, a data contractor on a retainer, and 12 months of duct tape between them. We built one firm with four integrated practices so the seams disappear.
+              FI Digital is a US SMB transformation partner. We were founded to solve the pattern we kept watching SMBs fall into, a Zoho partner here, a web app shop there, an AI freelancer off a Slack community, a data contractor on a retainer, and 12 months of duct tape between them. We built one firm with four integrated practices so the seams disappear.
             </p>
             <div className={`hero-animate ${pageStyles.heroCtas}`}>
-              <Link href="/book-a-fit-call/" className="btn btn-primary">Book a Fit Call &rarr;</Link>
+              <Link href="/book-a-fit-call/" className="btn btn-primary">Book a Fit Call &#8594;</Link>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function AboutClient() {
           <div className={styles.whyTextCentered}>
             <h2 className={pageStyles.sectionTitleCentered}>We build. We do not just advise.</h2>
             <p className={styles.whyParagraphCentered}>
-              Most firms that look like us sell advisory engagements and hand you a slide deck. We sell outcomes and ship production code, configuration, and integrations. Every engagement has a US account lead, a senior practice lead, and a delivery squad. Every engagement ends with something you can actually use — a running Zoho system, a production MVP, a live AI pilot, a trusted BI dashboard.
+              Most firms that look like us sell advisory engagements and hand you a slide deck. We sell outcomes and ship production code, configuration, and integrations. Every engagement has a US account lead, a senior practice lead, and a delivery squad. Every engagement ends with something you can actually use, a running Zoho system, a production MVP, a live AI pilot, a trusted BI dashboard.
             </p>
           </div>
         </div>
@@ -109,9 +109,9 @@ export default function AboutClient() {
       <section className={`${styles.sectionWhy} scroll-section`} style={{ borderTop: 'none' }}>
         <div className="container">
           <div className={styles.whyTextCentered}>
-            <h2 className={pageStyles.sectionTitleCentered}>US-based account leads. Global delivery bench.</h2>
+            <h2 className={pageStyles.sectionTitleCentered}>US based account leads. Global delivery bench.</h2>
             <p className={styles.whyParagraphCentered}>
-              Every client has a US-based account lead and a US-based practice lead on every engagement. Our delivery bench includes senior engineers, Zoho-certified consultants, data platform architects, and AI engineers distributed across multiple time zones so we can ship on 24/5 cadences when the work demands it. We do not sell staff-augmentation, we do not quote hourly rates, and we do not put junior consultants in lead roles.
+              Every client has a US based account lead and a US based practice lead on every engagement. Our delivery bench includes senior engineers, Zoho certified consultants, data platform architects, and AI engineers distributed across multiple time zones so we can ship on 24/5 cadences when the work demands it. We do not sell staff augmentation, we do not quote hourly rates, and we do not put junior consultants in lead roles.
             </p>
           </div>
         </div>
@@ -133,29 +133,29 @@ export default function AboutClient() {
               </thead>
               <tbody className="stagger-grid">
                 <tr className="stagger-card">
-                  <td className={styles.competitorName}>Large consultancy (Deloitte / Accenture / Bain-X)</td>
-                  <td className={styles.howTheyEngage}>Six-month advisory discovery, minimum engagement size that prices out SMBs</td>
-                  <td className={styles.howFiDifferent}>Fixed-fee starting offers, US SMB-sized engagements, production build after Discovery</td>
+                  <td className={styles.competitorName}>Large consultancy (Deloitte / Accenture / Bain X)</td>
+                  <td className={styles.howTheyEngage}>Six month advisory discovery, minimum engagement size that prices out SMBs</td>
+                  <td className={styles.howFiDifferent}>Fixed fee starting offers, US SMB sized engagements, production build after Discovery</td>
                 </tr>
                 <tr className="stagger-card">
                   <td className={styles.competitorName}>Offshore dev shop / staff aug</td>
-                  <td className={styles.howTheyEngage}>Hourly rates, bodies-in-seats, weak account layer</td>
-                  <td className={styles.howFiDifferent}>US account lead, fixed-fee scope, outcome-based, IP transfer on acceptance</td>
+                  <td className={styles.howTheyEngage}>Hourly rates, bodies in seats, weak account layer</td>
+                  <td className={styles.howFiDifferent}>US account lead, fixed fee scope, outcome based, IP transfer on acceptance</td>
                 </tr>
                 <tr className="stagger-card">
                   <td className={styles.competitorName}>Boutique Zoho partner</td>
-                  <td className={styles.howTheyEngage}>Zoho-only capability, no AI / data / engineering depth</td>
+                  <td className={styles.howTheyEngage}>Zoho only capability, no AI / data / engineering depth</td>
                   <td className={styles.howFiDifferent}>Zoho is one of four practices; we can deliver AI, data, and custom product engineering on the same engagement</td>
                 </tr>
                 <tr className="stagger-card">
-                  <td className={styles.competitorName}>Single-practice AI agency</td>
+                  <td className={styles.competitorName}>Single practice AI agency</td>
                   <td className={styles.howTheyEngage}>AI pilots without data foundations, no governance discipline, no production handover</td>
-                  <td className={styles.howFiDifferent}>One-Workflow AI Pilots on real data foundations with governance shipped from day one</td>
+                  <td className={styles.howFiDifferent}>One Workflow AI Pilots on real data foundations with governance shipped from day one</td>
                 </tr>
                 <tr className="stagger-card">
                   <td className={styles.competitorName}>Freelancer / contractor</td>
                   <td className={styles.howTheyEngage}>No continuity, no insurance, no governance</td>
-                  <td className={styles.howFiDifferent}>Registered US entity, professional indemnity, SOC 2-aligned practices, managed-services bench for day two</td>
+                  <td className={styles.howFiDifferent}>Registered US entity, professional indemnity, SOC 2 aligned practices, managed services bench for day two</td>
                 </tr>
               </tbody>
             </table>
@@ -169,7 +169,7 @@ export default function AboutClient() {
           <div className={styles.whyTextCentered}>
             <h2 className={pageStyles.sectionTitleCentered}>Leadership & Delivery</h2>
             <p className={styles.whyParagraphCentered}>
-              The US leadership team is based in Atlanta, Georgia. Each practice is led by a practice lead with 10+ years of SMB and growth-stage experience. Practice leads carry Zoho Premium, AWS, Azure, Databricks, and Snowflake credentials as appropriate. Delivery squads are senior-heavy and are distributed globally so that engagements can ship on fast cadences.
+              The US leadership team is based in Atlanta, Georgia. Each practice is led by a practice lead with 10+ years of SMB and growth stage experience. Practice leads carry Zoho Premium, AWS, Azure, Databricks, and Snowflake credentials as appropriate. Delivery squads are senior heavy and are distributed globally so that engagements can ship on fast cadences.
             </p>
           </div>
 
@@ -177,13 +177,13 @@ export default function AboutClient() {
             {[
               { 
                 name: "Pratik Modi", 
-                role: "CEO & Co-Founder", 
+                role: "CEO & Co Founder", 
                 image: "/images/team/pratikmodi.webp", 
                 linkedIn: "https://www.linkedin.com/in/iampratikmodi/" 
               },
               { 
                 name: "Paras Shah", 
-                role: "CTO & Co-Founder", 
+                role: "CTO & Co Founder", 
                 image: "/images/team/paras.png", 
                 linkedIn: "https://www.linkedin.com/in/parasshah1955/" 
               },
@@ -208,7 +208,7 @@ export default function AboutClient() {
                   <h3 className={styles.leaderName}>{leader.name}</h3>
                   <div className={styles.leaderRole}>{leader.role}</div>
                   <div className={styles.leaderCredentials}>{leader.credentials}</div>
-                  <a href={leader.linkedIn} className={styles.leaderLinkedIn} target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a>
+                  <a href={leader.linkedIn} className={styles.leaderLinkedIn} target="_blank" rel="noopener noreferrer">LinkedIn &#8594;</a>
                 </div>
               </div>
             ))}
@@ -227,7 +227,7 @@ export default function AboutClient() {
             {[
               { title: "Scope in Writing", text: "We will scope in writing before we invoice. No surprises, no hidden fees." },
               { title: "Fixed Fees Preferred", text: "We will publish fixed fees where a fixed fee is possible." },
-              { title: "Direct Referrals", text: "We will tell you if your problem is not our problem, and refer you to a better-fit firm if so." },
+              { title: "Direct Referrals", text: "We will tell you if your problem is not our problem, and refer you to a better fit firm if so." },
               { title: "IP Transfer", text: "We will transfer code and IP on acceptance, ensuring complete ownership." },
               { title: "Runbook Documentation", text: "We will give you a runbook and documentation on every production handover." },
               { title: "Enterprise Grade", text: "We will sign SOC 2 aligned security commitments, NDAs, DPAs, and BAAs where applicable." }

@@ -4,7 +4,7 @@ import aboutStyles from '../about/about.module.css';
 
 export const metadata = {
   title: 'Trust & Security | SOC 2, HIPAA, GLBA, AI Governance | FI Digital',
-  description: 'FI Digital\'s Trust & Security page. SOC 2 Type II aligned delivery, HIPAA support, GLBA, CCPA, and governed AI with model cards, audit logs, and human-in-the-loop.',
+  description: 'FI Digital\'s Trust & Security page. SOC 2 Type II aligned delivery, HIPAA support, GLBA, CCPA, and governed AI with model cards, audit logs, and human in the loop.',
 };
 
 const trustFaqSchema = {
@@ -16,7 +16,7 @@ const trustFaqSchema = {
       "name": "Are you SOC 2 Type II certified?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our delivery practices align with SOC 2 Type II controls and a Delivery Security Summary is available on NDA. Clients seeking a full SOC 2 Type II report from a vendor should reach out — we will scope the evidence, controls, and subservice posture."
+        "text": "Our delivery practices align with SOC 2 Type II controls and a Delivery Security Summary is available on NDA. Clients seeking a full SOC 2 Type II report from a vendor should reach out, we will scope the evidence, controls, and subservice posture."
       }
     },
     {
@@ -40,7 +40,7 @@ const trustFaqSchema = {
       "name": "What about international data transfer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We default to US-region hosting. Cross-border transfer is scoped explicitly when required (e.g., Canadian clients with Canadian-resident users)."
+        "text": "We default to US region hosting. Cross border transfer is scoped explicitly when required (e.g., Canadian clients with Canadian resident users)."
       }
     },
     {
@@ -48,7 +48,7 @@ const trustFaqSchema = {
       "name": "Do you conduct penetration testing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Production builds ship with static analysis and dependency scanning on CI. Full penetration testing is scoped separately, often via a client-chosen third-party testing firm."
+        "text": "Production builds ship with static analysis and dependency scanning on CI. Full penetration testing is scoped separately, often via a client chosen third party testing firm."
       }
     }
   ]
@@ -69,7 +69,7 @@ export default function TrustSecurityPage() {
         {/* TRUST FAQ SECTION */}
         <section className={aboutStyles.sectionFaq}>
           <div className="container">
-            <h2 className={styles.sectionTitleCentered}>Trust — Frequently Asked Questions</h2>
+            <h2 className={styles.sectionTitleCentered}>Trust, Frequently Asked Questions</h2>
             
             <div className={aboutStyles.faqList}>
               {trustFaqSchema.mainEntity.map((faq, index) => (

@@ -2,8 +2,8 @@ import QuickstartClient from './QuickstartClient';
 import styles from '../../../page.module.css';
 
 export const metadata = {
-  title: "Zoho CRM QuickStart | Fixed-Fee CRM Setup in 3–5 Weeks | FI Digital",
-  description: "Get your Zoho CRM live in 3–5 weeks with FI Digital's fixed-fee QuickStart. Sales pipelines, lead routing, data migration, and user training — all included. Zoho Premium Partner, Atlanta GA.",
+  title: "Zoho CRM QuickStart | Fixed Fee CRM Setup in 3 to 5 Weeks | FI Digital",
+  description: "Get your Zoho CRM live in 3 to 5 weeks with FI Digital's fixed fee QuickStart. Sales pipelines, lead routing, data migration, and user training, all included. Zoho Premium Partner, Atlanta GA.",
   alternates: {
     canonical: "https://fidigital.com/solutions/zoho-implementation/zoho-crm-quickstart/",
   },
@@ -19,7 +19,7 @@ export default function QuickstartPage() {
         "name": "What is the Zoho CRM QuickStart?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The Zoho CRM QuickStart is FI Digital's fixed-fee implementation package. In 3 to 5 weeks we configure your CRM, migrate your data from one source system, connect your email and calendar tool, automate your pipeline, run up to 2 role-specific training sessions, and hand you over with 30 days of post-go-live admin support. One fixed scope, one fixed fee."
+          "text": "The Zoho CRM QuickStart is FI Digital's fixed fee implementation package. In 3 to 5 weeks we configure your CRM, migrate your data from one source system, connect your email and calendar tool, automate your pipeline, run up to 2 role specific training sessions, and hand you over with 30 days of post go live admin support. One fixed scope, one fixed fee."
         }
       },
       {
@@ -27,7 +27,7 @@ export default function QuickstartPage() {
         "name": "How much does a Zoho CRM QuickStart cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We publish a starting-from price on the Packages page. The fixed fee depends on user count, data migration complexity, number of pipelines, and integrations in scope. All QuickStart engagements are fixed fee, not hourly. Five factors that move the price above the starting floor are described in Section 4 above."
+          "text": "We publish a starting from price on the Packages page. The fixed fee depends on user count, data migration complexity, number of pipelines, and integrations in scope. All QuickStart engagements are fixed fee, not hourly. Five factors that move the price above the starting floor are described in Section 4 above."
         }
       },
       {
@@ -35,7 +35,7 @@ export default function QuickstartPage() {
         "name": "How long does the QuickStart take?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "3 to 5 weeks from signed agreement to go-live. The timeline includes discovery, design, build, a pilot-user review period, training, and go-live cutover. Most QuickStart engagements kick off within 2 weeks of a signed agreement."
+          "text": "3 to 5 weeks from signed agreement to go live. The timeline includes discovery, design, build, a pilot user review period, training, and go live cutover. Most QuickStart engagements kick off within 2 weeks of a signed agreement."
         }
       },
       {
@@ -43,15 +43,15 @@ export default function QuickstartPage() {
         "name": "Can you migrate our data from Salesforce or HubSpot?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. The QuickStart includes migration from one source system — Salesforce, HubSpot, Pipedrive, or a CSV export. We map fields, migrate accounts, contacts, leads, deals, activities, and notes, and stage the cutover to minimize disruption. Multiple source-system migrations are quoted as an add-on."
+          "text": "Yes. The QuickStart includes migration from one source system: Salesforce, HubSpot, Pipedrive, or a CSV export. We map fields, migrate accounts, contacts, leads, deals, activities, and notes, and stage the cutover to minimize disruption. Multiple source system migrations are quoted as an add on."
         }
       },
       {
         "@type": "Question",
-        "name": "What happens after go-live?",
+        "name": "What happens after go live?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The QuickStart includes 30 days of post-go-live admin support. After that, most clients move to a Zoho Managed Services retainer for ongoing admin, optimization, and enhancements — or hand off to an internal admin with our playbooks."
+          "text": "The QuickStart includes 30 days of post go live admin support. After that, most clients move to a Zoho Managed Services retainer for ongoing admin, optimization, and enhancements, or hand off to an internal admin with our playbooks."
         }
       },
       {
@@ -59,7 +59,7 @@ export default function QuickstartPage() {
         "name": "What changes the price?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Five factors: (1) number of users and roles, (2) data migration volume and source-system complexity, (3) number of sales pipelines beyond three, (4) additional integrations beyond one email tool, and (5) custom Zoho Creator apps or complex multi-branch automation."
+          "text": "Five factors: (1) number of users and roles, (2) data migration volume and source system complexity, (3) number of sales pipelines beyond three, (4) additional integrations beyond one email tool, and (5) custom Zoho Creator apps or complex multi branch automation."
         }
       },
       {
@@ -83,7 +83,7 @@ export default function QuickstartPage() {
         "name": "Can we expand beyond the QuickStart later?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. The QuickStart is Phase 1. Clients commonly follow with a Zoho Desk Setup, Zoho Marketing Automation Launch, additional integrations, or a Zoho Creator app build — all as separate fixed-fee engagements by the same team."
+          "text": "Yes. The QuickStart is Phase 1. Clients commonly follow with a Zoho Desk Setup, Zoho Marketing Automation Launch, additional integrations, or a Zoho Creator app build, all as separate fixed fee engagements by the same team."
         }
       },
       {
@@ -113,7 +113,7 @@ export default function QuickstartPage() {
       "@type": "Organization",
       "name": "FI Digital"
     },
-    "description": "Get a production Zoho CRM live in 3 to 5 weeks with FI Digital's fixed-fee QuickStart implementation.",
+    "description": "Get a production Zoho CRM live in 3 to 5 weeks with FI Digital's fixed fee QuickStart implementation.",
     "areaServed": "US",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -146,7 +146,7 @@ export default function QuickstartPage() {
         {/* FAQ SECTION */}
         <section className={`${styles.sectionFaq} scroll-section`}>
           <div className="container">
-            <h2 className={styles.sectionTitleCentered}>FAQ — Zoho CRM QuickStart</h2>
+            <h2 className={styles.sectionTitleCentered}>FAQ, Zoho CRM QuickStart</h2>
             
             <div className={styles.faqList}>
               {faqSchema.mainEntity.map((faq, index) => (

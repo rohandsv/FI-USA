@@ -14,13 +14,13 @@ if (typeof window !== "undefined") {
 }
 
 const packagesData = [
-  { name: "AI Opportunity Workshop", outcome: "A scored map of 10-15 AI candidate workflows with ROI hypotheses", timeline: "1-2 weeks", model: "Fixed fee" },
-  { name: "One-Workflow AI Pilot", outcome: "Production pilot on one workflow with measured lift and audit logs", timeline: "4-6 weeks", model: "Fixed fee" },
-  { name: "Support Copilot", outcome: "Agent-assist or deflection copilot on Zoho Desk / Zendesk / Intercom", timeline: "6-10 weeks", model: "Fixed fee" },
-  { name: "Internal Knowledge Assistant (RAG)", outcome: "Company knowledge base answer assistant with citations", timeline: "6-10 weeks", model: "Fixed fee" },
-  { name: "Document AI Workflow", outcome: "Extraction, validation, and routing for invoices, contracts, claims, or forms", timeline: "6-12 weeks", model: "Fixed fee" },
-  { name: "SDR / Outbound AI", outcome: "AI-drafted outbound email with human approval and CRM sync", timeline: "6-10 weeks", model: "Fixed fee" },
-  { name: "Multi-Workflow AI Rollout", outcome: "Portfolio of 3-5 AI workflows with shared governance and observability", timeline: "3-6 months", model: "Custom proposal after discovery" }
+  { name: "AI Opportunity Workshop", outcome: "A scored map of 10 to 15 AI candidate workflows with ROI hypotheses", timeline: "1 to 2 weeks", model: "Fixed fee" },
+  { name: "One Workflow AI Pilot", outcome: "Production pilot on one workflow with measured lift and audit logs", timeline: "4 to 6 weeks", model: "Fixed fee" },
+  { name: "Support Copilot", outcome: "Agent assist or deflection copilot on Zoho Desk / Zendesk / Intercom", timeline: "6 to 10 weeks", model: "Fixed fee" },
+  { name: "Internal Knowledge Assistant (RAG)", outcome: "Company knowledge base answer assistant with citations", timeline: "6 to 10 weeks", model: "Fixed fee" },
+  { name: "Document AI Workflow", outcome: "Extraction, validation, and routing for invoices, contracts, claims, or forms", timeline: "6 to 12 weeks", model: "Fixed fee" },
+  { name: "SDR / Outbound AI", outcome: "AI drafted outbound email with human approval and CRM sync", timeline: "6 to 10 weeks", model: "Fixed fee" },
+  { name: "Multi Workflow AI Rollout", outcome: "Portfolio of 3 to 5 AI workflows with shared governance and observability", timeline: "3 to 6 months", model: "Custom proposal after discovery" }
 ];
 
 const integrationsStack = [
@@ -41,7 +41,7 @@ const integrationsStack = [
   },
   {
     category: "Orchestration & Vector",
-    stack: "LangChain, LlamaIndex, n8n, custom tool-use layers, pgvector, Pinecone, Azure AI Search",
+    stack: "LangChain, LlamaIndex, n8n, custom tool use layers, pgvector, Pinecone, Azure AI Search",
     logos: []
   }
 ];
@@ -111,17 +111,17 @@ export default function AiClient() {
         <div className={`container ${styles.heroContainer}`}>
           <div className={styles.heroContent}>
             <div className="hero-animate">
-              <span className={styles.eyebrow}>Governed AI for US SMB and mid-market ops</span>
+              <span className={styles.eyebrow}>Governed AI for US SMB and mid market ops</span>
             </div>
             <h1 className={`hero-animate ${styles.heroH1}`}>
               Pick one workflow.<br />Prove the lift.<br />Then scale.
             </h1>
             <p className={`hero-animate ${styles.heroSub}`}>
-              The AI that matters for a US SMB is not a demo and it is not a chatbot. It is a governed digital worker sitting inside one real workflow — triaging tickets, drafting SDR emails, summarizing sales calls, reading invoices, matching claims, or routing contracts — with audit logs, a kill-switch, and a human-in-the-loop layer. FI Digital ships One-Workflow AI Pilots as fixed-fee engagements so you get <Link href="/case-studies/?practice=ai" style={{textDecoration: 'underline'}}>measurable lift</Link> in 4 to 6 weeks without committing to a six-month "AI transformation" engagement.
+              The AI that matters for a US SMB is not a demo and it is not a chatbot. It is a governed digital worker sitting inside one real workflow, triaging tickets, drafting SDR emails, summarizing sales calls, reading invoices, matching claims, or routing contracts, with audit logs, a kill switch, and a human in the loop layer. FI Digital ships One Workflow AI Pilots as fixed fee engagements so you get <Link href="/case-studies/?practice=ai" style={{textDecoration: 'underline'}}>measurable lift</Link> in 4 to 6 weeks without committing to a six month "AI transformation" engagement.
             </p>
             <div className={`hero-animate ${styles.heroCtas}`}>
-              <Link href="/packages/#one-workflow-ai-pilot" className="btn btn-primary">Start with one AI workflow &rarr;</Link>
-              <Link href="/packages/#ai-opportunity-workshop" className="btn btn-outline">Book an AI Opportunity Workshop &rarr;</Link>
+              <Link href="/packages/#one-workflow-ai-pilot" className="btn btn-primary">Start with one AI workflow &#8594;</Link>
+              <Link href="/packages/#ai-opportunity-workshop" className="btn btn-outline">Book an AI Opportunity Workshop &#8594;</Link>
             </div>
           </div>
         </div>
@@ -132,7 +132,7 @@ export default function AiClient() {
               <li className="hero-animate">AI & LLM Integration</li>
               <li className="hero-animate">200+ projects delivered &middot; 10 years</li>
               <li className="hero-animate">SOC 2 Type II aligned delivery</li>
-              <li className="hero-animate">US-based account leads</li>
+              <li className="hero-animate">US based account leads</li>
               <li className="hero-animate">AWS and Azure delivery partners</li>
             </ul>
           </div>
@@ -185,36 +185,36 @@ export default function AiClient() {
       <section className={`${aiStyles.sectionMethod} scroll-section`}>
         <div className="container">
           <h2 className={styles.sectionTitleCentered}>How an AI Pilot Actually Works</h2>
-          <p className={styles.sectionIntroCentered}>A structured, 6-week engagement that delivers measured lift without the risk of a long-term transformation project.</p>
+          <p className={styles.sectionIntroCentered}>A structured, 6 week engagement that delivers measured lift without the risk of a long term transformation project.</p>
 
           <div className={aiStyles.methodGrid}>
             <div className={aiStyles.methodTimeline}>
               <div className={aiStyles.methodStep}>
                 <div className={aiStyles.stepIcon}>1</div>
                 <div className={aiStyles.stepContent}>
-                  <h4>Weeks 1-2: Discovery</h4>
+                  <h4>Weeks 1 to 2: Discovery</h4>
                   <p>We interview the team that owns the workflow, quantify the current cost, map the data the workflow reads and writes, and define one success metric.</p>
                 </div>
               </div>
               <div className={aiStyles.methodStep}>
                 <div className={aiStyles.stepIcon}>2</div>
                 <div className={aiStyles.stepContent}>
-                  <h4>Weeks 2-3: Design</h4>
-                  <p>We choose the foundation model (Claude, GPT-4o / GPT-5, or an open model hosted on Bedrock / Azure), design the prompt and tool-use architecture, and write the guardrail spec.</p>
+                  <h4>Weeks 2 to 3: Design</h4>
+                  <p>We choose the foundation model (Claude, GPT-4o / GPT-5, or an open model hosted on Bedrock / Azure), design the prompt and tool use architecture, and write the guardrail spec.</p>
                 </div>
               </div>
               <div className={aiStyles.methodStep}>
                 <div className={aiStyles.stepIcon}>3</div>
                 <div className={aiStyles.stepContent}>
-                  <h4>Weeks 3-5: Build &amp; Shadow Mode</h4>
-                  <p>We ship a shadow-mode deployment so the AI runs alongside the human for two weeks without touching production.</p>
+                  <h4>Weeks 3 to 5: Build &amp; Shadow Mode</h4>
+                  <p>We ship a shadow mode deployment so the AI runs alongside the human for two weeks without touching production.</p>
                 </div>
               </div>
               <div className={aiStyles.methodStep}>
                 <div className={aiStyles.stepIcon}>4</div>
                 <div className={aiStyles.stepContent}>
-                  <h4>Weeks 5-6: Go-Live &amp; Measure</h4>
-                  <p>We cut the AI into production behind a kill-switch, run a two-week measured period, and deliver a final report with lift, cost, and scaling plan.</p>
+                  <h4>Weeks 5 to 6: Go Live &amp; Measure</h4>
+                  <p>We cut the AI into production behind a kill switch, run a two week measured period, and deliver a final report with lift, cost, and scaling plan.</p>
                 </div>
               </div>
             </div>
@@ -237,14 +237,14 @@ export default function AiClient() {
         <div className={`container ${aiStyles.governanceGrid}`}>
           <div className={aiStyles.governanceTextCol}>
             <h2 className={styles.sectionTitle}>Governance and Guardrails (Read This First)</h2>
-            <p>Every AI pilot FI Digital ships comes with a governance kit: a model card describing the model, the training data class, and the intended use; a prompt and output log retained for at least 90 days; a human-in-the-loop escalation path for any decision that touches customers or regulated data; an evaluation set run before every production change; and a kill-switch that turns off the AI without a deploy.</p>
-            <p>For customer-facing workflows we ship a disclosure plan that complies with the Colorado AI Act, the Utah AI Policy Act, NYC Local Law 144, and the Illinois AI Video Interview Act, depending on where your customers are.</p>
-            <p><strong>We will not deliver an autonomous agent into a customer workflow without <Link href="/trust-security/" style={{textDecoration: 'underline'}}>approved guardrails</Link></strong> — if you need that, we will tell you before we take your money.</p>
+            <p>Every AI pilot FI Digital ships comes with a governance kit: a model card describing the model, the training data class, and the intended use; a prompt and output log retained for at least 90 days; a human in the loop escalation path for any decision that touches customers or regulated data; an evaluation set run before every production change; and a kill switch that turns off the AI without a deploy.</p>
+            <p>For customer facing workflows we ship a disclosure plan that complies with the Colorado AI Act, the Utah AI Policy Act, NYC Local Law 144, and the Illinois AI Video Interview Act, depending on where your customers are.</p>
+            <p><strong>We will not deliver an autonomous agent into a customer workflow without <Link href="/trust-security/" style={{textDecoration: 'underline'}}>approved guardrails</Link></strong>, if you need that, we will tell you before we take your money.</p>
           </div>
           <div className={aiStyles.governanceImageCol}>
             <Image 
               src="/images/ai-governance-diagram.png" 
-              alt="AI Governance and Guardrails: Model Card, Prompt Log, Eval Set, HITL, Kill-Switch" 
+              alt="AI Governance and Guardrails: Model Card, Prompt Log, Eval Set, HITL, Kill Switch" 
               fill 
               style={{ objectFit: 'cover' }}
               onError={(e) => e.target.style.display = 'none'}
@@ -296,7 +296,7 @@ export default function AiClient() {
         <div className="container">
           <h2 className={styles.sectionTitleCentered}>Ready to ship your first AI workflow?</h2>
           <p className={styles.sectionIntroCentered} style={{ marginBottom: '3rem' }}>
-            Get a fixed-fee pilot scoped to your operations, or review our past AI deliverables.
+            Get a fixed fee pilot scoped to your operations, or review our past AI deliverables.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/book-a-fit-call/?practice=ai" className="btn btn-primary">Book a Fit Call</Link>

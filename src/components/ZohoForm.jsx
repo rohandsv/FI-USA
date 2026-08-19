@@ -125,7 +125,7 @@ const FORM_CSS = `
 }
 `;
 
-export default function ZohoForm() {
+export default function ZohoForm({ onSubmitted }) {
   useEffect(() => {
     window.reloadImg3209734000060076018 = function () {
       var captcha = document.getElementById('imgid3209734000060076018');
@@ -210,6 +210,18 @@ export default function ZohoForm() {
     };
   }, []);
 
+  const handleSubmit = (e) => {
+    if (!window.checkMandatory3209734000060076018()) {
+      e.preventDefault();
+      return;
+    }
+    // Validation passed — form will POST into the hidden iframe.
+    // Show thank you after a short delay to let the POST fire.
+    if (onSubmitted) {
+      setTimeout(onSubmitted, 500);
+    }
+  };
+
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: FORM_CSS }} />
@@ -219,14 +231,15 @@ export default function ZohoForm() {
           action="https://crm.zoho.com/crm/WebToLeadForm"
           name="WebToLeads3209734000060076018"
           method="POST"
-          onSubmit="javascript:document.charset='UTF-8'; return checkMandatory3209734000060076018()"
+          target="zoho_submit_frame"
+          onSubmit={handleSubmit}
           acceptCharset="UTF-8"
         >
           <input type="text" style={{ display: 'none' }} name="xnQsjsdp" defaultValue="7c42a34e0f527335db665511efdcca866a0206693114e239cf115370bb3804e9" readOnly />
           <input type="hidden" name="zc_gad" id="zc_gad" defaultValue="" />
           <input type="text" style={{ display: 'none' }} name="xmIwtLD" defaultValue="afe609924d7adaa602ad53109e77a1de992b33c001919f526e0443c8e334d775d1cc34036a59aea9537c15d7b7d981ae" readOnly />
           <input type="text" style={{ display: 'none' }} name="actionType" defaultValue="TGVhZHM=" readOnly />
-          <input type="text" style={{ display: 'none' }} name="returnURL" defaultValue="https://www.fidigital.co/contact" readOnly />
+          <input type="text" style={{ display: 'none' }} name="returnURL" defaultValue="about:blank" readOnly />
           <input type="text" style={{ display: 'none' }} id="ldeskuid" name="ldeskuid" defaultValue="" />
           <input type="text" style={{ display: 'none' }} id="LDTuvid" name="LDTuvid" defaultValue="" />
 
@@ -317,6 +330,9 @@ export default function ZohoForm() {
           </div>
         </form>
       </div>
+
+      {/* Hidden iframe — receives the Zoho POST so the page does not reload */}
+      <iframe name="zoho_submit_frame" style={{ display: 'none' }} />
 
       <Script
         src="https://crm.zohopublic.com/crm/WebFormServlet?rid=b3458fba8d6e2e3f7521cf39297fcd47106044ab5b0b717ca7e3ee318c99f608"
