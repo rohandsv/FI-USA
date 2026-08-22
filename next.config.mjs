@@ -7,7 +7,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Content-Security-Policy',
-            value: "frame-src 'self' https://crm.zoho.com https://crm.zohopublic.com;",
+            value: "frame-src 'self' https://crm.zoho.com https://crm.zohopublic.com https://salesiq.zoho.com;",
           },
         ],
       },

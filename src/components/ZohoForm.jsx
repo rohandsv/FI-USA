@@ -127,6 +127,25 @@ const FORM_CSS = `
 
 export default function ZohoForm({ onSubmitted }) {
   useEffect(() => {
+    // SalesIQ widget initialization — matches reference exactly
+    var $zoho = window.$zoho = window.$zoho || {};
+    $zoho.salesiq = $zoho.salesiq || {
+      widgetcode: 'siqb15f79c14b9eb7cedc1073ae066f888dd9c03bc51db4381ae6e445aa0868d683',
+      values: {},
+      ready: function () {}
+    };
+    var d = document;
+    var s = d.createElement('script');
+    s.type = 'text/javascript';
+    s.id = 'zsiqscript';
+    s.defer = true;
+    s.src = 'https://salesiq.zoho.com/widget';
+    var t = d.getElementsByTagName('script')[0];
+    if (t && t.parentNode && !d.getElementById('zsiqscript')) {
+      t.parentNode.insertBefore(s, t);
+    }
+
+    /* Do not remove this code. */
     window.reloadImg3209734000060076018 = function () {
       var captcha = document.getElementById('imgid3209734000060076018');
       if (!captcha) return;
@@ -137,16 +156,23 @@ export default function ZohoForm({ onSubmitted }) {
       }
     };
 
+    window.historyBack3209734000060076018 = function () {
+      document.querySelector('.crmWebToEntityForm .formsubmit')?.removeAttribute('disabled');
+      window.reloadImg3209734000060076018();
+      window.removeEventListener('focus', window.historyBack3209734000060076018);
+    };
+
     window.validateEmail3209734000060076018 = function () {
       var form = document.forms['WebToLeads3209734000060076018'];
       var emailFld = form.querySelectorAll('[ftype=email]');
-      for (var i = 0; i < emailFld.length; i++) {
+      var i;
+      for (i = 0; i < emailFld.length; i++) {
         var emailVal = emailFld[i].value;
-        if (emailVal.trim().length !== 0) {
+        if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) {
           var atpos = emailVal.indexOf('@');
           var dotpos = emailVal.lastIndexOf('.');
           if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
-            alert('Please enter a valid email address.');
+            alert('Please enter a valid email address. ');
             emailFld[i].focus();
             return false;
           }
@@ -157,40 +183,81 @@ export default function ZohoForm({ onSubmitted }) {
 
     window.trackVisitor3209734000060076018 = function () {
       try {
-        var zoho = window.$zoho;
-        if (zoho && zoho.salesiq) {
-          var LDTuvidObj = document.forms['WebToLeads3209734000060076018']?.['LDTuvid'];
+        if (window.$zoho) {
+          var LDTuvidObj = document.forms['WebToLeads3209734000060076018']['LDTuvid'];
           if (LDTuvidObj) {
-            LDTuvidObj.value = zoho.salesiq.visitor.uniqueid();
+            LDTuvidObj.value = window.$zoho.salesiq.visitor.uniqueid();
+          }
+          var firstnameObj = document.forms['WebToLeads3209734000060076018']['First Name'];
+          if (firstnameObj) {
+            window._zohoVisitorName = firstnameObj.value + ' ' + (window._zohoVisitorName || '');
+          }
+          window.$zoho.salesiq.visitor.name(window._zohoVisitorName);
+          var emailObj = document.forms['WebToLeads3209734000060076018']['Email'];
+          if (emailObj) {
+            window.$zoho.salesiq.visitor.email(emailObj.value);
           }
         }
       } catch (e) {}
     };
 
     window.checkMandatory3209734000060076018 = function () {
-      var mndFileds = ['Company', 'First Name', 'Last Name', 'Email', 'Mobile'];
-      var fldLangVal = ['Company', 'First Name', 'Last Name', 'Email', 'Mobile'];
+      var mndFileds = new Array('Company', 'First Name', 'Last Name', 'Email', 'Mobile');
+      var fldLangVal = new Array('Company', 'First\x20Name', 'Last\x20Name', 'Email', 'Mobile');
       for (var i = 0; i < mndFileds.length; i++) {
         var fieldObj = document.forms['WebToLeads3209734000060076018'][mndFileds[i]];
         if (fieldObj) {
-          if (fieldObj.value.trim().length === 0) {
+          if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+            if (fieldObj.type == 'file') {
+              alert('Please select a file to upload.');
+              fieldObj.focus();
+              return false;
+            }
             alert(fldLangVal[i] + ' cannot be empty.');
             fieldObj.focus();
             return false;
+          } else if (fieldObj.nodeName == 'SELECT') {
+            if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+              alert(fldLangVal[i] + ' cannot be none.');
+              fieldObj.focus();
+              return false;
+            }
+          } else if (fieldObj.type == 'checkbox') {
+            if (fieldObj.checked == false) {
+              alert('Please accept  ' + fldLangVal[i]);
+              fieldObj.focus();
+              return false;
+            }
           }
+          try {
+            if (fieldObj.name == 'Last Name') {
+              window._zohoVisitorName = fieldObj.value;
+            }
+          } catch (e) {}
         }
       }
-      if (!window.validateEmail3209734000060076018()) return false;
       window.trackVisitor3209734000060076018();
-      document.getElementById('formsubmit').disabled = true;
-      document.getElementById('formsubmit').value = 'Sending...';
-      return true;
+      if (!window.validateEmail3209734000060076018()) {
+        return false;
+      }
+      var urlparams = new URLSearchParams(window.location.search);
+      if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) {
+        var webform = document.getElementById('webform3209734000060076018');
+        var service = urlparams.get('service');
+        var smarturlfield = document.createElement('input');
+        smarturlfield.setAttribute('type', 'hidden');
+        smarturlfield.setAttribute('value', service);
+        smarturlfield.setAttribute('name', 'service');
+        webform.appendChild(smarturlfield);
+      }
+      document.querySelector('.crmWebToEntityForm .formsubmit')?.setAttribute('disabled', true);
+      window.addEventListener('focus', window.historyBack3209734000060076018);
     };
 
     window.tooltipShow3209734000060076018 = function (el) {
       var tooltip = el.nextElementSibling;
       var tooltipDisplay = tooltip.style.display;
-      if (tooltipDisplay === 'none') {
+      if (tooltipDisplay == 'none') {
         var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
         for (var i = 0; i < allTooltip.length; i++) {
           allTooltip[i].style.display = 'none';
@@ -203,6 +270,7 @@ export default function ZohoForm({ onSubmitted }) {
 
     return () => {
       delete window.reloadImg3209734000060076018;
+      delete window.historyBack3209734000060076018;
       delete window.validateEmail3209734000060076018;
       delete window.trackVisitor3209734000060076018;
       delete window.checkMandatory3209734000060076018;
@@ -211,12 +279,12 @@ export default function ZohoForm({ onSubmitted }) {
   }, []);
 
   const handleSubmit = (e) => {
-    if (!window.checkMandatory3209734000060076018()) {
+    try { document.charset = 'UTF-8'; } catch (_) {}
+    if (window.checkMandatory3209734000060076018() === false) {
       e.preventDefault();
       return;
     }
     // Validation passed — form will POST into the hidden iframe.
-    // Show thank you after a short delay to let the POST fire.
     if (onSubmitted) {
       setTimeout(onSubmitted, 500);
     }
@@ -225,7 +293,7 @@ export default function ZohoForm({ onSubmitted }) {
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: FORM_CSS }} />
-      <div id="crmWebToEntityForm">
+      <div id="crmWebToEntityForm" className="zcwf_lblLeft crmWebToEntityForm">
         <form
           id="webform3209734000060076018"
           action="https://crm.zoho.com/crm/WebToLeadForm"
@@ -235,37 +303,39 @@ export default function ZohoForm({ onSubmitted }) {
           onSubmit={handleSubmit}
           acceptCharset="UTF-8"
         >
-          <input type="text" style={{ display: 'none' }} name="xnQsjsdp" defaultValue="7c42a34e0f527335db665511efdcca866a0206693114e239cf115370bb3804e9" readOnly />
+          <input type="text" style={{ display: 'none' }} name="xnQsjsdp" defaultValue="526da2c328bc79c83950c5bf87e802cec1865ee9aadd0517b7187c7c9fb940b0" />
           <input type="hidden" name="zc_gad" id="zc_gad" defaultValue="" />
-          <input type="text" style={{ display: 'none' }} name="xmIwtLD" defaultValue="afe609924d7adaa602ad53109e77a1de992b33c001919f526e0443c8e334d775d1cc34036a59aea9537c15d7b7d981ae" readOnly />
-          <input type="text" style={{ display: 'none' }} name="actionType" defaultValue="TGVhZHM=" readOnly />
-          <input type="text" style={{ display: 'none' }} name="returnURL" defaultValue="about:blank" readOnly />
+          <input type="text" style={{ display: 'none' }} name="xmIwtLD" defaultValue="8b3c8db641409c0ebcda7ba3f00e0c8933060493054704298a05d80ecc9f8259a45f38fab276ca4155b93508fb89c04b" />
+          <input type="text" style={{ display: 'none' }} name="actionType" defaultValue="TGVhZHM=" />
+          <input type="text" style={{ display: 'none' }} name="returnURL" defaultValue="https://www.fidigital.co/contact.html" />
+          {/* Do not remove this code. */}
           <input type="text" style={{ display: 'none' }} id="ldeskuid" name="ldeskuid" defaultValue="" />
           <input type="text" style={{ display: 'none' }} id="LDTuvid" name="LDTuvid" defaultValue="" />
+          {/* Do not remove this code. */}
 
           <div className="zcwf_row">
             <div className="zcwf_col_lab"><label htmlFor="First_Name">First Name <span style={{ color: 'red' }}>*</span></label></div>
-            <div className="zcwf_col_fld"><input type="text" id="First_Name" name="First Name" maxLength={40} required /></div>
+            <div className="zcwf_col_fld"><input type="text" id="First_Name" name="First Name" maxLength={40} /></div>
           </div>
 
           <div className="zcwf_row">
             <div className="zcwf_col_lab"><label htmlFor="Last_Name">Last Name <span style={{ color: 'red' }}>*</span></label></div>
-            <div className="zcwf_col_fld"><input type="text" id="Last_Name" name="Last Name" maxLength={80} required /></div>
+            <div className="zcwf_col_fld"><input type="text" id="Last_Name" name="Last Name" maxLength={80} /></div>
           </div>
 
           <div className="zcwf_row full-width">
             <div className="zcwf_col_lab"><label htmlFor="Email">Email <span style={{ color: 'red' }}>*</span></label></div>
-            <div className="zcwf_col_fld"><input type="text" ftype="email" id="Email" name="Email" maxLength={100} required /></div>
+            <div className="zcwf_col_fld"><input type="text" ftype="email" autoComplete="false" id="Email" name="Email" crmlabel="" maxLength={100} /></div>
           </div>
 
           <div className="zcwf_row">
             <div className="zcwf_col_lab"><label htmlFor="Mobile">Mobile <span style={{ color: 'red' }}>*</span></label></div>
-            <div className="zcwf_col_fld"><input type="text" id="Mobile" name="Mobile" maxLength={30} required /></div>
+            <div className="zcwf_col_fld"><input type="text" id="Mobile" name="Mobile" maxLength={30} /></div>
           </div>
 
           <div className="zcwf_row">
             <div className="zcwf_col_lab"><label htmlFor="Company">Company <span style={{ color: 'red' }}>*</span></label></div>
-            <div className="zcwf_col_fld"><input type="text" id="Company" name="Company" maxLength={200} required /></div>
+            <div className="zcwf_col_fld"><input type="text" id="Company" name="Company" maxLength={200} /></div>
           </div>
 
           <div className="zcwf_row full-width">
@@ -281,11 +351,11 @@ export default function ZohoForm({ onSubmitted }) {
           <div className="zcwf_row full-width">
             <div className="zcwf_col_lab" id="reCaptchaField">Enter the Captcha <span style={{ color: 'red' }}>*</span></div>
             <div className="zcwf_col_fld">
-              <input type="text" id="captchaField3209734000060076018" name="enterdigest" maxLength={10} required />
+              <input type="text" id="captchaField3209734000060076018" name="enterdigest" maxLength={10} />
               <div className="captcha-container">
                 <img
                   id="imgid3209734000060076018"
-                  src="https://crm.zoho.com/crm/CaptchaServlet?formId=afe609924d7adaa602ad53109e77a1de992b33c001919f526e0443c8e334d775d1cc34036a59aea9537c15d7b7d981ae&grpid=7c42a34e0f527335db665511efdcca866a0206693114e239cf115370bb3804e9"
+                  src="https://crm.zoho.com/crm/CaptchaServlet?formId=8b3c8db641409c0ebcda7ba3f00e0c8933060493054704298a05d80ecc9f8259a45f38fab276ca4155b93508fb89c04b&grpid=526da2c328bc79c83950c5bf87e802cec1865ee9aadd0517b7187c7c9fb940b0"
                   alt="Captcha"
                 />
                 <a href="javascript:;" onClick={() => window.reloadImg3209734000060076018?.()} className="reload-link">Reload</a>
@@ -293,10 +363,11 @@ export default function ZohoForm({ onSubmitted }) {
             </div>
           </div>
 
+          {/* Do not remove this code. */}
           <div className="zcwf_row wfrm_fld_dpNn">
             <div className="zcwf_col_lab"><label htmlFor="LEADCF48">Business Entity</label></div>
             <div className="zcwf_col_fld">
-              <select id="LEADCF48" name="LEADCF48" defaultValue="FI Digital US">
+              <select className="zcwf_col_fld_slt" id="LEADCF48" name="LEADCF48" defaultValue="FI Digital US">
                 <option value="-None-">-None-</option>
                 <option value="Fristine Infotech">Fristine Infotech</option>
                 <option value="FI Digital">FI Digital</option>
@@ -305,7 +376,6 @@ export default function ZohoForm({ onSubmitted }) {
                 <option value="FI Digital UK">FI Digital UK</option>
                 <option value="FI Digital US">FI Digital US</option>
                 <option value="FI Digital NZ">FI Digital NZ</option>
-                <option value="DSV Consulting">DSV Consulting</option>
               </select>
             </div>
           </div>
@@ -313,15 +383,22 @@ export default function ZohoForm({ onSubmitted }) {
           <div className="zcwf_row wfrm_fld_dpNn">
             <div className="zcwf_col_lab"><label htmlFor="Lead_Status">Lead Status</label></div>
             <div className="zcwf_col_fld">
-              <select id="Lead_Status" name="Lead Status" defaultValue="New Lead">
+              <select className="zcwf_col_fld_slt" id="Lead_Status" name="Lead Status" defaultValue="New Lead">
                 <option value="-None-">-None-</option>
                 <option value="Not Contacted">Not Contacted</option>
+                <option value="Attempted to Contact">Attempted to Contact</option>
+                <option value="Contact In Future">Contact In Future</option>
+                <option value="Contacted">Contacted</option>
+                <option value="Qualified">Qualified</option>
+                <option value="Junk Lead">Junk Lead</option>
+                <option value="Lost Lead">Lost Lead</option>
+                <option value="Unqualified">Unqualified</option>
                 <option value="New Lead">New Lead</option>
               </select>
             </div>
           </div>
 
-          <input type="hidden" name="aG9uZXlwb3Q" defaultValue="" />
+          <input type="text" style={{ display: 'none' }} name="aG9uZXlwb3Q" defaultValue="" />
 
           <div className="zcwf_row full-width">
             <div className="zcwf_col_fld">
@@ -333,14 +410,17 @@ export default function ZohoForm({ onSubmitted }) {
 
       {/* Hidden iframe — receives the Zoho POST so the page does not reload */}
       <iframe name="zoho_submit_frame" style={{ display: 'none' }} />
+      {/* Do not remove this code. */}
+      <iframe name="captchaFrame" style={{ display: 'none' }} />
 
       <Script
         src="https://crm.zohopublic.com/crm/WebFormServlet?rid=b3458fba8d6e2e3f7521cf39297fcd47106044ab5b0b717ca7e3ee318c99f608"
         strategy="afterInteractive"
       />
+      {/* Do not remove this --- Analytics Tracking code */}
       <Script
         id="wf_anal"
-        src="https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=b8b59fb296872dbb85ac4db260342d6721c911cd4c01a49d4f50e5b73da1a564d28d23835ae9b7f9021b1eb17542fd2agid56729dee31f77783b34acff87dd30e24f823eef8634047e4aef9c7f9d0fdf2b4gidc3b34b6f75f7365c60b7c7285f3dc2dc61a8a22c962d3ecc6861cdf2371b5c5bgid9305017eb9737e7842c6dbc97a07c1b00d30b74e572e0c93749e504bd49d2f1b&tw=3d83ec64716c7f8cdc952c6c4ab28af1cc2bab909088b7334046b846a9942cd1"
+        src="https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=6829ce7fb821addc1a40eea005227c2ae2d0cceaaf1b5813bc22373156177b6924d52c2f7f9d115c90a8767ebb38672fgid5f18724014afd0bed1ede1e1b43f9b5b6b3b325e6e820a83472e265d36309607gidad8c95271abe9deb188c916e6456fd9c0d21290b8bc4bc23a4bd0ca0a0270974gidcdb6a55d2dac4fccf95acae354959d1a6119091e9aec6c34e36007d760ca8ba4&tw=7dd103768b56b1e5149227fabf8cbf89251e79b9446edd9c415da5eea5971353"
         strategy="afterInteractive"
       />
     </>
