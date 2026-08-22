@@ -158,7 +158,9 @@ export default function ZohoForm({ onSubmitted }) {
 
     window.historyBack3209734000060076018 = function () {
       document.querySelector('.crmWebToEntityForm .formsubmit')?.removeAttribute('disabled');
-      window.reloadImg3209734000060076018();
+      if (typeof window.reloadImg3209734000060076018 === 'function') {
+        window.reloadImg3209734000060076018();
+      }
       window.removeEventListener('focus', window.historyBack3209734000060076018);
     };
 
@@ -269,6 +271,7 @@ export default function ZohoForm({ onSubmitted }) {
     };
 
     return () => {
+      window.removeEventListener('focus', window.historyBack3209734000060076018);
       delete window.reloadImg3209734000060076018;
       delete window.historyBack3209734000060076018;
       delete window.validateEmail3209734000060076018;
