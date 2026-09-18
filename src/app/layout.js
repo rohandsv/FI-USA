@@ -15,11 +15,11 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "@id": "https://fidigital.com/#organization",
+    "@id": "https://www.fidigital.co/#organization",
     "name": "FI Digital",
     "legalName": "FI Digital LLC",
-    "url": "https://fidigital.com",
-    "logo": "https://fidigital.com/assets/logo.png",
+    "url": "https://www.fidigital.co",
+    "logo": "https://www.fidigital.co/assets/logo.png",
     "description": "US SMB transformation partner. Zoho Premium Partner plus product engineering, AI automation, and data engineering delivery from one execution partner.",
     "address": {
       "@type": "PostalAddress",
@@ -36,10 +36,10 @@ export default function RootLayout({ children }) {
       "@type": "OfferCatalog",
       "name": "Services",
       "itemListElement": [
-        { "@type": "Offer", "name": "Zoho Implementation Stack", "url": "https://fidigital.com/solutions/zoho-implementation/" },
-        { "@type": "Offer", "name": "Product Engineering", "url": "https://fidigital.com/solutions/product-engineering/" },
-        { "@type": "Offer", "name": "AI and Digital Workers", "url": "https://fidigital.com/solutions/ai-digital-workers/" },
-        { "@type": "Offer", "name": "Data Engineering", "url": "https://fidigital.com/solutions/data-engineering/" }
+        { "@type": "Offer", "name": "Zoho Implementation Stack", "url": "https://www.fidigital.co/solutions/zoho-implementation/" },
+        { "@type": "Offer", "name": "Product Engineering", "url": "https://www.fidigital.co/solutions/product-engineering/" },
+        { "@type": "Offer", "name": "AI and Digital Workers", "url": "https://www.fidigital.co/solutions/ai-digital-workers/" },
+        { "@type": "Offer", "name": "Data Engineering", "url": "https://www.fidigital.co/solutions/data-engineering/" }
       ]
     },
     "sameAs": [

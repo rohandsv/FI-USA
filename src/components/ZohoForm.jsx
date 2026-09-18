@@ -59,10 +59,17 @@ const ZOHO_FORM_HTML = `
 <META HTTP-EQUIV="content-type" CONTENT="text/html;charset=UTF-8">
 <form id="webform3209734000060076018" action="https://crm.zoho.com/crm/WebToLeadForm" name=WebToLeads3209734000060076018 method="POST" onSubmit='javascript:document.charset="UTF-8"; return checkMandatory3209734000060076018()' accept-charset="UTF-8">
 <input type="text" style="display:none;" name="xnQsjsdp" value="526da2c328bc79c83950c5bf87e802cec1865ee9aadd0517b7187c7c9fb940b0">
-<input type="hidden" name="zc_gad" id="zc_gad" value="">
+<input type="hidden" name="zc_gad" id="fi_gclid" value="">
+<input type="hidden" name="LEADCF_xx" id="fi_gbraid" value="">
+<input type="hidden" name="LEADCF_xx" id="fi_wbraid" value="">
+<input type="hidden" name="LEADCF_xx" id="fi_source" value="">
+<input type="hidden" name="LEADCF_xx" id="fi_medium" value="">
+<input type="hidden" name="LEADCF_xx" id="fi_campaign" value="">
+<input type="hidden" name="LEADCF_xx" id="fi_landing" value="">
+<input type="hidden" name="LEADCF_xx" id="fi_first_seen" value="">
 <input type="text" style="display:none;" name="xmIwtLD" value="8b3c8db641409c0ebcda7ba3f00e0c8933060493054704298a05d80ecc9f8259a45f38fab276ca4155b93508fb89c04b">
 <input type="text" style="display:none;" name="actionType" value="TGVhZHM=">
-<input type="text" style="display:none;" name="returnURL" value="https://www.fidigital.co/contact">
+<input type="text" style="display:none;" name="returnURL" value="https://www.fidigital.co/thank-you">
 <!-- Do not remove this code. -->
 <input type="text" style="display:none;" id="ldeskuid" name="ldeskuid">
 <input type="text" style="display:none;" id="LDTuvid" name="LDTuvid">
@@ -100,6 +107,27 @@ function trackVisitor3209734000060076018(){try{if($zoho){var LDTuvidObj=document
 <script id="wf_anal" src="https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=6829ce7fb821addc1a40eea005227c2ae2d0cceaaf1b5813bc22373156177b6924d52c2f7f9d115c90a8767ebb38672fgid5f18724014afd0bed1ede1e1b43f9b5b6b3b325e6e820a83472e265d36309607gidad8c95271abe9deb188c916e6456fd9c0d21290b8bc4bc23a4bd0ca0a0270974gidcdb6a55d2dac4fccf95acae354959d1a6119091e9aec6c34e36007d760ca8ba4&tw=7dd103768b56b1e5149227fabf8cbf89251e79b9446edd9c415da5eea5971353"></script>
 <!-- Do not remove this --- Analytics Tracking code ends. -->
 </form>
+<script>
+(function () {
+  var KEYS = ['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign'];
+  var store = {};
+  try { store = JSON.parse(sessionStorage.getItem('fi_ad') || '{}'); } catch (e) {}
+  var q = new URLSearchParams(window.location.search);
+  KEYS.forEach(function (k) { if (q.get(k)) store[k] = q.get(k); });
+  if (!store.landing) store.landing = window.location.href.split('?')[0];
+  if (!store.first_seen) store.first_seen = new Date().toISOString();
+  try { sessionStorage.setItem('fi_ad', JSON.stringify(store)); } catch (e) {}
+  function put(id, v) { var el = document.getElementById(id); if (el && v) el.value = v; }
+  put('fi_gclid', store.gclid);
+  put('fi_gbraid', store.gbraid);
+  put('fi_wbraid', store.wbraid);
+  put('fi_source', store.utm_source);
+  put('fi_medium', store.utm_medium);
+  put('fi_campaign', store.utm_campaign);
+  put('fi_landing', store.landing);
+  put('fi_first_seen', store.first_seen);
+})();
+</script>
 <!-- Do not remove this code. -->
 <iframe name="captchaFrame" style="display:none;"></iframe>
 </div>

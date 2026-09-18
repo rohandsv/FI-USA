@@ -28,7 +28,7 @@ export default function ManagedServicesPage() {
     "provider": {
       "@type": "Organization",
       "name": "FI Digital",
-      "url": "https://fidigital.com",
+      "url": "https://www.fidigital.co",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Atlanta",

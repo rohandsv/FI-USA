@@ -9,17 +9,17 @@ Delivery: US-based account leads, global engineering bench
 
 ## Services
 
-- [Zoho Implementation Stack](https://fidigital.com/solutions/zoho-implementation/): Zoho Premium Partner. CRM, marketing automation, service ops, Zoho One rollouts, managed support, optimization.
-- [Product Engineering](https://fidigital.com/solutions/product-engineering/): Discovery sprints, MVP builds, customer portals, internal workflow apps, app modernization, integration engineering.
-- [AI and Digital Workers](https://fidigital.com/solutions/ai-digital-workers/): AI opportunity workshops, one-workflow AI pilots, support copilots, internal knowledge assistants, document AI, human-in-the-loop automation.
-- [Data Engineering](https://fidigital.com/solutions/data-engineering/): Data foundation assessments, ETL / ELT modernization, Databricks lakehouse, Snowflake analytics, governance, BI acceleration.
+- [Zoho Implementation Stack](https://www.fidigital.co/solutions/zoho-implementation/): Zoho Premium Partner. CRM, marketing automation, service ops, Zoho One rollouts, managed support, optimization.
+- [Product Engineering](https://www.fidigital.co/solutions/product-engineering/): Discovery sprints, MVP builds, customer portals, internal workflow apps, app modernization, integration engineering.
+- [AI and Digital Workers](https://www.fidigital.co/solutions/ai-digital-workers/): AI opportunity workshops, one-workflow AI pilots, support copilots, internal knowledge assistants, document AI, human-in-the-loop automation.
+- [Data Engineering](https://www.fidigital.co/solutions/data-engineering/): Data foundation assessments, ETL / ELT modernization, Databricks lakehouse, Snowflake analytics, governance, BI acceleration.
 
 ## Industries
 
-- [Professional Services](https://fidigital.com/industries/professional-services/)
-- [Manufacturing and Distribution](https://fidigital.com/industries/manufacturing-distribution/)
-- [Logistics and Field Service](https://fidigital.com/industries/logistics-field-service/)
-- [Financial Services](https://fidigital.com/industries/financial-services/)
+- [Professional Services](https://www.fidigital.co/industries/professional-services/)
+- [Manufacturing and Distribution](https://www.fidigital.co/industries/manufacturing-distribution/)
+- [Logistics and Field Service](https://www.fidigital.co/industries/logistics-field-service/)
+- [Financial Services](https://www.fidigital.co/industries/financial-services/)
 
 ## Starting Offers
 
@@ -38,5 +38,5 @@ Delivery: US-based account leads, global engineering bench
 
 ## Contact
 
-- Book a fit call: https://fidigital.com/contact/
+- Book a fit call: https://www.fidigital.co/contact/
 - Email: hello@fidigital.com

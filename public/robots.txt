@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://fidigital.com/sitemap.xml
+Sitemap: https://www.fidigital.co/sitemap.xml
 
 # Allow major LLM / AI crawlers
 User-agent: GPTBot
@@ -42,4 +42,3 @@ Disallow: /admin/
 Disallow: /wp-admin/
 Disallow: /cart/
 Disallow: /checkout/
-Disallow: /thank-you/

@@ -5,7 +5,7 @@ export const metadata = {
   title: "Zoho CRM QuickStart | Fixed Fee CRM Setup in 3 to 5 Weeks | FI Digital",
   description: "Get your Zoho CRM live in 3 to 5 weeks with FI Digital's fixed fee QuickStart. Sales pipelines, lead routing, data migration, and user training, all included. Zoho Premium Partner, Atlanta GA.",
   alternates: {
-    canonical: "https://fidigital.com/solutions/zoho-implementation/zoho-crm-quickstart/",
+    canonical: "https://www.fidigital.co/solutions/zoho-implementation/zoho-crm-quickstart/",
   },
 };
 

@@ -197,7 +197,7 @@ export default async function CaseStudyDetailPage({ params }) {
     "@type": "Article",
     "headline": study.title,
     "description": study.description,
-    "image": `https://fidigital.com${study.image}`,
+    "image": `https://www.fidigital.co${study.image}`,
     "author": {
       "@type": "Organization",
       "name": "FI Digital"
@@ -217,13 +217,13 @@ export default async function CaseStudyDetailPage({ params }) {
         "@type": "ListItem",
         "position": 1,
         "name": "Case Studies",
-        "item": "https://fidigital.com/case-studies/"
+        "item": "https://www.fidigital.co/case-studies/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": study.title,
-        "item": `https://fidigital.com/case-studies/${study.slug}/`
+        "item": `https://www.fidigital.co/case-studies/${study.slug}/`
       }
     ]
   };
