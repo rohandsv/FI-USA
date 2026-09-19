@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import pageStyles from '../page.module.css';
@@ -11,7 +11,6 @@ import ZohoForm from '@/components/ZohoForm';
 
 export default function ContactClient() {
   const containerRef = useRef(null);
-  const [submitted, setSubmitted] = useState(false);
 
   useGSAP(() => {
     gsap.fromTo('.hero-animate',
@@ -55,56 +54,53 @@ export default function ContactClient() {
         </div>
       </section>
 
-      {/* FORM SECTION */}
+      {/* TWO-COLUMN: INFO LEFT + FORM RIGHT */}
       <section className={styles.formSection}>
-        <div className="container" style={{ maxWidth: '800px' }}>
-          <div className={styles.formCard}>
-            {submitted ? (
-              <div style={{ textAlign: 'center', padding: '2rem 0' }}>
-                <div className={styles.successIcon}>&#10003;</div>
-                <h2 style={{ fontSize: '1.75rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--text-primary)' }}>Thank You!</h2>
-                <p style={{ fontSize: '1.05rem', color: 'var(--text-secondary)', maxWidth: '480px', margin: '0 auto 1.5rem', lineHeight: 1.6 }}>
-                  Your inquiry has been received. A practice lead will get back to you within one US business day.
-                </p>
-                <button
-                  onClick={() => setSubmitted(false)}
-                  style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontWeight: 600, cursor: 'pointer', fontSize: '1rem' }}
-                >
-                  Submit another inquiry &#8594;
-                </button>
-              </div>
-            ) : (
-              <>
-                <ZohoForm onSubmitted={() => setSubmitted(true)} />
-                <div style={{ marginTop: '2rem', textAlign: 'center' }}>
-                  <p className={styles.footerPrompt}>
-                    Prefer to skip the form? <Link href="/book-a-fit-call/" style={{ color: 'var(--accent-color)', fontWeight: 600 }}>Book a fit call immediately &#8594;</Link>
-                  </p>
-                </div>
-              </>
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* TRUST STRIP */}
-      <section className={styles.trustStripSection}>
         <div className="container">
-          <div className={styles.trustStripWrapper}>
-            <div className={styles.trustItem}>
-              <strong>Corporate Identity:</strong> FI Digital LLC · 123 Innovation Drive, Suite 400, Atlanta, GA 30301
+          <div className={styles.contactGrid}>
+            {/* LEFT — Address & Info */}
+            <div className={styles.contactInfo}>
+              <div className={styles.infoBlock}>
+                <h3 className={styles.infoHeading}>Office</h3>
+                <p>FI Digital LLC</p>
+                <p>123 Innovation Drive, Suite 400</p>
+                <p>Atlanta, GA 30301</p>
+              </div>
+
+              <div className={styles.infoBlock}>
+                <h3 className={styles.infoHeading}>Phone</h3>
+                <p><a href="tel:+18665550199">+1-866-555-0199</a></p>
+                <p className={styles.infoMuted}>ET business hours</p>
+              </div>
+
+              <div className={styles.infoBlock}>
+                <h3 className={styles.infoHeading}>Email</h3>
+                <p><a href="mailto:hello@fidigital.com">hello@fidigital.com</a></p>
+                <p><a href="mailto:privacy@fidigital.com">privacy@fidigital.com</a></p>
+                <p><a href="mailto:security@fidigital.com">security@fidigital.com</a></p>
+              </div>
+
+              <div className={styles.infoBlock}>
+                <h3 className={styles.infoHeading}>Hours</h3>
+                <p>Monday to Friday, 9am to 6pm ET</p>
+                <p className={styles.infoMuted}>24/5 for managed services clients</p>
+              </div>
+
+              <div className={styles.infoBlock}>
+                <h3 className={styles.infoHeading}>Response SLA</h3>
+                <p>One US business day on every form submission</p>
+              </div>
+
+              <div className={styles.infoBlock} style={{ marginTop: 'auto' }}>
+                <p className={styles.infoMuted}>
+                  Prefer to skip the form? <Link href="/book-a-fit-call/" style={{ color: 'var(--accent-color)', fontWeight: 600 }}>Book a fit call &#8594;</Link>
+                </p>
+              </div>
             </div>
-            <div className={styles.trustItem}>
-              <strong>Direct Phone:</strong> <a href="tel:+18665550199">+1-866-555-0199</a> (ET business hours)
-            </div>
-            <div className={styles.trustItem}>
-              <strong>Contact Channels:</strong> hello@fidigital.com | privacy@fidigital.com | security@fidigital.com
-            </div>
-            <div className={styles.trustItem}>
-              <strong>Operational Hours:</strong> Monday to Friday, 9am to 6pm ET (24/5 for managed services clients)
-            </div>
-            <div className={styles.trustItem}>
-              <strong>Response SLA:</strong> One US business day on every form submission
+
+            {/* RIGHT — Form */}
+            <div className={styles.formCard}>
+              <ZohoForm />
             </div>
           </div>
         </div>
