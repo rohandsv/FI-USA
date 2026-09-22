@@ -49,24 +49,17 @@ const CUSTOM_CSS = `
 }
 `;
 
-// New Zoho form HTML with updated tokens, no captcha, updated fields.
-// Visible fields: First Name, Last Name, Email, Mobile, "What do you want to automate?"
-// Hidden fields: Company, Company Size, Business Entity, Lead Status + ad tracking fields
+// Zoho form with latest tokens (Sep 2026).
+// Visible: First Name, Last Name, Email, Mobile, "What do you want to automate?"
+// Hidden: Company, Company Size, Business Entity, Lead Status, all tracking fields
 const ZOHO_FORM_HTML = `
 <div id="crmWebToEntityForm" class="zcwf_lblLeft crmWebToEntityForm" style="max-width:100%;">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <META HTTP-EQUIV="content-type" CONTENT="text/html;charset=UTF-8">
 <form id="webform3209734000060076018" action="https://crm.zoho.com/crm/WebToLeadForm" name=WebToLeads3209734000060076018 method="POST" onSubmit='javascript:document.charset="UTF-8"; return checkMandatory3209734000060076018()' accept-charset="UTF-8">
-<input type="text" style="display:none;" name="xnQsjsdp" value="78fed0fd87f11447c13efc2f81e14997c926a3c9a095ab5195482edd7c3b83a0">
-<input type="hidden" name="zc_gad" id="fi_gclid" value="">
-<input type="hidden" name="LEADCF_xx" id="fi_gbraid" value="">
-<input type="hidden" name="LEADCF_xx" id="fi_wbraid" value="">
-<input type="hidden" name="LEADCF_xx" id="fi_source" value="">
-<input type="hidden" name="LEADCF_xx" id="fi_medium" value="">
-<input type="hidden" name="LEADCF_xx" id="fi_campaign" value="">
-<input type="hidden" name="LEADCF_xx" id="fi_landing" value="">
-<input type="hidden" name="LEADCF_xx" id="fi_first_seen" value="">
-<input type="text" style="display:none;" name="xmIwtLD" value="d69f9846ae6043cef9819833a40e388277c14a4faec943e0a4b34403f9f24b1e0776c83a71b0c5fcc9403856c6cc46e7">
+<input type="text" style="display:none;" name="xnQsjsdp" value="59c35a183086ae54bf805a9798cc9d202d0531a74e8cfc833fc27b207ce3b476">
+<input type="hidden" name="zc_gad" id="zc_gad" value="">
+<input type="text" style="display:none;" name="xmIwtLD" value="cb9bd1335cd6ae36053b22cda11d519a411106b42e2b42fd882bdfab539bd77c4e33f798cc1514b66c204adc476fc484">
 <input type="text" style="display:none;" name="actionType" value="TGVhZHM=">
 <input type="text" style="display:none;" name="returnURL" value="https://www.fidigital.co/thank-you">
 <!-- Do not remove this code. -->
@@ -83,6 +76,13 @@ const ZOHO_FORM_HTML = `
 <div class="zcwf_row wfrm_fld_dpNn"><div class="zcwf_col_lab" style="font-size:12px;font-family:Arial;"><label for="LEADCF55">Company Size</label></div><div class="zcwf_col_fld"><input type="text" id="LEADCF55" aria-required="false" aria-label="LEADCF55" name="LEADCF55" maxlength="9"><div class="zcwf_col_help"></div></div></div>
 <div class="zcwf_row wfrm_fld_dpNn"><div class="zcwf_col_lab" style="font-size:12px;font-family:Arial;"><label for="LEADCF48">Business Entity</label></div><div class="zcwf_col_fld"><select class="zcwf_col_fld_slt" role="combobox" aria-expanded="false" aria-haspopup="listbox" id="LEADCF48" onChange="addAriaSelected3209734000060076018()" aria-required="false" aria-label="LEADCF48" name="LEADCF48"><option value="-None-">-None-</option><option value="Fristine Infotech">Fristine Infotech</option><option value="FI Digital">FI Digital</option><option value="DSV Corp">DSV Corp</option><option value="FI Digital MEA">FI Digital MEA</option><option value="FI Digital UK">FI Digital UK</option><option selected value="FI Digital US">FI Digital US</option><option value="FI Digital NZ">FI Digital NZ</option><option value="DSV Consulting">DSV Consulting</option></select><div class="zcwf_col_help"></div></div></div>
 <div class="zcwf_row wfrm_fld_dpNn"><div class="zcwf_col_lab" style="font-size:12px;font-family:Arial;"><label for="Lead_Status">Lead Status</label></div><div class="zcwf_col_fld"><select class="zcwf_col_fld_slt" role="combobox" aria-expanded="false" aria-haspopup="listbox" id="Lead_Status" onChange="addAriaSelected3209734000060076018()" aria-required="false" aria-label="Lead Status" name="Lead Status"><option value="-None-">-None-</option><option value="Not Contacted">Not Contacted</option><option value="Attempted to Contact">Attempted to Contact</option><option value="Contact In Future">Contact In Future</option><option value="Contacted">Contacted</option><option value="Qualified">Qualified</option><option value="Junk Lead">Junk Lead</option><option value="Lost Lead">Lost Lead</option><option value="Unqualified">Unqualified</option><option selected value="New Lead">New Lead</option></select><div class="zcwf_col_help"></div></div></div>
+<div class="zcwf_row wfrm_fld_dpNn"><div class="zcwf_col_lab" style="font-size:12px;font-family:Arial;"><label for="LEADCF155">utm source</label></div><div class="zcwf_col_fld"><input type="text" id="LEADCF155" aria-required="false" aria-label="LEADCF155" name="LEADCF155" maxlength="255"><div class="zcwf_col_help"></div></div></div>
+<div class="zcwf_row wfrm_fld_dpNn"><div class="zcwf_col_lab" style="font-size:12px;font-family:Arial;"><label for="LEADCF157">utm medium</label></div><div class="zcwf_col_fld"><input type="text" id="LEADCF157" aria-required="false" aria-label="LEADCF157" name="LEADCF157" maxlength="255"><div class="zcwf_col_help"></div></div></div>
+<div class="zcwf_row wfrm_fld_dpNn"><div class="zcwf_col_lab" style="font-size:12px;font-family:Arial;"><label for="LEADCF156">utm campaign</label></div><div class="zcwf_col_fld"><input type="text" id="LEADCF156" aria-required="false" aria-label="LEADCF156" name="LEADCF156" maxlength="255"><div class="zcwf_col_help"></div></div></div>
+<div class="zcwf_row wfrm_fld_dpNn"><div class="zcwf_col_lab" style="font-size:12px;font-family:Arial;"><label for="LEADCF153">utm term</label></div><div class="zcwf_col_fld"><input type="text" id="LEADCF153" aria-required="false" aria-label="LEADCF153" name="LEADCF153" maxlength="255"><div class="zcwf_col_help"></div></div></div>
+<div class="zcwf_row wfrm_fld_dpNn"><div class="zcwf_col_lab" style="font-size:12px;font-family:Arial;"><label for="LEADCF158">utm content</label></div><div class="zcwf_col_fld"><input type="text" id="LEADCF158" aria-required="false" aria-label="LEADCF158" name="LEADCF158" maxlength="255"><div class="zcwf_col_help"></div></div></div>
+<div class="zcwf_row wfrm_fld_dpNn"><div class="zcwf_col_lab" style="font-size:12px;font-family:Arial;"><label for="LEADCF159">g clid</label></div><div class="zcwf_col_fld"><input type="text" id="LEADCF159" aria-required="false" aria-label="LEADCF159" name="LEADCF159" maxlength="255"><div class="zcwf_col_help"></div></div></div>
+<div class="zcwf_row wfrm_fld_dpNn"><div class="zcwf_col_lab" style="font-size:12px;font-family:Arial;"><label for="LEADCF154">fbclid</label></div><div class="zcwf_col_fld"><input type="text" id="LEADCF154" aria-required="false" aria-label="LEADCF154" name="LEADCF154" maxlength="255"><div class="zcwf_col_help"></div></div></div>
 <input type="text" type="hidden" style="display:none;" name="aG9uZXlwb3Q" value="">
 <div class="zcwf_row full-width"><div class="zcwf_col_lab"></div><div class="zcwf_col_fld"><input type="submit" id="formsubmit" role="button" class="formsubmit zcwf_button" value="Submit" aria-label="Submit" title="Submit"><input type="reset" class="zcwf_button" role="button" name="reset" value="Reset" aria-label="Reset" title="Reset"></div></div>
 <script>
@@ -98,12 +98,12 @@ function trackVisitor3209734000060076018(){try{if($zoho){var LDTuvidObj=document
 </script>
 <script src="https://crm.zohopublic.com/crm/WebFormServlet?rid=b3458fba8d6e2e3f7521cf39297fcd47106044ab5b0b717ca7e3ee318c99f608"></script>
 <!-- Do not remove this --- Analytics Tracking code starts -->
-<script id="wf_anal" src="https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=cd48e7050e76b9d0d1171fc42b1450dd240f5b8dca1f110fb6b199840db87814b5b89c71c770d8458e418a7b3273770cgid3b318aba000207bce6e250545bc30c0953e88e2918a93d136f3041afe893d8d7gidec79014ab10060904db7c3bce68a7ac30b642527f18d1c0de3d9d54ed809148fgidd0dc9ae64f3ba279661f16104d4a2b66667d441eb1fab6333be6a594b8adf494&tw=767cadddf8d34c9efb6c4f66bab66bed97239a717e607f01ec4813adf44045d2&version=v2"></script>
+<script id="wf_anal" src="https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=d8c871eba25b265ba8f2ff59de8522c277bc857b7973a93ed8d10c44d281d0732294552e7448c0c60648f0a384c57cc0gidac9ceba5a0ccd5b90fdf787bb59cd1fe164088755225ecb582cc3b798f14d875gid8a9ad62d90e859af91610d1539c1fc98b8570d4990a950be9cd425d7284d1a2egida0e8d675e9eaa62609c68a546caa8ce755d7e24d3a48da19d23287da1244b5ca&tw=1506cf843563e5ac48d1170ea6f2ddb3d7c1577d8ba1eec08638123bdd7e3a65&version=v2"></script>
 <!-- Do not remove this --- Analytics Tracking code ends. -->
 </form>
 <script>
 (function () {
-  var KEYS = ['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign'];
+  var KEYS = ['gclid','gbraid','wbraid','utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid'];
   var store = {};
   try { store = JSON.parse(sessionStorage.getItem('fi_ad') || '{}'); } catch (e) {}
   var q = new URLSearchParams(window.location.search);
@@ -112,14 +112,14 @@ function trackVisitor3209734000060076018(){try{if($zoho){var LDTuvidObj=document
   if (!store.first_seen) store.first_seen = new Date().toISOString();
   try { sessionStorage.setItem('fi_ad', JSON.stringify(store)); } catch (e) {}
   function put(id, v) { var el = document.getElementById(id); if (el && v) el.value = v; }
-  put('fi_gclid', store.gclid);
-  put('fi_gbraid', store.gbraid);
-  put('fi_wbraid', store.wbraid);
-  put('fi_source', store.utm_source);
-  put('fi_medium', store.utm_medium);
-  put('fi_campaign', store.utm_campaign);
-  put('fi_landing', store.landing);
-  put('fi_first_seen', store.first_seen);
+  put('zc_gad',   store.gclid);
+  put('LEADCF159', store.gclid);
+  put('LEADCF155', store.utm_source);
+  put('LEADCF157', store.utm_medium);
+  put('LEADCF156', store.utm_campaign);
+  put('LEADCF153', store.utm_term);
+  put('LEADCF158', store.utm_content);
+  put('LEADCF154', store.fbclid);
 })();
 </script>
 <!-- Do not remove this code. -->
