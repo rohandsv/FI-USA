@@ -71,7 +71,7 @@ export default function Footer() {
         {/* Column 5 — Contact */}
         <div className={styles.linkColumn}>
           <h4>Contact</h4>
-          <a href="mailto:hello@fidigital.com" className={styles.footerContactLink}>hello@fidigital.com</a>
+          <a href="mailto:hello@fidigital.co" className={styles.footerContactLink}>hello@fidigital.co</a>
           <a href="tel:+18665550199" className={styles.footerContactLink}>+1-866-555-0199</a>
           <p className={styles.address}>123 Innovation Drive, Suite 400, Atlanta, GA 30301</p>
         </div>

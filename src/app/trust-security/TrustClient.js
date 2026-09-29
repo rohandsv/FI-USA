@@ -72,7 +72,7 @@ export default function TrustClient() {
           <div className={pageStyles.heroContent} style={{ maxWidth: '800px' }}>
             <h1 className={`hero-animate ${pageStyles.heroH1}`}>Trust & Security at FI Digital</h1>
             <p className={`hero-animate ${pageStyles.heroSub}`} style={{ maxWidth: '750px' }}>
-              US SMB buyers now expect clarity on AI use, data handling, access controls, and implementation posture early in the buying cycle. This page pre answers the questions your security, compliance, and legal teams will ask. If something is not covered here, email privacy@fidigital.com and we will send the relevant documentation under NDA.
+              US SMB buyers now expect clarity on AI use, data handling, access controls, and implementation posture early in the buying cycle. This page pre answers the questions your security, compliance, and legal teams will ask. If something is not covered here, email privacy@fidigital.co and we will send the relevant documentation under NDA.
             </p>
             <div className={`hero-animate ${pageStyles.heroCtas}`}>
               <Link href="/book-a-fit-call/" className="btn btn-primary">Book a Fit Call &#8594;</Link>

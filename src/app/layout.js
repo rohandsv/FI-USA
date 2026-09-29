@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       "addressCountry": "US"
     },
     "telephone": "+1-866-555-0199",
-    "email": "hello@fidigital.com",
+    "email": "hello@fidigital.co",
     "areaServed": "US",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",

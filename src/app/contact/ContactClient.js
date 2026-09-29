@@ -75,9 +75,9 @@ export default function ContactClient() {
 
               <div className={styles.infoBlock}>
                 <h3 className={styles.infoHeading}>Email</h3>
-                <p><a href="mailto:hello@fidigital.com">hello@fidigital.com</a></p>
-                <p><a href="mailto:privacy@fidigital.com">privacy@fidigital.com</a></p>
-                <p><a href="mailto:security@fidigital.com">security@fidigital.com</a></p>
+                <p><a href="mailto:hello@fidigital.co">hello@fidigital.co</a></p>
+                <p><a href="mailto:privacy@fidigital.co">privacy@fidigital.co</a></p>
+                <p><a href="mailto:security@fidigital.co">security@fidigital.co</a></p>
               </div>
 
               <div className={styles.infoBlock}>

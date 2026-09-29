@@ -4,7 +4,7 @@ import aboutStyles from '../about/about.module.css';
 
 export const metadata = {
   title: 'Contact FI Digital | Atlanta, Georgia | US SMB Transformation Partner',
-  description: 'Contact FI Digital. US based account leads in Atlanta, Georgia. Book a fit call, route by practice, or email hello@fidigital.com.',
+  description: 'Contact FI Digital. US based account leads in Atlanta, Georgia. Book a fit call, route by practice, or email hello@fidigital.co.',
 };
 
 export default function ContactPage() {
@@ -31,7 +31,7 @@ export default function ContactPage() {
               <details className={aboutStyles.faqItem}>
                 <summary className={aboutStyles.faqQuestion}>Can I email directly?</summary>
                 <div className={aboutStyles.faqAnswer}>
-                  <p>Yes. hello@fidigital.com for general inquiries, privacy@fidigital.com for privacy, security@fidigital.com for security.</p>
+                  <p>Yes. hello@fidigital.co for general inquiries, privacy@fidigital.co for privacy, security@fidigital.co for security.</p>
                 </div>
               </details>
 

@@ -38,7 +38,7 @@ export default function TermsPage() {
             FI Digital LLC<br />
             123 Innovation Drive, Suite 400, Atlanta, GA 30301<br />
             Phone: 1-866-555-0199 (ET business hours)<br />
-            Email: <a href="mailto:hello@fidigital.com" style={{ color: 'var(--accent-color)' }}>hello@fidigital.com</a>
+            Email: <a href="mailto:hello@fidigital.co" style={{ color: 'var(--accent-color)' }}>hello@fidigital.co</a>
           </p>
         </section>
       </div>
